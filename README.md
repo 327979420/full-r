@@ -1,79 +1,31 @@
-# Max Rebate / 满返网
+# Max Rebate
 
-A static multilingual referral, rebate and IB application website for `max-rebate.com`.
+A clearer way to compare account types and eligible rebates before applying.
 
-## Architecture
+**[Visit the live site](https://max-rebate.com/)**
 
-- HTML files contain page structure and default Simplified Chinese content.
-- `assets/css/home.css` contains the original home-page styles.
-- `assets/css/application.css` and `assets/css/success.css` contain the application-flow styles.
-- `assets/home-enhancements.css` contains newer layout and interaction styles.
-- `assets/site-config.js` is the single source for referral URLs, contact URLs and calculator rates.
-- `assets/site-links.js` applies those shared destinations wherever a page needs them.
-- `assets/home-i18n.js` is the complete home-page translation table.
-- `assets/home.js` only binds language, calculator and pointer behavior.
-- `assets/application.js` and `assets/success.js` contain the application-flow behavior.
-- `scripts/validate-site.mjs` checks structural, resource, sitemap and translation integrity.
+![Max Rebate homepage](assets/max-rebate-homepage.jpg)
 
-There is no build step and no runtime dependency.
+## The problem
 
-## Important files
+Rebate rates, account types, eligibility rules, and application steps were spread across different pages and often lacked context. Max Rebate brings them into one transparent place.
 
-```text
-.
-├── index.html
-├── apply.html
-├── success.html
-├── tmgm-*.html
-├── tutorial-*.html
-├── assets/
-│   ├── css/home.css
-│   ├── css/application.css
-│   ├── css/success.css
-│   ├── home-enhancements.css
-│   ├── site-config.js
-│   ├── site-links.js
-│   ├── home-i18n.js
-│   ├── home.js
-│   ├── application.js
-│   ├── success.js
-│   ├── trust.css
-│   └── trust-pages.js
-├── scripts/validate-site.mjs
-├── sitemap.xml
-└── robots.txt
-```
+## The product
 
-## Editing rules
+**Compare.** Review rebate figures for each product and account group, with the relevant qualifications beside them.
 
-1. Change referral links, contact destinations and calculator rates only in `assets/site-config.js`.
-2. Change home-page translations only in `assets/home-i18n.js`.
-3. Keep page structure in HTML and presentation in CSS. Do not inject layout CSS or static sections from JavaScript.
-4. Add every public content page to `sitemap.xml`.
-5. Run validation before committing.
+**Calculate.** Estimate a gold rebate using the current rate table. The result is an estimate, not a platform statement or guarantee.
 
-## Validation
+**Choose a path.** New clients, existing account holders, and prospective IB partners follow different routes.
 
-```bash
-npm run check
-```
+**Get support.** Request an eligibility check and human follow up without sharing trading passwords or verification codes.
 
-The validator checks headings, metadata, duplicate IDs, local resources, external-link safety, sitemap coverage, translation completeness, core-page separation and centralized configuration.
+## How it works
 
-## Local preview
+Choose an account situation → compare rates → estimate a rebate → submit the relevant details → platform review → human follow up.
 
-```bash
-python3 -m http.server 8000
-```
+Final eligibility, rebate amounts, account attribution, and settlement depend on the account group, eligible trades, platform records, local rules, and platform review. Max Rebate is independent and is not TMGM's official website. Rebates may reduce part of eligible trading costs, but they do not reduce market risk or guarantee profit.
 
-Open `http://localhost:8000/`.
+## Built with
 
-## Deployment checklist
-
-1. Run `npm run check`.
-2. Preview the home page and application flow.
-3. Test all five languages.
-4. Verify the calculator, referral link and contact destinations.
-5. Confirm current rates and compliance language with the platform owner.
-
-Never collect trading passwords, verification codes, bank-card credentials or identity-document images.
+Static HTML, CSS, and JavaScript, with English, Simplified Chinese, Traditional Chinese, Malay, and Thai support.
