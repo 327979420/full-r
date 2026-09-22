@@ -1,79 +1,23 @@
 # Max Rebate / 满返网
 
-A static multilingual referral, rebate and IB application website for `max-rebate.com`.
+**[Explore max-rebate.com](https://max-rebate.com/)**
 
-## Architecture
+Rebate information can be hard to piece together: which account to choose, what a quoted rate means, and whether an existing account qualifies. Max Rebate brings TMGM account comparisons, rebate estimates, and application support into one place.
 
-- HTML files contain page structure and default Simplified Chinese content.
-- `assets/css/home.css` contains the original home-page styles.
-- `assets/css/application.css` and `assets/css/success.css` contain the application-flow styles.
-- `assets/home-enhancements.css` contains newer layout and interaction styles.
-- `assets/site-config.js` is the single source for referral URLs, contact URLs and calculator rates.
-- `assets/site-links.js` applies those shared destinations wherever a page needs them.
-- `assets/home-i18n.js` is the complete home-page translation table.
-- `assets/home.js` only binds language, calculator and pointer behavior.
-- `assets/application.js` and `assets/success.js` contain the application-flow behavior.
-- `scripts/validate-site.mjs` checks structural, resource, sitemap and translation integrity.
+![Max Rebate homepage in English](assets/max-rebate-homepage.jpg)
 
-There is no build step and no runtime dependency.
+*“100%” means the eligible client rebate received is returned, not all trading costs. Rates and eligibility remain subject to platform rules.*
 
-## Important files
+## From comparison to application
 
-```text
-.
-├── index.html
-├── apply.html
-├── success.html
-├── tmgm-*.html
-├── tutorial-*.html
-├── assets/
-│   ├── css/home.css
-│   ├── css/application.css
-│   ├── css/success.css
-│   ├── home-enhancements.css
-│   ├── site-config.js
-│   ├── site-links.js
-│   ├── home-i18n.js
-│   ├── home.js
-│   ├── application.js
-│   ├── success.js
-│   ├── trust.css
-│   └── trust-pages.js
-├── scripts/validate-site.mjs
-├── sitemap.xml
-└── robots.txt
-```
+Compare account types and published rebates for gold, forex, and Bitcoin alongside reference spreads and fees. Use the gold calculator to estimate a rebate by account type and lot size. It excludes spreads, slippage, and overnight fees, so it is not a total-cost or profit calculator.
 
-## Editing rules
+Follow the route for a new account, an existing-account eligibility check, or an Introducing Broker partnership. Application support and human follow-up help with onboarding and next steps. Never submit trading passwords, verification codes, bank-card details, or identity-document images.
 
-1. Change referral links, contact destinations and calculator rates only in `assets/site-config.js`.
-2. Change home-page translations only in `assets/home-i18n.js`.
-3. Keep page structure in HTML and presentation in CSS. Do not inject layout CSS or static sections from JavaScript.
-4. Add every public content page to `sitemap.xml`.
-5. Run validation before committing.
+## Before applying
 
-## Validation
+Applications do not guarantee approval, eligibility, rebate amounts, or settlement timing. Account group, eligible trades, platform records, and platform review determine the outcome; rates and rules can change.
 
-```bash
-npm run check
-```
+Max Rebate is independent, not TMGM’s official website, and does not provide personal investment advice. Leveraged trading is high risk. Rebates may offset eligible costs but do not reduce market risk or guarantee profit. Read the [terms](https://max-rebate.com/terms.html) and [risk disclaimer](https://max-rebate.com/risk-disclaimer.html).
 
-The validator checks headings, metadata, duplicate IDs, local resources, external-link safety, sitemap coverage, translation completeness, core-page separation and centralized configuration.
-
-## Local preview
-
-```bash
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000/`.
-
-## Deployment checklist
-
-1. Run `npm run check`.
-2. Preview the home page and application flow.
-3. Test all five languages.
-4. Verify the calculator, referral link and contact destinations.
-5. Confirm current rates and compliance language with the platform owner.
-
-Never collect trading passwords, verification codes, bank-card credentials or identity-document images.
+Built with HTML, CSS, and JavaScript.
