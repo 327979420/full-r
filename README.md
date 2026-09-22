@@ -1,31 +1,23 @@
-# Max Rebate
+# Max Rebate / 满返网
 
-A clearer way to compare account types and eligible rebates before applying.
+**[Explore max-rebate.com](https://max-rebate.com/)**
 
-**[Visit the live site](https://max-rebate.com/)**
+Rebate information can be hard to piece together: which account to choose, what a quoted rate means, and whether an existing account qualifies. Max Rebate brings TMGM account comparisons, rebate estimates, and application support into one place.
 
-![Max Rebate homepage](assets/max-rebate-homepage.jpg)
+![Max Rebate homepage in English](assets/max-rebate-homepage.jpg)
 
-## The problem
+*“100%” means the eligible client rebate received is returned, not all trading costs. Rates and eligibility remain subject to platform rules.*
 
-Rebate rates, account types, eligibility rules, and application steps were spread across different pages and often lacked context. Max Rebate brings them into one transparent place.
+## From comparison to application
 
-## The product
+Compare account types and published rebates for gold, forex, and Bitcoin alongside reference spreads and fees. Use the gold calculator to estimate a rebate by account type and lot size. It excludes spreads, slippage, and overnight fees, so it is not a total-cost or profit calculator.
 
-**Compare.** Review rebate figures for each product and account group, with the relevant qualifications beside them.
+Follow the route for a new account, an existing-account eligibility check, or an Introducing Broker partnership. Application support and human follow-up help with onboarding and next steps. Never submit trading passwords, verification codes, bank-card details, or identity-document images.
 
-**Calculate.** Estimate a gold rebate using the current rate table. The result is an estimate, not a platform statement or guarantee.
+## Before applying
 
-**Choose a path.** New clients, existing account holders, and prospective IB partners follow different routes.
+Applications do not guarantee approval, eligibility, rebate amounts, or settlement timing. Account group, eligible trades, platform records, and platform review determine the outcome; rates and rules can change.
 
-**Get support.** Request an eligibility check and human follow up without sharing trading passwords or verification codes.
+Max Rebate is independent, not TMGM’s official website, and does not provide personal investment advice. Leveraged trading is high risk. Rebates may offset eligible costs but do not reduce market risk or guarantee profit. Read the [terms](https://max-rebate.com/terms.html) and [risk disclaimer](https://max-rebate.com/risk-disclaimer.html).
 
-## How it works
-
-Choose an account situation → compare rates → estimate a rebate → submit the relevant details → platform review → human follow up.
-
-Final eligibility, rebate amounts, account attribution, and settlement depend on the account group, eligible trades, platform records, local rules, and platform review. Max Rebate is independent and is not TMGM's official website. Rebates may reduce part of eligible trading costs, but they do not reduce market risk or guarantee profit.
-
-## Built with
-
-Static HTML, CSS, and JavaScript, with English, Simplified Chinese, Traditional Chinese, Malay, and Thai support.
+Built with HTML, CSS, and JavaScript.
