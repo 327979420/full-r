@@ -4,3 +4,4 @@
 .card th,.card td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
 .card th{background:#f7fbff;color:var(--navy)}
 @media (max-width:640px){.card table{font-size:14px}.card th,.card td{padding:8px}}
+.card.answer{border-left:5px solid var(--gold);background:#fffdf6}
