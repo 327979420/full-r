@@ -44,6 +44,20 @@ for (const file of contentPages) {
     if (target && !(await exists(target))) fail(file, `missing local resource: ${match[1]}`);
   }
 
+  for (const match of source.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try {
+      JSON.parse(match[1]);
+    } catch (error) {
+      fail(file, `invalid JSON-LD: ${error.message}`);
+    }
+  }
+  if (/<meta\s+property=["']og:type["']\s+content=["']article["']/i.test(source)) {
+    if (!/data-seo=["']managed["']/i.test(source)) fail(file, "article page missing managed JSON-LD (run: node scripts/seo-sync.mjs)");
+    if (!/data-seo=["']updated["']/i.test(source)) fail(file, "article page missing visible last-updated date (run: node scripts/seo-sync.mjs)");
+  }
+  const title = (source.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || "";
+  if (!title.trim()) fail(file, "missing title");
+
   for (const match of source.matchAll(/<a\b([^>]*\btarget=["']_blank["'][^>]*)>/gi)) {
     if (!/\brel=["'][^"']*noopener/i.test(match[1])) fail(file, "target=_blank link missing rel=noopener");
   }
