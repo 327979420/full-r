@@ -1,0 +1,70 @@
+name: Weekly SEO review
+
+# Every Monday morning (Melbourne time): pull Search Console data, let Claude make a small set of
+# SEO/GEO improvements following .github/seo-agent.md, and open one PR for the owner to review.
+# Needs repo secrets CLAUDE_CODE_OAUTH_TOKEN (or ANTHROPIC_API_KEY) and, optionally, GSC_SA_KEY.
+
+on:
+  schedule:
+    - cron: "0 23 * * 0" # Sunday 23:00 UTC = Monday 09:00 (AEST) / 10:00 (AEDT) Melbourne
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: seo-weekly
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check secrets
+        id: secrets
+        env:
+          OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          APIKEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$OAUTH" ] || [ -n "$APIKEY" ]; then echo "ready=true" >> "$GITHUB_OUTPUT"; else
+            echo "::warning::Add CLAUDE_CODE_OAUTH_TOKEN (or ANTHROPIC_API_KEY) in Settings → Secrets → Actions to enable the weekly SEO review."
+            echo "ready=false" >> "$GITHUB_OUTPUT"; fi
+          echo "today=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+          echo "dom=$(date -u +%-d)" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch Search Console data
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
+        run: node scripts/gsc-fetch.mjs
+
+      - name: Weekly SEO / GEO pass
+        if: steps.secrets.outputs.ready == 'true'
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            TODAY: ${{ steps.secrets.outputs.today }} (day of month: ${{ steps.secrets.outputs.dom }})
+
+            Read .github/seo-agent.md and follow it exactly. It defines your weekly SEO/GEO tasks,
+            writing rules, files you must not touch, the privacy rule for this public repo, and how
+            to open the pull request. Search Console data (if configured) is in .seo-data/.
+          claude_args: |
+            --max-turns 80
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/seo-sync.mjs),Bash(node scripts/seo-sync.mjs --check),Bash(npm run check),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git checkout:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*),Bash(date:*)"

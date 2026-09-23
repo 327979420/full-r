@@ -36,6 +36,6 @@
   if(langEl)langEl.addEventListener('change',e=>setLang(e.target.value));
   if(accountSelect)accountSelect.addEventListener('change',updateCalculator);
   if(lotInput)lotInput.addEventListener('input',updateCalculator);
-  const saved=localStorage.getItem('tmgm-lang'),browser=(navigator.language||'en').toLowerCase();
-  setLang(saved||(browser.startsWith('zh-tw')||browser.startsWith('zh-hk')?'zh-TW':browser.startsWith('zh')?'zh-CN':browser.startsWith('ms')?'ms':browser.startsWith('th')?'th':'en'));
+  const saved=localStorage.getItem('tmgm-lang');
+  setLang(new URLSearchParams(location.search).get('lang')||saved||'zh-CN');
 })();

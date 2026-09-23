@@ -1,0 +1,64 @@
+name: SEO CI
+
+# Pull requests: validate the site (links, titles, canonical, JSON-LD, sitemap coverage).
+# Pushes to main: refresh structured-data dates + sitemap from git history,
+# commit the result as "[seo-sync]", then notify IndexNow about changed pages.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-ci-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run check
+
+  sync-and-notify:
+    if: github.event_name != 'pull_request' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Sync structured data, dates and sitemap
+        run: node scripts/seo-sync.mjs
+
+      - name: Validate
+        run: npm run check
+
+      - name: Commit SEO sync
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to sync."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: refresh SEO dates and sitemap [seo-sync]"
+          git push
+
+      - name: Wait for GitHub Pages deploy
+        run: sleep 120
+
+      - name: Notify IndexNow
+        run: node scripts/indexnow.mjs "${{ github.event.before }}"

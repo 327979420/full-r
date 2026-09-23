@@ -46,6 +46,5 @@
   }
   els.lang.addEventListener('change', (e) => setLang(e.target.value));
   const saved = localStorage.getItem('tmgm-lang');
-  const browser = (navigator.language || 'en').toLowerCase();
-  setLang(saved || (browser.startsWith('zh-tw') || browser.startsWith('zh-hk') ? 'zh-TW' : browser.startsWith('zh') ? 'zh-CN' : browser.startsWith('ms') ? 'ms' : browser.startsWith('th') ? 'th' : 'en'));
+  setLang(new URLSearchParams(location.search).get('lang') || saved || 'zh-CN');
 })();
