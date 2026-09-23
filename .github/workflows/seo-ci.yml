@@ -39,6 +39,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Prerender script-rendered pages (zh-CN)
+        run: node scripts/prerender.mjs
+
       - name: Sync structured data, dates and sitemap
         run: node scripts/seo-sync.mjs
 

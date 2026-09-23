@@ -13,6 +13,8 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
   `.notice`, `.card` sections, FAQ `<details>`, 参考资料, 相关指南, footer).
 - `node scripts/seo-sync.mjs` generates Article/Breadcrumb JSON-LD, the visible 最后更新 date and sitemap.xml
   from git history. Never edit those dates, the `data-seo="managed"` block or sitemap `lastmod` by hand.
+- `node scripts/prerender.mjs` writes the zh-CN text of script-rendered pages (about, contact, privacy, terms,
+  risk-disclaimer, tutorial-*) into their HTML; run it after editing their scripts.
 - `npm run check` must pass before you open the PR.
 
 ## Inputs
