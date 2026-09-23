@@ -50,6 +50,6 @@
     els.footerBrand.textContent=c.footerBrand; els.footerAbout.textContent=c.about; els.footerPrivacy.textContent=c.privacy; els.footerTerms.textContent=c.terms; els.footerRiskLink.textContent=c.riskLink; els.footerContact.textContent=c.contact; els.footerRisk.textContent=c.risk;
   }
   langEl.addEventListener('change',(e)=>setLang(e.target.value));
-  const saved=localStorage.getItem('tmgm-lang'),browser=(navigator.language||'en').toLowerCase();
-  setLang(saved||(browser.startsWith('zh-tw')||browser.startsWith('zh-hk')?'zh-TW':browser.startsWith('zh')?'zh-CN':browser.startsWith('ms')?'ms':browser.startsWith('th')?'th':'en'));
+  const saved=localStorage.getItem('tmgm-lang');
+  setLang(new URLSearchParams(location.search).get('lang')||saved||'zh-CN');
 })();
