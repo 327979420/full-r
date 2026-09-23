@@ -6,7 +6,9 @@
 //
 // Dates come from git: datePublished = first commit touching the file,
 // dateModified = latest commit touching the file, ignoring commits whose
-// message contains "[seo-sync]" (so this script's own commits never bump dates).
+// message contains "[seo-sync]" (this script's own commits) or "[skip-date]"
+// (minor edits such as adding related links, which should not look like a
+// content update).
 // Files not yet committed get today's date. Content edits are picked up after
 // they are committed/merged; CI then runs this script on main.
 
@@ -39,7 +41,7 @@ function git(args) {
 
 function dates(file) {
   const all = git(["log", "--follow", "--format=%cs", "--", file]).split("\n").filter(Boolean);
-  const real = git(["log", "--format=%cs", "--invert-grep", "--grep=\\[seo-sync\\]", "--", file])
+  const real = git(["log", "--format=%cs", "-E", "--invert-grep", "--grep=\\[(seo-sync|skip-date)\\]", "--", file])
     .split("\n")
     .filter(Boolean);
   const published = all.at(-1) || today;
