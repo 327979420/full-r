@@ -50,11 +50,20 @@ jobs:
           GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
         run: node scripts/gsc-fetch.mjs
 
+      - name: Normalise Claude token (strip line breaks from copy/paste)
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          RAW: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          CLEAN=$(printf '%s' "$RAW" | tr -d '[:space:]')
+          echo "::add-mask::$CLEAN"
+          echo "CLAUDE_TOKEN_CLEAN=$CLEAN" >> "$GITHUB_ENV"
+
       - name: Weekly SEO / GEO pass
         if: steps.secrets.outputs.ready == 'true'
         uses: anthropics/claude-code-action@v1
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ env.CLAUDE_TOKEN_CLEAN }}
           show_full_output: ${{ vars.SEO_DEBUG == 'true' }}
           prompt: |
             REPO: ${{ github.repository }}
