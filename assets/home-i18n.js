@@ -138,7 +138,7 @@
     "contactTitle": "Contact us",
     "contactDesc": "For rebate applications, existing-account reviews, IB partnerships or follow-up, use any channel below.",
     "contactUse": "Rebate application / account review",
-    "communityUse": "Community / service updates",
+    "communityUse": "Community and service updates",
     "openContact": "Open",
     "join": "Join",
     "footerIdentity": "Independent multi-platform trading rebate service. Not the official website of any trading platform.",
@@ -171,7 +171,12 @@
       "DC": "DC · Bitcoin · $10/lot",
       "PRO": "PRO · Professional · $10/lot",
       "RAW07": "RAW07 · ECN · $2–3.5/lot"
-    }
+    },
+    "telegramDesc": "Message @LiangFreddy directly",
+    "discordAction": "Join Discord",
+    "telegramAction": "Message on Telegram",
+    "contactChoose": "Choose how to connect",
+    "closeContact": "Close"
   },
   "zh-CN": {
     "brandSub": "满返网",
@@ -309,7 +314,7 @@
     "contactTitle": "联系我们",
     "contactDesc": "返佣、账户或代理合作咨询。",
     "contactUse": "返佣申请 / 账户查询",
-    "communityUse": "社群 / 服务更新",
+    "communityUse": "社群交流与服务更新",
     "openContact": "打开",
     "join": "加入",
     "footerIdentity": "独立多平台交易返佣服务，并非任何交易平台的官方网站。",
@@ -342,7 +347,12 @@
       "DC": "DC · 比特账户 · $10/手",
       "PRO": "PRO · 专业账户 · $10/手",
       "RAW07": "RAW07 · ECN · $2–3.5/手"
-    }
+    },
+    "telegramDesc": "直接联系 @LiangFreddy",
+    "discordAction": "加入 Discord",
+    "telegramAction": "通过 Telegram 联系",
+    "contactChoose": "选择联系渠道",
+    "closeContact": "关闭"
   },
   "zh-TW": {
     "brandSub": "滿返網",
@@ -480,7 +490,7 @@
     "contactTitle": "聯絡我們",
     "contactDesc": "返佣申請、舊帳戶查詢、IB合作或後續跟進，可透過以下渠道聯絡。",
     "contactUse": "返佣申請 / 帳戶查詢",
-    "communityUse": "社群 / 服務更新",
+    "communityUse": "社群交流與服務更新",
     "openContact": "打開",
     "join": "加入",
     "footerIdentity": "獨立多平台交易返佣服務，並非任何交易平台官方網站。",
@@ -513,7 +523,12 @@
       "DC": "DC · 比特帳戶 · $10/手",
       "PRO": "PRO · 專業帳戶 · $10/手",
       "RAW07": "RAW07 · ECN · $2–3.5/手"
-    }
+    },
+    "telegramDesc": "直接聯絡 @LiangFreddy",
+    "discordAction": "加入 Discord",
+    "telegramAction": "透過 Telegram 聯絡",
+    "contactChoose": "選擇聯絡渠道",
+    "closeContact": "關閉"
   },
   "ms": {
     "brandSub": "TRADING CASHBACK",
@@ -651,7 +666,7 @@
     "contactTitle": "Contact us",
     "contactDesc": "For rebate applications, existing-account reviews, IB partnerships or follow-up, use any channel below.",
     "contactUse": "Rebate application / account review",
-    "communityUse": "Community / service updates",
+    "communityUse": "Komuniti dan kemas kini perkhidmatan",
     "openContact": "Open",
     "join": "Join",
     "footerIdentity": "Independent multi-platform trading rebate service. Not the official website of any trading platform.",
@@ -684,7 +699,12 @@
       "DC": "DC · Bitcoin · $10/lot",
       "PRO": "PRO · Professional · $10/lot",
       "RAW07": "RAW07 · ECN · $2–3.5/lot"
-    }
+    },
+    "telegramDesc": "Mesej terus kepada @LiangFreddy",
+    "discordAction": "Sertai Discord",
+    "telegramAction": "Mesej di Telegram",
+    "contactChoose": "Pilih cara untuk berhubung",
+    "closeContact": "Tutup"
   },
   "th": {
     "brandSub": "TRADING CASHBACK",
@@ -822,7 +842,7 @@
     "contactTitle": "Contact us",
     "contactDesc": "For rebate applications, existing-account reviews, IB partnerships or follow-up, use any channel below.",
     "contactUse": "Rebate application / account review",
-    "communityUse": "Community / service updates",
+    "communityUse": "ชุมชนและข่าวสารบริการ",
     "openContact": "Open",
     "join": "Join",
     "footerIdentity": "Independent multi-platform trading rebate service. Not the official website of any trading platform.",
@@ -855,7 +875,12 @@
       "DC": "DC · Bitcoin · $10/lot",
       "PRO": "PRO · Professional · $10/lot",
       "RAW07": "RAW07 · ECN · $2–3.5/lot"
-    }
+    },
+    "telegramDesc": "ส่งข้อความถึง @LiangFreddy โดยตรง",
+    "discordAction": "เข้าร่วม Discord",
+    "telegramAction": "ส่งข้อความทาง Telegram",
+    "contactChoose": "เลือกช่องทางติดต่อ",
+    "closeContact": "ปิด"
   }
 });
 })();
