@@ -5,8 +5,6 @@
     referralUrl: "https://portal.tminvgain.com/register?sales=NjAwM19GcmVkZHlMaWFuZw==&language=zh-Hans",
     applicationEndpoint: "https://formsubmit.co/ajax/f774839241@gmail.com",
     contacts: Object.freeze({
-      qq: "https://qm.qq.com/q/WJBVC3uE8M",
-      wechat: "https://u.wechat.com/kHj45VpIFXCSN5JV-zx8xUc?s=2",
       discord: "https://discord.gg/x86Zqg7gY",
       telegram: "https://t.me/LiangFreddy"
     }),
