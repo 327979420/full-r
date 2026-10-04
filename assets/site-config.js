@@ -5,7 +5,7 @@
     referralUrl: "https://portal.tminvgain.com/register?sales=NjAwM19GcmVkZHlMaWFuZw==&language=zh-Hans",
     applicationEndpoint: "https://formsubmit.co/ajax/f774839241@gmail.com",
     contacts: Object.freeze({
-      discord: "https://discord.gg/x86Zqg7gY",
+      discord: "https://discord.gg/7zYmxR42KY",
       telegram: "https://t.me/LiangFreddy"
     }),
     rebateAccounts: Object.freeze({
