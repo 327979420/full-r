@@ -185,7 +185,10 @@ async function telegramWebhook(request, env) {
   }
   const message = (await request.json().catch(() => ({}))).message;
   const owner = String(env.TELEGRAM_OWNER || "").toLowerCase();
-  if (!message || message.chat?.type !== "private" || String(message.from?.username || "").toLowerCase() !== owner) return json({ ok: true });
+  if (!message || message.chat?.type !== "private" || String(message.from?.username || "").toLowerCase() !== owner) {
+    if (message) console.log(JSON.stringify({ event: "telegram_ignored", username: message.from?.username ?? null }));
+    return json({ ok: true });
+  }
 
   const chatId = String(message.chat.id);
   const text = String(message.text || "").trim();
@@ -329,5 +332,15 @@ export default {
 
   async scheduled(event, env) {
     await connectTelegram(env);
+    // Until the owner has pressed Start, log Telegram's view of the webhook (visible in `wrangler tail`).
+    if (telegramReady(env) && !(await env.CHAT_GAPS.get("telegram:chat"))) {
+      const info = await telegram(env, "getWebhookInfo", {});
+      console.log(JSON.stringify({
+        event: "telegram_waiting_for_start",
+        pending_updates: info?.pending_update_count ?? null,
+        last_error: info?.last_error_message ?? null,
+        last_error_at: info?.last_error_date ? new Date(info.last_error_date * 1000).toISOString() : null
+      }));
+    }
   }
 };
