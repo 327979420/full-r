@@ -1,5 +1,5 @@
-// End-to-end test of the Worker in the real Workers runtime (wrangler dev), with a local stand-in
-// for the Claude API and the site, so it needs no API key and costs nothing.
+// End-to-end test of the Worker in the real Workers runtime (wrangler dev), with local stand-ins
+// for the Claude API, Telegram and the site, so it needs no keys and costs nothing.
 //
 //   npm test        (from chat-worker/; run `node scripts/build-chat-knowledge.mjs` at the repo root first)
 
@@ -7,6 +7,7 @@ import { createServer } from "node:http";
 import { readFile, rm, writeFile } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 
 const MOCK_PORT = 8799;
 const WORKER_PORT = 8788;
@@ -16,11 +17,23 @@ const ORIGIN = "http://localhost:8791";
 let nextReply = { reply: "STD 标准账户黄金每手返 $20。", needs_human: false, missing_topic: "" };
 let upstreamStatus = 200;
 const requests = [];
+const telegramCalls = [];
+let nextTelegramId = 900;
 
 const mock = createServer(async (req, res) => {
   if (req.url === "/assets/chat-knowledge.json") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(await readFile(new URL("../../assets/chat-knowledge.json", import.meta.url)));
+    return;
+  }
+  if (req.method === "POST" && req.url.startsWith("/bottest-bot-token/")) {
+    const chunks = [];
+    for await (const chunk of req) chunks.push(chunk);
+    const call = { method: req.url.split("/").pop(), body: JSON.parse(Buffer.concat(chunks).toString("utf8")) };
+    call.result = call.method === "sendMessage" ? { message_id: nextTelegramId++ } : true;
+    telegramCalls.push(call);
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ ok: true, result: call.result }));
     return;
   }
   if (req.method === "POST" && req.url.startsWith("/v1/messages")) {
@@ -57,13 +70,17 @@ const vars = {
   ANTHROPIC_API_KEY: "test-key-not-real",
   GAPS_TOKEN: "test-gaps-token",
   ALLOW_LOCALHOST: "true",
-  CHAT_ENABLED: "true"
+  CHAT_ENABLED: "true",
+  TELEGRAM_BOT_TOKEN: "test-bot-token",
+  TELEGRAM_API_BASE: `http://127.0.0.1:${MOCK_PORT}`,
+  TELEGRAM_OWNER: "owner_user"
 };
+const WEBHOOK_SECRET = createHash("sha256").update("max-rebate-webhook:test-bot-token").digest("hex");
 // Start from empty local KV and rate-limit counters.
 await rm(new URL("../.wrangler/state", import.meta.url), { recursive: true, force: true });
 const wrangler = spawn(
   "npx",
-  ["wrangler", "dev", "--port", String(WORKER_PORT), "--ip", "127.0.0.1", ...Object.entries(vars).flatMap(([k, v]) => ["--var", `${k}:${v}`])],
+  ["wrangler", "dev", "--test-scheduled", "--port", String(WORKER_PORT), "--ip", "127.0.0.1", ...Object.entries(vars).flatMap(([k, v]) => ["--var", `${k}:${v}`])],
   { cwd: new URL("..", import.meta.url), stdio: ["ignore", "pipe", "pipe"] }
 );
 let log = "";
@@ -82,9 +99,24 @@ async function waitForWorker() {
   throw new Error(`wrangler dev did not start:\n${log}`);
 }
 
+// Each request gets its own client address so only the rate-limit test hits the per-visitor limit.
+let visitor = 0;
 const post = (body, headers = { Origin: ORIGIN }) =>
-  fetch(`${WORKER}/api/chat`, { method: "POST", headers: { "Content-Type": "application/json", ...headers }, body: JSON.stringify(body) });
-const ask = (content, extra = {}) => post({ messages: [{ role: "user", content }], lang: "zh-CN", page: "/", ...extra });
+  fetch(`${WORKER}/api/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "CF-Connecting-IP": `10.0.0.${++visitor}`, ...headers },
+    body: JSON.stringify(body)
+  });
+const webhook = (message, secret = WEBHOOK_SECRET) =>
+  fetch(`${WORKER}/api/chat/telegram`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", ...(secret ? { "X-Telegram-Bot-Api-Secret-Token": secret } : {}) },
+    body: JSON.stringify({ update_id: Date.now(), message })
+  });
+const fromOwner = (fields) => ({ message_id: Math.floor(Math.random() * 1e6), chat: { id: 4242, type: "private" }, from: { username: "Owner_User" }, ...fields });
+const lastSent = () => telegramCalls.filter((c) => c.method === "sendMessage").at(-1);
+const settle = () => new Promise((r) => setTimeout(r, 300));
+const ask = (content, extra = {}, headers) => post({ messages: [{ role: "user", content }], lang: "zh-CN", page: "/", ...extra }, headers);
 
 const results = [];
 async function test(name, fn) {
@@ -178,9 +210,80 @@ try {
     assert.deepEqual(await res.json(), { error: "upstream" });
   });
 
+  await test("cron registers the Telegram webhook once", async () => {
+    await fetch(`${WORKER}/__scheduled?cron=*%2F5+*+*+*+*`);
+    await fetch(`${WORKER}/__scheduled?cron=*%2F5+*+*+*+*`);
+    const calls = telegramCalls.filter((c) => c.method === "setWebhook");
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0].body.url, `${vars.SITE_ORIGIN}/api/chat/telegram`);
+    assert.equal(calls[0].body.secret_token, WEBHOOK_SECRET);
+    assert.deepEqual(calls[0].body.allowed_updates, ["message"]);
+  });
+
+  await test("webhook rejects calls without Telegram's secret", async () => {
+    assert.equal((await webhook(fromOwner({ text: "/start" }), "")).status, 401);
+    assert.equal((await webhook(fromOwner({ text: "/start" }), "wrong")).status, 401);
+  });
+
+  await test("the owner's Start connects; strangers are ignored", async () => {
+    await webhook({ message_id: 1, chat: { id: 777, type: "private" }, from: { username: "someone" }, text: "/start" });
+    assert.ok(!telegramCalls.some((c) => c.body.chat_id === 777));
+    await webhook(fromOwner({ text: "/start" }));
+    assert.equal(lastSent().body.chat_id, "4242");
+    assert.match(lastSent().body.text, /Connected/);
+  });
+
+  const CONV = "conv0000000000000001";
+  let alertId;
+  await test("a visitor who needs a person reaches the owner, and the reply comes back", async () => {
+    nextReply = { reply: "已通知客服，稍后会在这里回复你。", needs_human: true, missing_topic: "" };
+    const res = await ask("我的返佣没到账", { conversation: CONV, page: "/th.html", lang: "th" });
+    assert.deepEqual(await res.json(), { reply: nextReply.reply, needs_human: true });
+    await settle();
+    const alert = lastSent();
+    assert.equal(alert.body.chat_id, "4242");
+    assert.match(alert.body.text, /我的返佣没到账/);
+    assert.match(alert.body.text, /Reply to this message/);
+    alertId = alert.result.message_id;
+    assert.equal((await webhook(fromOwner({ text: "Hi, Freddy here", reply_to_message: { message_id: alertId } }))).status, 200);
+    assert.ok(telegramCalls.some((c) => c.method === "setMessageReaction"));
+    const inbox = await (await fetch(`${WORKER}/api/chat/inbox?c=${CONV}&after=0`)).json();
+    assert.deepEqual(inbox, { messages: [{ n: 1, text: "Hi, Freddy here" }], human: true });
+    assert.deepEqual((await (await fetch(`${WORKER}/api/chat/inbox?c=${CONV}&after=1`)).json()).messages, []);
+  });
+
+  await test("while the owner is chatting, visitor messages go to Telegram, not the AI", async () => {
+    const before = requests.length;
+    const res = await ask("还在吗？", { conversation: CONV });
+    assert.deepEqual(await res.json(), { forwarded: true, needs_human: true });
+    await settle();
+    assert.equal(requests.length, before, "the AI must not be called");
+    assert.match(lastSent().body.text, /还在吗？/);
+    await webhook(fromOwner({ text: "Yes, checking now", reply_to_message: { message_id: lastSent().result.message_id } }));
+    const inbox = await (await fetch(`${WORKER}/api/chat/inbox?c=${CONV}&after=1`)).json();
+    assert.deepEqual(inbox.messages, [{ n: 2, text: "Yes, checking now" }]);
+  });
+
+  await test("owner messages that are not replies get instructions", async () => {
+    await webhook(fromOwner({ text: "hello" }));
+    assert.match(lastSent().body.text, /swipe left/);
+  });
+
+  await test("inbox ignores invalid conversation ids", async () => {
+    assert.deepEqual(await (await fetch(`${WORKER}/api/chat/inbox?c=BAD&after=0`)).json(), { messages: [], human: false });
+  });
+
+  await test("at most 5 alerts per conversation", async () => {
+    const before = telegramCalls.filter((c) => c.method === "sendMessage").length;
+    for (let i = 0; i < 7; i++) await ask(`help ${i}`, { conversation: "conv0000000000000002" });
+    await settle();
+    assert.equal(telegramCalls.filter((c) => c.method === "sendMessage").length - before, 5);
+    nextReply = { reply: "ok", needs_human: false, missing_topic: "" };
+  });
+
   await test("per-visitor rate limit kicks in", async () => {
     const statuses = [];
-    for (let i = 0; i < 12; i++) statuses.push((await ask(`q${i}`)).status);
+    for (let i = 0; i < 12; i++) statuses.push((await ask(`q${i}`, {}, { Origin: ORIGIN, "CF-Connecting-IP": "10.9.9.9" })).status);
     assert.ok(statuses.includes(429), `statuses: ${statuses.join(",")}`);
   });
 } finally {

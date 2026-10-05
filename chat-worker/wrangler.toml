@@ -11,6 +11,12 @@ routes = [{ pattern = "max-rebate.com/api/chat*", zone_name = "max-rebate.com" }
 SITE_ORIGIN = "https://max-rebate.com"
 # "false": hidden from visitors, previewable with ?chat=on. Set to "true" and redeploy to go live.
 CHAT_ENABLED = "false"
+# Telegram username of the person who answers visitors (through their own bot; see README).
+TELEGRAM_OWNER = "LiangFreddy"
+
+# Registers the Telegram webhook once TELEGRAM_BOT_TOKEN is set (does nothing after that).
+[triggers]
+crons = ["*/5 * * * *"]
 
 # Per-visitor limit: 8 messages a minute (Cloudflare only allows 10- or 60-second periods).
 [[ratelimits]]
