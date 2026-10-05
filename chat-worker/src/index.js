@@ -1,12 +1,20 @@
 // Max Rebate support assistant: a Cloudflare Worker on max-rebate.com/api/chat.
 //
-// GET  /api/chat/status -> {enabled}; the site widget only appears when CHAT_ENABLED is "true".
-// POST /api/chat        {messages:[{role,content}], lang, page} -> {reply, needs_human}
-// GET  /api/chat/gaps   (Authorization: Bearer GAPS_TOKEN) -> questions the assistant could not
-//                       answer, as short anonymous topics, for the weekly SEO review.
+// GET  /api/chat/status    -> {enabled}; the site widget only appears when CHAT_ENABLED is "true".
+// POST /api/chat           {messages:[{role,content}], lang, page, conversation}
+//                          -> {reply, needs_human}, or {forwarded: true} while a person is chatting.
+// GET  /api/chat/inbox     ?c=<conversation>&after=<n> -> {messages, human}: replies from the team.
+// POST /api/chat/telegram  Telegram webhook for the owner's alert bot.
+// GET  /api/chat/gaps      (Authorization: Bearer GAPS_TOKEN) -> questions the assistant could not
+//                          answer, as short anonymous topics, for the weekly SEO review.
 //
 // Answers come only from https://max-rebate.com/assets/chat-knowledge.json, which CI rebuilds from
 // the site on every push to main, so content changes reach the assistant without a redeploy.
+//
+// Human handoff: when a visitor needs a person, the conversation goes to the owner on Telegram
+// (their own bot, secret TELEGRAM_BOT_TOKEN; owner = TELEGRAM_OWNER). Replying to that Telegram
+// message sends the answer to the visitor's chat window, and for the next 30 minutes the visitor's
+// messages go to the owner instead of the AI. A cron run registers the webhook automatically.
 
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
@@ -19,6 +27,11 @@ const MAX_BODY = 32_000;
 const KNOWLEDGE_TTL_MS = 10 * 60 * 1000;
 const GAP_TTL_SECONDS = 90 * 24 * 60 * 60;
 const LANGS = new Set(["zh-CN", "zh-TW", "en", "ms", "th"]);
+const TELEGRAM_API = "https://api.telegram.org";
+const MAX_ALERTS_PER_CHAT = 5;
+const HUMAN_MODE_MS = 30 * 60 * 1000;
+const DAY_SECONDS = 24 * 60 * 60;
+const CONVERSATION = /^[a-z0-9]{12,32}$/;
 
 const ReplySchema = z.object({
   reply: z.string(),
@@ -28,14 +41,14 @@ const ReplySchema = z.object({
 
 const RULES = `You are the support assistant on max-rebate.com (Max Rebate / 满返网), an independent TMGM rebate and Introducing Broker (IB) information service. You are an AI assistant, not a person, and not TMGM.
 
-You answer visitors' questions about Max Rebate, TMGM rebates, account types, rebate rates, how to apply, when rebates are credited and IB partnership.
+You answer visitors' questions about Max Rebate, TMGM rebates, account types, rebate rates, how to apply, when rebates are credited and IB partnership. Messages starting with "[Max Rebate team]" were written by a team member.
 
 Rules:
-1. Use only the knowledge base below. If it does not cover the question, say so plainly, suggest contacting the team on Telegram or Discord, set needs_human to true and set missing_topic.
+1. Use only the knowledge base below. If it does not cover the question, say so plainly, say the team has been notified, set needs_human to true and set missing_topic.
 2. Rebate figures, fees and timings must match the knowledge base exactly. Say that final eligibility and amounts depend on platform records and review. Never promise approval, an amount for a specific account or a payout date.
 3. No investment advice: do not recommend trades, instruments, leverage, position sizes or brokers, predict prices, or suggest a rebate guarantees profit. If asked, say you cannot advise on trading and that leveraged products are high risk.
 4. Never ask for or accept passwords, verification codes, card details, identity documents or login details. If a visitor shares any, tell them not to and never repeat it.
-5. For a specific account, an application's status, a missing rebate, a complaint or anything else a person must check: give the general answer if the knowledge base has one, then set needs_human to true so the visitor sees the Telegram and Discord buttons.
+5. For a specific account, an application's status, a missing rebate, a complaint, a request to talk to a person or anything else a person must check: give the general answer if the knowledge base has one, then set needs_human to true. Tell the visitor a team member has been notified and will reply in this chat window, and that they can also use the Telegram or Discord buttons.
 6. To apply, point to https://max-rebate.com/apply.html. Link at most two relevant pages from the knowledge base, written as full URLs.
 7. Reply in the visitor's language (Simplified Chinese, Traditional Chinese, English, Malay or Thai). If unsure, use the page language given after the knowledge base.
 8. Be brief: about 120 words at most, plain text, short paragraphs or simple "-" lists. No tables, headings or markdown links.
@@ -113,6 +126,115 @@ async function listGaps(request, env) {
   return json({ gaps });
 }
 
+// ---- Telegram handoff -------------------------------------------------------------------------
+// KV keys: telegram:chat (owner chat id), telegram:webhook (registered URL),
+// tg:<message id> -> conversation (so a reply finds its visitor), conv:<conversation> -> {humanUntil,
+// inbox:[{n,text,at}]}, alerts:<conversation> -> alert count.
+
+const telegramReady = (env) => Boolean(env.TELEGRAM_BOT_TOKEN && env.CHAT_GAPS);
+const webhookUrl = (env) => `${env.SITE_ORIGIN}/api/chat/telegram`;
+
+async function telegram(env, method, body) {
+  const response = await fetch(`${env.TELEGRAM_API_BASE || TELEGRAM_API}/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!data.ok) console.error(JSON.stringify({ event: "telegram_error", method, status: response.status }));
+  return data.ok ? data.result : null;
+}
+
+// Telegram echoes this in a header on every webhook call, proving the call came from Telegram.
+async function webhookSecret(env) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`max-rebate-webhook:${env.TELEGRAM_BOT_TOKEN}`));
+  return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function sendToOwner(env, conversation, text) {
+  const chatId = await env.CHAT_GAPS.get("telegram:chat");
+  if (!chatId) {
+    console.warn(JSON.stringify({ event: "telegram_not_connected" }));
+    return;
+  }
+  const sent = await telegram(env, "sendMessage", { chat_id: chatId, text: text.slice(0, 4000), disable_web_page_preview: true });
+  if (sent && conversation) await env.CHAT_GAPS.put(`tg:${sent.message_id}`, conversation, { expirationTtl: 7 * DAY_SECONDS });
+}
+
+async function readConversation(env, conversation) {
+  return (await env.CHAT_GAPS.get(`conv:${conversation}`, "json")) || { humanUntil: 0, inbox: [] };
+}
+
+async function alertOwner(env, { conversation, lang, page, messages, reply }) {
+  if (conversation) {
+    const key = `alerts:${conversation}`;
+    const count = Number(await env.CHAT_GAPS.get(key)) || 0;
+    if (count >= MAX_ALERTS_PER_CHAT) return;
+    await env.CHAT_GAPS.put(key, String(count + 1), { expirationTtl: DAY_SECONDS });
+  }
+  const transcript = [...messages.slice(-6), { role: "assistant", content: reply }]
+    .map((m) => `${m.role === "user" ? "Visitor" : "Bot"}: ${m.content}`)
+    .join("\n\n");
+  const howToReply = conversation ? "\n\n↩️ Reply to this message to answer in the visitor's chat window." : "";
+  await sendToOwner(env, conversation, `🔔 A visitor needs a person (${page} · ${lang})\n\n${transcript}${howToReply}`);
+}
+
+async function telegramWebhook(request, env) {
+  if (!telegramReady(env) || !sameText(request.headers.get("X-Telegram-Bot-Api-Secret-Token") || "", await webhookSecret(env))) {
+    return json({ error: "unauthorized" }, 401);
+  }
+  const message = (await request.json().catch(() => ({}))).message;
+  const owner = String(env.TELEGRAM_OWNER || "").toLowerCase();
+  if (!message || message.chat?.type !== "private" || String(message.from?.username || "").toLowerCase() !== owner) return json({ ok: true });
+
+  const chatId = String(message.chat.id);
+  const text = String(message.text || "").trim();
+  if ((await env.CHAT_GAPS.get("telegram:chat")) !== chatId) await env.CHAT_GAPS.put("telegram:chat", chatId);
+  if (text.startsWith("/start")) {
+    await telegram(env, "sendMessage", {
+      chat_id: chatId,
+      text: "✅ Connected. When a website visitor needs a person you'll get a message here. Reply to it (swipe left) to answer them in the website chat."
+    });
+    return json({ ok: true });
+  }
+
+  const conversation = message.reply_to_message && (await env.CHAT_GAPS.get(`tg:${message.reply_to_message.message_id}`));
+  if (!conversation || !text) {
+    await telegram(env, "sendMessage", { chat_id: chatId, text: "To answer a visitor, reply to their message (swipe left on it), then type your answer." });
+    return json({ ok: true });
+  }
+  const state = await readConversation(env, conversation);
+  const n = (state.inbox.at(-1)?.n || 0) + 1;
+  state.inbox = [...state.inbox, { n, text: text.slice(0, 2000), at: Date.now() }].slice(-50);
+  state.humanUntil = Date.now() + HUMAN_MODE_MS;
+  await env.CHAT_GAPS.put(`conv:${conversation}`, JSON.stringify(state), { expirationTtl: 2 * DAY_SECONDS });
+  await telegram(env, "setMessageReaction", { chat_id: chatId, message_id: message.message_id, reaction: [{ type: "emoji", emoji: "👍" }] });
+  return json({ ok: true });
+}
+
+async function inbox(request, env) {
+  const url = new URL(request.url);
+  const conversation = url.searchParams.get("c") || "";
+  if (!env.CHAT_GAPS || !CONVERSATION.test(conversation)) return json({ messages: [], human: false });
+  const after = Number(url.searchParams.get("after")) || 0;
+  const state = await readConversation(env, conversation);
+  return json({ messages: state.inbox.filter((m) => m.n > after).map(({ n, text }) => ({ n, text })), human: state.humanUntil > Date.now() });
+}
+
+// Register the webhook once the bot token exists (runs every 5 minutes; does nothing after that).
+async function connectTelegram(env) {
+  if (!telegramReady(env) || (await env.CHAT_GAPS.get("telegram:webhook")) === webhookUrl(env)) return;
+  const ok = await telegram(env, "setWebhook", {
+    url: webhookUrl(env),
+    secret_token: await webhookSecret(env),
+    allowed_updates: ["message"],
+    max_connections: 1
+  });
+  if (ok) await env.CHAT_GAPS.put("telegram:webhook", webhookUrl(env));
+}
+
+// ---- Chat ---------------------------------------------------------------------------------------
+
 async function chat(request, env, ctx) {
   if (!allowedOrigin(request.headers.get("Origin"), env)) return json({ error: "forbidden" }, 403);
 
@@ -133,6 +255,13 @@ async function chat(request, env, ctx) {
   if (!messages) return json({ error: "bad_request" }, 400);
   const lang = LANGS.has(input.lang) ? input.lang : "zh-CN";
   const page = typeof input.page === "string" && /^\/[\w./-]{0,100}$/.test(input.page) ? input.page : "/";
+  const conversation = typeof input.conversation === "string" && CONVERSATION.test(input.conversation) ? input.conversation : "";
+
+  // A team member is chatting with this visitor: pass the message on instead of asking the AI.
+  if (conversation && telegramReady(env) && (await readConversation(env, conversation)).humanUntil > Date.now()) {
+    ctx.waitUntil(sendToOwner(env, conversation, `💬 Visitor (${page} · ${lang}):\n${messages.at(-1).content}\n\n↩️ Reply to answer.`));
+    return json({ forwarded: true, needs_human: true });
+  }
 
   const client = new Anthropic({
     apiKey: env.ANTHROPIC_API_KEY,
@@ -178,7 +307,9 @@ async function chat(request, env, ctx) {
       env.CHAT_GAPS.put(`gap:${day}:${crypto.randomUUID()}`, "", { expirationTtl: GAP_TTL_SECONDS, metadata: { topic, lang } })
     );
   }
-  return json({ reply: result.reply, needs_human: result.needs_human || Boolean(topic) });
+  const needsHuman = result.needs_human || Boolean(topic);
+  if (needsHuman && telegramReady(env)) ctx.waitUntil(alertOwner(env, { conversation, lang, page, messages, reply: result.reply }));
+  return json({ reply: result.reply, needs_human: needsHuman });
 }
 
 export default {
@@ -189,8 +320,14 @@ export default {
         headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=300" }
       });
     }
-    if (pathname === "/api/chat/gaps" && request.method === "GET") return listGaps(request, env);
     if (pathname === "/api/chat" && request.method === "POST") return chat(request, env, ctx);
+    if (pathname === "/api/chat/inbox" && request.method === "GET") return inbox(request, env);
+    if (pathname === "/api/chat/telegram" && request.method === "POST") return telegramWebhook(request, env);
+    if (pathname === "/api/chat/gaps" && request.method === "GET") return listGaps(request, env);
     return json({ error: "not_found" }, 404);
+  },
+
+  async scheduled(event, env) {
+    await connectTelegram(env);
   }
 };

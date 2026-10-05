@@ -43,6 +43,24 @@ npx wrangler deploy
 4. **Go live.** In `wrangler.toml`, set `CHAT_ENABLED = "true"` and run `npx wrangler deploy` again. Turn it off the
    same way.
 
+## Answer visitors from Telegram
+
+When a visitor needs a person, the conversation arrives in Telegram. **Reply to that message (swipe left)** and your
+answer appears in the visitor's chat window on the site, usually within a minute. For the next 30 minutes the visitor's
+messages come straight to your Telegram instead of the AI. Each one is a message you can reply to. After 30 minutes
+without a reply from you, the AI takes over again.
+
+One-time setup:
+
+1. In Telegram, open **@BotFather**, send `/newbot`, and choose a name and a username, e.g. `maxrebate_alerts_bot`.
+   BotFather replies with a token. Copy it.
+2. Open your new bot (BotFather links to it) and press **Start**. Use the account set in `TELEGRAM_OWNER` in
+   `wrangler.toml` (`LiangFreddy`).
+3. `npx wrangler secret put TELEGRAM_BOT_TOKEN` and paste the token.
+
+Within 5 minutes the bot sends you "✅ Connected". Messages from anyone except `TELEGRAM_OWNER` are ignored. A
+visitor triggers at most 5 alerts per conversation.
+
 ## Cost
 
 - **Cloudflare Workers and KV:** the free plan covers this traffic.
