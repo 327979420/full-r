@@ -136,6 +136,23 @@ for (const file of contentPages.filter((name) => name !== "success.html")) {
   if (!sitemap.includes(`<loc>${url}</loc>`)) fail("sitemap.xml", `missing page: ${file}`);
 }
 
+// hreflang: every alternate must exist and link back, or search engines ignore the whole set.
+const fileOfUrl = (url) => (url === "https://max-rebate.com/" ? "index.html" : url.replace("https://max-rebate.com/", ""));
+for (const file of contentPages) {
+  const source = await readFile(path.join(root, file), "utf8");
+  const self = file === "index.html" ? "https://max-rebate.com/" : `https://max-rebate.com/${file}`;
+  for (const match of source.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)) {
+    const target = fileOfUrl(match[2]);
+    if (!(await exists(target))) {
+      fail(file, `hreflang ${match[1]} points to a missing page: ${match[2]}`);
+      continue;
+    }
+    const back = await readFile(path.join(root, target), "utf8");
+    const linksBack = [...back.matchAll(/<link rel="alternate" hreflang="[^"]+" href="([^"]+)">/g)].some((m) => m[1] === self);
+    if (!linksBack) fail(file, `hreflang ${match[1]} page ${target} does not link back`);
+  }
+}
+
 if (failures.length) {
   console.error(`Site validation failed (${failures.length}):`);
   failures.forEach((message) => console.error(`- ${message}`));

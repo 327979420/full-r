@@ -74,4 +74,4 @@ jobs:
             to open the pull request. Search Console data (if configured) is in .seo-data/.
           claude_args: |
             --max-turns 80
-            --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/seo-sync.mjs),Bash(node scripts/seo-sync.mjs --check),Bash(npm run check),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git checkout:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*),Bash(date:*)"
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/seo-sync.mjs),Bash(node scripts/seo-sync.mjs --check),Bash(node scripts/build-locales.mjs),Bash(npm run check),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git checkout:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*),Bash(date:*)"

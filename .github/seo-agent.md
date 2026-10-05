@@ -15,6 +15,9 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
   from git history. Never edit those dates, the `data-seo="managed"` block or sitemap `lastmod` by hand.
 - `node scripts/prerender.mjs` writes the zh-CN text of script-rendered pages (about, contact, privacy, terms,
   risk-disclaimer, tutorial-*) into their HTML; run it after editing their scripts.
+- `en.html`, `zh-hant.html`, `ms.html` and `th.html` are generated from `index.html` and `assets/home-i18n.js`
+  by `node scripts/build-locales.mjs` (homepage title and description are the `metaTitle` / `metaDesc` keys).
+  Never edit the generated pages; edit the source and run the script.
 - `npm run check` must pass before you open the PR.
 
 ## Inputs
@@ -68,6 +71,10 @@ in commits, files or the PR text. Describe them qualitatively ("高展现、低�
 
 ## Pull request
 
+0. Run `gh pr list --state open` first. Weekly PRs that are still open have not reached `main`, so their
+   pages and backlog changes are invisible to you. Never repeat a page or topic that an open PR already
+   covers. If two or more `seo/weekly-*` PRs are still open, make no changes and open no PR — the owner
+   has a review backlog.
 1. `git checkout -b seo/weekly-<YYYY-MM-DD>`; make focused commits.
 2. `node scripts/seo-sync.mjs` then `npm run check`; fix anything that fails; commit generated changes with
    `[seo-sync]` in the message.
