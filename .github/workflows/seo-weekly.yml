@@ -50,6 +50,16 @@ jobs:
           GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
         run: node scripts/gsc-fetch.mjs
 
+      - name: Fetch questions the support assistant could not answer
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          CHAT_GAPS_TOKEN: ${{ secrets.CHAT_GAPS_TOKEN }}
+        run: |
+          if [ -z "$CHAT_GAPS_TOKEN" ]; then echo "CHAT_GAPS_TOKEN not set; skipping."; exit 0; fi
+          mkdir -p .seo-data
+          curl -fsS -H "Authorization: Bearer $CHAT_GAPS_TOKEN" https://max-rebate.com/api/chat/gaps -o .seo-data/chat-gaps.json \
+            || echo "::warning::Could not fetch chat gaps (is the chat Worker deployed?)"
+
       - name: Normalise Claude token (strip line breaks from copy/paste)
         if: steps.secrets.outputs.ready == 'true'
         env:
@@ -74,4 +84,4 @@ jobs:
             to open the pull request. Search Console data (if configured) is in .seo-data/.
           claude_args: |
             --max-turns 80
-            --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/seo-sync.mjs),Bash(node scripts/seo-sync.mjs --check),Bash(npm run check),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git checkout:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*),Bash(date:*)"
+            --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/seo-sync.mjs),Bash(node scripts/seo-sync.mjs --check),Bash(node scripts/build-locales.mjs),Bash(npm run check),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git checkout:*),Bash(git push:*),Bash(gh pr create:*),Bash(gh pr list:*),Bash(date:*)"
