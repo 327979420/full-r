@@ -50,6 +50,16 @@ jobs:
           GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
         run: node scripts/gsc-fetch.mjs
 
+      - name: Fetch questions the support assistant could not answer
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          CHAT_GAPS_TOKEN: ${{ secrets.CHAT_GAPS_TOKEN }}
+        run: |
+          if [ -z "$CHAT_GAPS_TOKEN" ]; then echo "CHAT_GAPS_TOKEN not set; skipping."; exit 0; fi
+          mkdir -p .seo-data
+          curl -fsS -H "Authorization: Bearer $CHAT_GAPS_TOKEN" https://max-rebate.com/api/chat/gaps -o .seo-data/chat-gaps.json \
+            || echo "::warning::Could not fetch chat gaps (is the chat Worker deployed?)"
+
       - name: Normalise Claude token (strip line breaks from copy/paste)
         if: steps.secrets.outputs.ready == 'true'
         env:

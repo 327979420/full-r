@@ -1,0 +1,29 @@
+# Max Rebate support assistant. Setup steps: chat-worker/README.md
+name = "max-rebate-chat"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Same origin as the site, so the widget needs no CORS.
+routes = [{ pattern = "max-rebate.com/api/chat*", zone_name = "max-rebate.com" }]
+
+[vars]
+SITE_ORIGIN = "https://max-rebate.com"
+# "false": hidden from visitors, previewable with ?chat=on. Set to "true" and redeploy to go live.
+CHAT_ENABLED = "false"
+
+# Per-visitor limit: 8 messages a minute (Cloudflare only allows 10- or 60-second periods).
+[[ratelimits]]
+name = "CHAT_LIMITER"
+namespace_id = "7301"
+
+  [ratelimits.simple]
+  limit = 8
+  period = 60
+
+# Anonymous topics of questions the assistant could not answer (kept 90 days).
+[[kv_namespaces]]
+binding = "CHAT_GAPS"
+
+[observability]
+enabled = true

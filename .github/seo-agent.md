@@ -18,6 +18,10 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
 - `en.html`, `zh-hant.html`, `ms.html` and `th.html` are generated from `index.html` and `assets/home-i18n.js`
   by `node scripts/build-locales.mjs` (homepage title and description are the `metaTitle` / `metaDesc` keys).
   Never edit the generated pages; edit the source and run the script.
+- Every page ends with the `assets/site-config.js` and `assets/chat-widget.js` script tags (the support
+  assistant). Keep them when copying a template. The assistant answers only from
+  `assets/chat-knowledge.json`, which CI rebuilds from the pages, so a page's `#answer` card and FAQ
+  `<details>` are also what the assistant knows about that topic.
 - `npm run check` must pass before you open the PR.
 
 ## Inputs
@@ -26,6 +30,10 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
   28 days vs the previous 28 days, plus index status per URL. They may be missing (secret not configured);
   then skip the data-driven tasks and say so in the PR.
 - `.github/content-backlog.md` — topic ideas with status.
+- `.seo-data/chat-gaps.json` — short anonymous topics of visitor questions the support assistant could not
+  answer in the last 90 days (may be missing). Topics that recur, or that fit the site, are strong backlog
+  candidates: real visitors asked them. Add them to the backlog in your own words; never copy the file or
+  quote counts in commits or the PR.
 
 ## Weekly tasks, in priority order (at most 5 page edits + 1 new article per week)
 
@@ -40,7 +48,10 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
 4. **New article (max 1).** Take the highest-priority `待写` item in `.github/content-backlog.md`, write it as a
    new page, link it from 2–3 related pages (commit those link-only edits with `[skip-date]` in the message),
    and mark it `已写（待合并）` in the backlog. Skip this step if you cannot support the facts with sources.
-5. **GEO check (only when today's day-of-month ≤ 7).** Use WebSearch for each question below (Chinese first,
+5. **Unanswered chat questions.** If an existing page already covers a topic in `chat-gaps.json`, add a
+   short FAQ entry there (with its FAQPage JSON-LD entry) so the assistant can answer it next time.
+   Otherwise add it to the backlog. Questions about a specific account or application need a person, not a page.
+6. **GEO check (only when today's day-of-month ≤ 7).** Use WebSearch for each question below (Chinese first,
    then English). Record whether max-rebate.com appears and which domains are cited. Turn clear gaps into new
    backlog items. Questions: TMGM返佣怎么申请 · TMGM返佣多少 · TMGM黄金返佣 · 外汇返佣靠谱吗 · 黄金周三三倍隔夜利息 ·
    为什么不同外汇平台K线不一样 · TMGM代理怎么申请 · best TMGM rebate.
@@ -62,6 +73,7 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
 - `about.html`, `assets/about.js`, and the existing site-wide disclaimer/footer wording on every page —
   copy them unchanged into new pages and do not comment on them.
 - `.github/workflows/*`, `scripts/*`, `CNAME`, the IndexNow key file.
+- `chat-worker/*`, `assets/chat-widget.*` and the generated `assets/chat-knowledge.json`.
 
 ## Public repository — privacy
 
