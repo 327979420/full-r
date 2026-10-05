@@ -45,6 +45,9 @@ jobs:
       - name: Build language homepages (en, zh-Hant, ms, th)
         run: node scripts/build-locales.mjs
 
+      - name: Build support assistant knowledge
+        run: node scripts/build-chat-knowledge.mjs
+
       - name: Sync structured data, dates and sitemap
         run: node scripts/seo-sync.mjs
 

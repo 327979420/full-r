@@ -61,6 +61,14 @@ for (const file of contentPages) {
   for (const match of source.matchAll(/<a\b([^>]*\btarget=["']_blank["'][^>]*)>/gi)) {
     if (!/\brel=["'][^"']*noopener/i.test(match[1])) fail(file, "target=_blank link missing rel=noopener");
   }
+
+  // Support assistant on every page (it reads contact links from site-config.js, loaded first).
+  if (file !== "success.html") {
+    const configAt = source.indexOf("assets/site-config.js");
+    const chatAt = source.indexOf("assets/chat-widget.js");
+    if (chatAt < 0) fail(file, "missing assets/chat-widget.js (copy the two script tags before </body> from an existing page)");
+    else if (configAt < 0 || configAt > chatAt) fail(file, "assets/site-config.js must load before assets/chat-widget.js");
+  }
 }
 
 const requiredSources = [
