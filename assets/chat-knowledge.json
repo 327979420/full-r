@@ -1,0 +1,377 @@
+{
+ "site": "https://max-rebate.com",
+ "homepage": {
+  "url": "https://max-rebate.com/",
+  "languages": {
+   "zh-CN": "https://max-rebate.com/",
+   "zh-TW": "https://max-rebate.com/zh-hant.html",
+   "en": "https://max-rebate.com/en.html",
+   "ms": "https://max-rebate.com/ms.html",
+   "th": "https://max-rebate.com/th.html"
+  },
+  "applyUrl": "https://max-rebate.com/apply.html",
+  "rebatePerLotUsd": {
+   "STD": {
+    "min": 20,
+    "max": 20,
+    "feePerLot": null
+   },
+   "PM": {
+    "min": 15,
+    "max": 15,
+    "feePerLot": null
+   },
+   "DC": {
+    "min": 10,
+    "max": 10,
+    "feePerLot": null
+   },
+   "PRO": {
+    "min": 10,
+    "max": 10,
+    "feePerLot": null
+   },
+   "RAW07": {
+    "min": 2,
+    "max": 3.5,
+    "feePerLot": 5
+   }
+  },
+  "rebateTable": [
+   "账户类型 | STD 标准账户 | PM 高级账户 | DC 比特账户 | PRO 专业账户 | RAW07 ECN / Raw",
+   "黄金 | 全网最高返佣 $20 / 手 参考点差 32 | $15 / 手 参考点差 27 | $10 / 手 参考点差 22 | $10 / 手 参考点差 22 | $2–3.5 / 手 参考点差 9 · 手续费 5",
+   "外汇 | $10 / 手 参考点差 16 | $4 / 手 参考点差 10 | $7 / 手 参考点差 13 | $2 / 手 参考点差 7 | $2 / 手 参考点差 0 · 手续费 7",
+   "比特币 | $1.5 / 手 参考点差 14 | $1.5 / 手 参考点差 14 | $10 / 手 参考点差 25 | $1.5 / 手 参考点差 14 | $1.5 / 手 参考点差 14"
+  ],
+  "facts": [
+   "Max Rebate provides TMGM traders with a transparent rebate service. We return 100% of the eligible client rebate we receive, with no extra deduction or added spread markup.",
+   "TMGM Standard Gold rebate: $20 per lot.",
+   "Figures use one standard lot. Final eligibility, rebate amount, spreads and conditions depend on the account group, executed trades and platform review.",
+   "“Highest rebate online” is based on publicly visible TMGM client-rebate pages reviewed on 10 Aug 2026. Publicly advertised rates can change.",
+   "Public rebate pages we reviewed commonly advertise around $18–18.4/lot; Max Rebate offers $20/lot on TMGM Standard Gold.",
+   "100% of the eligible returnable rebate we receive goes to the client.",
+   "The rebate service does not add an extra spread markup.",
+   "Your account and execution conditions remain those of the platform and account group.",
+   "After approval, you can continue with the relevant account manager for follow-up.",
+   "Register through the correct link and establish rebate attribution",
+   "Do not open a duplicate account; check transfer or rebate eligibility first",
+   "For trading teams, communities and client channels",
+   "You complete the process yourself. We never request passwords, codes or bank-card details.",
+   "Gold rebate only. Spread, slippage, swaps and other costs are not included.",
+   "Independent multi-platform trading rebate service. Not the official website of any trading platform.",
+   "CFDs, FX and other leveraged products are high risk and may cause rapid losses. This site does not provide personal financial advice. Platform names and marks are used only for identification."
+  ],
+  "faq": {
+   "en": [
+    {
+     "q": "Does the rebate change my spread or trading conditions?",
+     "a": "Under the current Max Rebate plan, the rebate service does not add a spread markup. Actual conditions still depend on the platform, account group and market."
+    },
+    {
+     "q": "What does “100% rebate” mean?",
+     "a": "100% means that after we actually receive the broker rebate, we return 100% of the eligible client rebate portion to the client. The spread is a fixed trading cost and cannot be refunded."
+    },
+    {
+     "q": "Can an existing TMGM account apply?",
+     "a": "You can request a review. Attribution or group changes remain subject to platform rules."
+    },
+    {
+     "q": "When is the rebate credited?",
+     "a": "Under normal circumstances, the rebate is credited within one business day. For example, positions closed on Monday can be credited on Tuesday. Exceptional cases may take longer."
+    },
+    {
+     "q": "Will you ask for my trading password?",
+     "a": "No. Never send passwords, verification codes, card passwords or identity-document images."
+    },
+    {
+     "q": "Does a rebate guarantee profit?",
+     "a": "No. A rebate may reduce eligible costs but does not reduce market risk or guarantee profit."
+    },
+    {
+     "q": "What permissions does an agent receive?",
+     "a": "Once agent access is activated, the agent receives a dedicated account-opening link and invitation code for business development. Agent rebates are determined by the client account group, trading instrument and eligible trading volume. Client account profits or losses do not affect agent income."
+    }
+   ],
+   "zh-CN": [
+    {
+     "q": "返佣会影响我的点差或交易条件吗？",
+     "a": "按满返网当前方案，不因为返佣服务额外加点差；实际交易条件仍由平台、账户组别和市场环境决定。"
+    },
+    {
+     "q": "“100%返佣”是什么意思？",
+     "a": "100% 指我们在实际收到券商返佣后，把其中属于客户的合资格返佣部分 100% 返还给客户。点差属于固定的交易成本，无法返还。"
+    },
+    {
+     "q": "已有 TMGM 账户还能申请吗？",
+     "a": "可以先提交查询。能否调整归属、转组或开启返佣，需要按平台规则人工确认。"
+    },
+    {
+     "q": "返佣什么时候到账？",
+     "a": "正常情况下，实际到账时间为 1 个工作日。例如周一关单，周二即可到账；特殊情况除外。"
+    },
+    {
+     "q": "网站会要求我的交易密码吗？",
+     "a": "不会。不要提交交易密码、投资者密码、验证码、银行卡密码或证件图片。"
+    },
+    {
+     "q": "返佣是不是稳赚？",
+     "a": "不是。返佣只能抵减部分符合条件的交易成本，不降低市场风险，也不保证盈利。"
+    },
+    {
+     "q": "代理有什么权限？",
+     "a": "代理权限开通后，可以获得专属的开户链接和邀请码用于展业。代理返佣只和客户的账户类别、交易标的、合资格交易手数有关。客户账户的收益或亏损与代理收入无关。"
+    }
+   ]
+  }
+ },
+ "pages": [
+  {
+   "url": "https://max-rebate.com/about.html",
+   "lang": "zh-CN",
+   "title": "About Us｜关于满返网 Max Rebate",
+   "description": "了解满返网 Max Rebate：独立的交易返佣与合作信息服务平台，致力于让返佣结构、账户类型和交易成本更透明。",
+   "text": "我们是谁 满返网（Max Rebate）是一个独立的交易返佣、交易成本与经纪商合作信息服务平台。我们希望把返佣结构、账户类型、申请流程和实际交易成本用更清晰、可核对的方式呈现给用户。 我们的原则： 少一层中间成本，多一点透明。 我们在做什么 目前网站提供 TMGM 相关的返佣申请、满返说明、开户链接、账户类型和 Introducing Broker 合作信息。未来可逐步覆盖更多经纪商和交易平台。 我们如何工作 尽量公开返佣结构、账户类型和申请步骤。 只收集处理申请所合理需要的信息。 不会要求交易密码、验证码、银行卡密码或证件图片。 返佣资格和最终金额以对应平台的实际审核及规则为准。 独立身份 满返网是独立的返佣及合作信息服务平台，并非 TMGM 或其他交易平台的官方网站，也不代表任何平台提供金融建议。 我们的目标 让用户在开户或申请返佣前，更清楚地知道账户类型、交易成本，以及返佣如何影响实际成本，而不是只看到一个开户链接。"
+  },
+  {
+   "url": "https://max-rebate.com/apply.html",
+   "lang": "zh-CN",
+   "title": "提交返佣申请｜满返网 Max Rebate",
+   "description": "提交满返网 TMGM 返佣或 Introducing Broker 申请。",
+   "text": "申请返佣 100%返还合资格返佣 申请 IB 合作 团队、社群与客户渠道合作 平台 TMGM EC Markets — Coming soon IC Markets — Coming soon Exness — Coming soon 平台注册邮箱 账户是否在 3 天内注册？ 请选择 是 否 是否可以通过该注册邮箱联系你？ 请选择 是 否 不要提交交易密码、验证码、银行卡资料或证件图片。申请结果和返佣资格以对应平台审核为准。 我同意满返网使用以上资料联系我并处理本次申请。 提交申请 提交后会生成申请编号，请保留编号用于后续查询。"
+  },
+  {
+   "url": "https://max-rebate.com/contact.html",
+   "lang": "zh-CN",
+   "title": "Contact｜联系满返网 Max Rebate",
+   "description": "联系满返网 Max Rebate：Discord、Telegram。",
+   "text": "联系渠道 Discord 社群交流与服务更新 加入 Discord ↗ Telegram 直接联系 @LiangFreddy 通过 Telegram 联系 ↗ 查询申请 建议提供申请编号及平台注册邮箱，方便快速定位记录。 不要发送： 交易密码、验证码、银行卡密码或证件图片。"
+  },
+  {
+   "url": "https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html",
+   "lang": "zh-CN",
+   "title": "黄金周三三倍隔夜利息是什么？大利息日与库存费计算｜满返网",
+   "description": "为什么黄金和外汇在周三收三倍隔夜利息（库存费/Swap）？用T+2交割讲清“大利息日”，附不同品种的三倍日、MT4/MT5查询方法和成本估算。",
+   "faq": [
+    {
+     "q": "周三开仓、当天平仓，会收三倍隔夜利息吗？",
+     "a": "不会。隔夜利息只对跨过换日时间仍然持有的仓位收取。"
+    },
+    {
+     "q": "换日时间是北京时间几点？",
+     "a": "多数平台以纽约时间下午5点作为换日，约为北京时间凌晨5点（美国夏令时）或凌晨6点（冬令时）。以平台服务器时间为准。"
+    },
+    {
+     "q": "有没有不收隔夜利息的账户？",
+     "a": "部分平台提供免隔夜利息账户（常称伊斯兰账户），通常有申请条件，并可能以其他方式收费。请以平台说明为准。"
+    },
+    {
+     "q": "返佣能抵消隔夜利息吗？",
+     "a": "返佣按合资格交易手数计算，和持仓时间无关。它可以抵减一部分总成本，但不会减少隔夜利息本身。"
+    }
+   ]
+  },
+  {
+   "url": "https://max-rebate.com/privacy.html",
+   "lang": "zh-CN",
+   "title": "Privacy Policy｜满返网隐私政策",
+   "description": "满返网 Max Rebate 隐私政策。",
+   "text": "我们可能收集的信息 根据申请表或联系渠道，我们可能收集平台、平台注册邮箱、账户状态、申请类型、申请编号、联系方式及你主动提供的说明。 我们不会要求： 交易密码、验证码、银行卡密码、完整银行卡资料或证件图片。 为什么收集 用于处理返佣或 Introducing Broker 申请、联系申请人、核对记录、跟进资格或结果，以及处理访问、更正或删除请求。 表单传输 网站目前通过 FormSubmit 将申请资料转发至指定服务邮箱，因此提交数据会经过该第三方服务的基础设施。 浏览器本地存储 网站可能使用 Local Storage 保存语言偏好和最近申请的本地备用记录。这不等同于跨设备客户账户。 披露与保留 在处理申请确有必要时，资料可能用于与对应交易平台或服务方核实账户关系、返佣资格或状态。资料仅在合理需要的期限内保留。 查询、更正或删除 可通过 Contact 页面提交 Privacy Request。为保护资料，我们可能需要核对你与相关申请记录的关系。"
+  },
+  {
+   "url": "https://max-rebate.com/rebate-ib-guide-en.html",
+   "lang": "en",
+   "title": "What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates | Max Rebate",
+   "description": "Learn how Introducing Brokers (IBs), forex rebates and full rebates work, and why TMGM rebates, STD accounts and EA high-frequency traders should focus on the actual rebate per lot.",
+   "text": "The short version: a rebate is not extra trading profit. It is part or all of an eligible commission that an Introducing Broker returns to the trader to reduce trading costs that have already been incurred. How do the trader, broker and IB relate to each other? IB stands for Introducing Broker . In simple terms, an IB introduces clients to a broker and may help with account opening, account attribution and ongoing support. When eligible clients trade, the broker may pay the IB a commission under the relevant partnership arrangement. The exact calculation differs by broker, account group and agreement, but the basic flow can be understood like this: 01 Trader trades 02 Broker earns spread / fees 03 IB receives eligible commission 04 IB returns a rebate So a rebate is not money created from nowhere. It is the amount of eligible IB commission that the IB chooses to return to the trader. Why…"
+  },
+  {
+   "url": "https://max-rebate.com/rebate-ib-guide.html",
+   "lang": "zh-CN",
+   "title": "返佣是什么？IB、外汇返佣与满返的关系｜满返网",
+   "description": "一篇看懂IB、Introducing Broker、外汇返佣和满返之间的关系，并了解TMGM返佣、STD账户与EA高频交易为什么更需要关注每手实际返佣。",
+   "text": "先说结论： 返佣不是额外的交易利润。它本质上是IB把自己从合资格交易中获得的部分或全部佣金返还给客户，用来降低已经发生的交易成本。 外汇交易成本通常由点差、手续费与返佣共同决定。返佣的价值要放在完整交易成本里理解。 IB、券商和客户之间是什么关系？ IB是 Introducing Broker（介绍经纪人） 的简称。简单理解，IB负责把有交易需求的客户介绍给券商，并提供开户、账户归属或后续服务。客户产生符合条件的交易后，券商会根据具体合作安排向IB支付佣金。 基本流程如下： 01 客户交易 02 券商收取点差/手续费 03 IB获得合资格佣金 04 IB向客户返佣 因此，“返佣”并不是凭空产生的钱，而是IB决定把自己可分配佣金中的多少返还给客户。 为什么不同返佣平台给出的金额不一样？ IB可以保留佣金，也可以把更多返给客户。 这也是为什么同一个券商、同一种账户，在不同返佣网站看到的数字可能不同。客户真正应该关注的不是“最高返佣”四个字，而是 自己这个账户、这个品种、每一标准手最后实际能拿到多少 。 满返网的定位很简单：减少不必要的中间层级，把返佣标准公开，让客户能够直接核对自己的账户类型、交易品种和可返佣金额。 那什么叫“满返”？ 满返不等于退回全部点差和手续费。 满返网所说的“满返”，是指在账户归属正确、交易符合平台规则并通过审核的前提下， 将可分配给我们的IB佣金按当前方案返还给客户，不再额外从中抽取服务分成。 以满返网当前展示的TMGM STD黄金方案为例： 方案示例 每标准手返佣 其他常见返佣方案示例 18美元 满返网当前方案 20美元 每手差额 2美元 实际返佣资格、账户组别和金额仍以平台后台记录及审核结果为准。 每手只差2美元，为什么EA和高频交易者特别在意？ 对EA、量化或高频交易者，每手差额会随交易量累积。 每月交易量 每月多返 一年多返 100手 200美元 2,400美元 500手 1,000美元 12,000美元 1,000手 2,000美元 24,000美元 所以高频客户真正应该比较的是长期综合成本，而不是只看开户时宣传的某一个点差或手续费数字。…"
+  },
+  {
+   "url": "https://max-rebate.com/risk-disclaimer.html",
+   "lang": "zh-CN",
+   "title": "Risk Disclaimer｜满返网风险声明",
+   "description": "满返网 Max Rebate 风险声明。",
+   "text": "重要： 差价合约（CFD）、外汇及其他杠杆交易产品具有高风险，可能造成快速亏损。 不构成个人投资建议 本网站内容用于一般信息、交易成本说明、返佣信息和申请支持，不构成个人金融或交易建议。 返佣不降低市场风险 返佣可能返还部分符合条件的佣金或交易成本，但不会减少价格波动、杠杆、滑点、流动性、强制平仓或其他交易风险。 历史记录不是未来保证 历史返佣记录、Top IB 数据、成本示例和计算结果不保证未来返佣、交易表现或收益。 平台规则可能变化 点差、手续费、返佣比例、产品、账户组别和结算方式可能变化，以对应平台官方信息为准。"
+  },
+  {
+   "url": "https://max-rebate.com/terms.html",
+   "lang": "zh-CN",
+   "title": "Terms of Use｜满返网使用条款",
+   "description": "满返网 Max Rebate 使用条款。",
+   "text": "网站用途 满返网提供返佣、开户链接、账户类型、交易成本和 Introducing Broker 合作的一般信息与申请支持，不构成个人金融、投资、法律或税务建议。 信息可能更新 平台政策、点差、佣金、返佣比例、产品和审核流程可能变化，以对应平台最终规则和审核结果为准。 返佣与申请 提交申请不代表一定获批，也不保证返佣金额、到账时间、账户归属或持续资格。 第三方服务 第三方网站、应用和交易平台由其自身条款、隐私政策及运营规则管理。 用户责任 请提交真实、准确且有权提供的信息，并不要提交密码、验证码、银行卡密码或证件图片。 交易结果 返佣可能降低部分符合条件的交易成本，但不会降低市场风险，也不会保证盈利。"
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-dai-li.html",
+   "lang": "zh-CN",
+   "title": "TMGM代理申请｜IB权限、开户链接与代理返佣说明｜满返网",
+   "description": "TMGM代理与IB合作说明：了解代理权限、专属开户链接、邀请码、代理返佣计算逻辑、客户交易量关系及申请流程。满返网为独立服务网站，并非TMGM官方网站。",
+   "answer": "TMGM代理（Introducing Broker，IB）是通过专属开户链接和邀请码开发客户，并按客户的账户类别、交易品种和合资格交易手数获得佣金的合作身份。代理收入来自客户归属和合资格交易量，不参与客户盈亏；代理资格和佣金以实际合作安排及平台审核为准。",
+   "faq": [
+    {
+     "q": "代理权限开通以后有哪些工具？",
+     "a": "主要包括专属开户链接和邀请码，用于客户开发及归属识别。实际可用工具以最终开通权限为准。"
+    },
+    {
+     "q": "代理返佣跟客户盈利有关吗？",
+     "a": "无关。代理收入根据账户类别、交易标的和合资格交易手数计算，不以客户账户盈利或亏损作为直接计算依据。"
+    },
+    {
+     "q": "我没有现成客户，可以先申请吗？",
+     "a": "可以先提交合作意向，由工作人员根据你的渠道、计划和实际情况确认是否适合开通相应代理权限。"
+    },
+    {
+     "q": "代理需要拿客户密码吗？",
+     "a": "不需要。不要索取或提交客户交易密码、验证码、银行卡密码等敏感信息。"
+    }
+   ]
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-fan-yong-zenme-suan.html",
+   "lang": "zh-CN",
+   "title": "TMGM返佣怎么算？账户类型、品种与手数计算指南｜满返网",
+   "description": "TMGM返佣怎么算？从账户类型、黄金与外汇品种、有效手数和结算记录说明返佣计算方法，并提供核对返佣金额的实用步骤。",
+   "answer": "TMGM返佣 ≈ 合资格交易手数 × 对应账户和品种的每手返佣标准。例如标准账户（STD）黄金每手20美元，完成10手合资格黄金交易约返200美元。最终金额以后台认定的有效交易记录为准；返佣不会抵消点差、滑点、隔夜费或交易亏损。"
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-fan-yong.html",
+   "lang": "zh-CN",
+   "title": "TMGM返佣申请｜返佣标准、结算方式和常见问题｜满返网",
+   "description": "TMGM返佣申请指南：了解TMGM账户类型、返佣计算、一个工作日结算、新老账户区别、TMGM代理与IB合作关系及申请步骤。",
+   "answer": "TMGM返佣是按账户组别、交易品种和合资格标准手数，把交易产生的部分佣金返还给客户。以满返网当前方案为例，标准账户（STD）黄金每手返20美元；合资格返佣正常约一个工作日到账（例如周一平仓、周二到账），特殊审核或节假日除外。 每标准手返佣（美元） STD PM DC PRO RAW07 黄金 20 15 10 10 2–3.5 外汇 10 4 7 2 2 比特币 1.5 1.5 10 1.5 1.5 数据来自满返网首页当前返佣表；RAW07 另收手续费。实际资格和金额以平台后台记录及审核为准。",
+   "faq": [
+    {
+     "q": "“100%返佣”是什么意思？",
+     "a": "指满返网在实际收到券商返佣后，把属于客户的合资格返佣部分100%返还给客户。点差属于固定交易成本，无法返还。"
+    },
+    {
+     "q": "返佣会影响点差吗？",
+     "a": "满返网当前返佣服务不额外增加隐藏点差加价。实际交易条件仍由TMGM、账户组别和市场环境决定。"
+    },
+    {
+     "q": "为什么交易后没有显示返佣？",
+     "a": "可能原因包括账户归属尚未生效、交易不符合规则、后台延迟或账户需要人工审核。查询时只需提供必要的账户识别信息，不要提供交易密码。"
+    },
+    {
+     "q": "我也想做代理，可以申请吗？",
+     "a": "可以。代理权限开通后，可获得专属开户链接和邀请码用于展业，并按客户账户类别、交易标的和合资格交易手数获得代理返佣。详细说明请查看TMGM代理页面。"
+    }
+   ]
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-huangjin-fan-yong.html",
+   "lang": "zh-CN",
+   "title": "TMGM黄金返佣指南｜XAUUSD每手返佣与成本计算｜满返网",
+   "description": "TMGM黄金返佣怎么计算？了解XAUUSD标准手、账户类型、点差手续费与返佣后的净成本，适合黄金短线和高频交易者参考。",
+   "answer": "以满返网当前方案为例，TMGM黄金（XAUUSD）每标准手返佣为：STD 20美元、PM 15美元、DC 和 PRO 各10美元、RAW07 2–3.5美元（RAW07另收手续费）。判断哪个账户更划算，要看“点差 + 手续费 + 滑点 + 隔夜费 − 返佣”后的净成本，而不是只看返佣数字。"
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-kai-hu.html",
+   "lang": "zh-CN",
+   "title": "TMGM开户链接｜开户注册与返佣绑定教程｜满返网",
+   "description": "通过TMGM开户链接完成注册、身份认证和交易账户开通，并了解返佣绑定、新老账户区别及开户安全注意事项。独立客户服务网站，非TMGM官网。",
+   "answer": "想拿TMGM返佣，新客户应在注册前通过对应的开户链接开户，因为返佣归属通常在注册阶段就已建立；开户和身份认证完成后，用同一个注册邮箱提交返佣申请。已有账户不要重复注册，先提交人工查询。",
+   "faq": [
+    {
+     "q": "开户链接打开后可以切换语言吗？",
+     "a": "通常可以在注册页面切换支持的语言。注册资料应保持真实一致，避免因语言切换重复建立账户。"
+    },
+    {
+     "q": "注册后没有马上交易，会影响返佣吗？",
+     "a": "开户和返佣权限是不同环节。建议注册完成后及时提交申请并确认账户归属，在权限确认前不要假设返佣已经自动生效。"
+    },
+    {
+     "q": "已有账户是否应该重新注册一个？",
+     "a": "不建议。重复账户可能增加合规审核和账户管理复杂度。先查询原账户能否调整归属是更稳妥的做法。"
+    }
+   ]
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-lao-zhanghu-fan-yong.html",
+   "lang": "zh-CN",
+   "title": "已有TMGM账户怎么申请返佣？老账户资格查询指南｜满返网",
+   "description": "已有TMGM账户还能申请返佣吗？了解老账户代理归属查询、转组限制、所需信息、安全注意事项及无法调整时的处理方式。",
+   "answer": "已有TMGM账户可以申请返佣资格查询，但不能保证一定能转为返佣账户：结果取决于注册时间、原有代理关系、账户状态、所在地区和平台政策。查询只需要注册邮箱和大致开户时间，不要为了返佣重复开户。"
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-man-fan.html",
+   "lang": "zh-CN",
+   "title": "TMGM满返是什么？满返标准与申请流程｜满返网",
+   "description": "了解TMGM满返的含义、适用账户、返佣计算、申请条件、到账方式及老账户处理流程。满返网为独立客户服务网站，并非TMGM官方网站。",
+   "answer": "TMGM满返是指在账户归属正确、交易符合平台规则并通过审核的前提下，把可分配的合资格IB佣金按当前方案返还给客户，不再额外抽取服务分成。满返不等于退还点差和手续费，也不代表盈利保证。",
+   "faq": [
+    {
+     "q": "TMGM满返多久到账？",
+     "a": "当前方案通常在合资格订单平仓后的处理周期内结算，具体时间取决于平台后台处理和账户状态，不能把任何固定时间理解为无条件保证。"
+    },
+    {
+     "q": "老账户一定可以转成满返账户吗？",
+     "a": "不一定。老账户能否转组或调整代理归属，需要人工审核，受到注册时间、原有代理关系和平台政策影响。"
+    },
+    {
+     "q": "满返会不会改变我的交易账户安全？",
+     "a": "正常申请不需要提供密码或验证码。申请主要核对注册邮箱、账户状态和返佣归属。任何索要密码或要求远程控制账户的行为都应拒绝。"
+    }
+   ]
+  },
+  {
+   "url": "https://max-rebate.com/tutorial-existing.html",
+   "lang": "zh-CN",
+   "title": "已有TMGM账户如何申请返佣｜老账户资格查询教程",
+   "description": "已有TMGM账户如何查询返佣资格：提交注册邮箱、交易账号和大致开户时间，了解转组、归属调整与人工审核流程。",
+   "text": "1 步骤 1 在满返申请表中选择“注册超过三天的老账户”。 2 步骤 2 填写注册邮箱、交易账号和可联系的社交方式。 3 步骤 3 在补充说明中填写大致开户注册时间。 4 步骤 4 提交后等待人工查询账户是否可以办理。 老账户能否调整归属或开启满返，以最终人工审核结果为准。"
+  },
+  {
+   "url": "https://max-rebate.com/tutorial-ib.html",
+   "lang": "zh-CN",
+   "title": "TMGM Introducing Broker申请教程｜IB合作流程",
+   "description": "了解TMGM Introducing Broker申请流程、客户渠道与行业经验资料要求、审核和协议确认步骤。独立客户服务网站，非TMGM官网。",
+   "text": "1 步骤 1 填写姓名或团队名称、所在地区和联系方式。 2 步骤 2 说明行业经验、客户来源和主要推广渠道。 3 步骤 3 提交申请并保存IB申请编号。 4 步骤 4 审核通过后，登录TMGM客户后台，在“协议及文档”中确认相应协议。 Introducing Broker申请需要人工沟通和审核，不保证获批。"
+  },
+  {
+   "url": "https://max-rebate.com/tutorial-open.html",
+   "lang": "zh-CN",
+   "title": "TMGM开户链接教程｜开户注册与身份认证步骤",
+   "description": "TMGM开户链接图文教程：完成开户注册、邮箱验证、身份认证并保存交易账号，随后提交返佣申请。独立客户服务网站，非TMGM官网。",
+   "text": "1 步骤 1 点击网站上的“通过专属链接开户”。 2 步骤 2 在TMGM相关注册页面填写资料并完成身份认证。 3 步骤 3 账户审核完成后，保存TMGM注册邮箱和交易账号。 4 步骤 4 返回本网站提交满返申请。 请勿向任何人提供交易密码、验证码、银行卡资料或证件图片。"
+  },
+  {
+   "url": "https://max-rebate.com/tutorial-rebate.html",
+   "lang": "zh-CN",
+   "title": "TMGM返佣申请教程｜满返申请步骤与资料要求",
+   "description": "TMGM返佣与满返申请图文教程：填写注册邮箱、账户状态并保存申请编号，了解返佣权限确认流程。独立客户服务网站，非TMGM官网。",
+   "text": "1 步骤 1 准备姓名、国家或地区、联系方式和TMGM注册邮箱。 2 步骤 2 填写交易账号并选择账户状态。 3 步骤 3 确认资料准确，勾选联系和隐私授权。 4 步骤 4 提交表单并保存系统生成的申请编号。 申请需要人工审核，提交成功不代表一定获批。"
+  },
+  {
+   "url": "https://max-rebate.com/waihui-fan-yong-kaopu-ma.html",
+   "lang": "zh-CN",
+   "title": "外汇返佣靠谱吗？判断正规返佣平台的7项标准｜满返网",
+   "description": "外汇返佣靠谱吗？从资金安全、开户链接、密码要求、规则透明度、到账记录和风险声明等7项标准判断返佣服务是否正规。",
+   "text": "先讲结论： 可信的外汇返佣服务只处理必要的账户归属和返佣信息，不应代客交易、承诺盈利或索取密码。选择交易平台和杠杆产品前，应独立评估监管实体与个人风险承受能力。 外汇返佣的资金逻辑 交易者通过合作伙伴或IB渠道建立账户关系，符合条件的交易产生合作佣金，服务方再按约定将可返还部分给客户。返佣的合理价值是降低部分交易成本，而不是创造无风险收益。 因此，正规服务应能清楚解释返佣来源、计算口径、到账方式和不适用情况。如果只强调高额回报，却不解释账户组别和有效交易规则，应提高警惕。 判断外汇返佣是否靠谱的7项标准 不接触客户资金： 入金和出金应在交易平台提供的官方渠道内完成。 不索取密码或验证码： 返佣申请不需要交易密码、投资者密码、邮箱验证码或银行卡密码。 明确独立身份： 第三方返佣网站应说明自己不是券商官方网站，避免品牌混淆。 公开计算条件： 说明账户类型、品种、标准手数、有效交易和审核口径。 不承诺盈利： 返佣只能抵减部分成本，不能消除杠杆和市场风险。 开户链接可核对： 新账户注册前应检查HTTPS、页面品牌和最终注册域名。 有清晰的查询流程： 金额异常时能够按订单记录核对，而不是要求继续入金或加大交易量。 需要立即停止的风险信号 代客操作 要求远程控制设备、提供密码或让客服替你完成身份认证。 保证收益 用“稳赚”“保本”或返佣可以覆盖亏损等说法诱导交易。 私下转账 要求把入金、保证金或解冻费转到个人账户或陌生钱包。 开户链接也需要谨慎核对。可参阅 TMGM开户链接安全检查 ，了解新账户注册和返佣绑定的边界。 高返佣是否一定更好 不一定。外汇账户的整体成本还包括点差、手续费、滑点和隔夜费。不同账户组别可能采用不同定价方式，如果只比较每手返佣，很容易忽略更大的交易成本。 同时，频繁交易只是为了获得返佣，可能扩大手续费和市场风险。交易频率应由经过评估的交易计划决定，不应由返佣激励推动。 以TMGM返佣为例应核对什么 准备申请 TMGM返佣 或 TMGM满返 时，应确认适用账户、交易品种、返佣权限生效时间和结算记录。新账户应先核对开户链接；老账户先查询现有代理归属，不要盲目重复注…"
+  },
+  {
+   "url": "https://max-rebate.com/waihui-k-xian-bu-yi-yang.html",
+   "lang": "zh-CN",
+   "title": "为什么不同外汇平台的K线不一样？报价来源、点差与时区｜满返网",
+   "description": "不同外汇、黄金平台的K线高低点不一样，是券商自己画的吗？从场外市场、流动性提供商、买价图表、服务器时区和期货现货价差五个原因讲清楚。",
+   "faq": [
+    {
+     "q": "K线是券商自己画的吗？",
+     "a": "K线由平台收到的报价自动生成。不同平台接入的流动性不同，所以K线会有差异，不等于平台随意修改价格。"
+    },
+    {
+     "q": "为什么别的平台没触发，我的止损却触发了？",
+     "a": "可能是两家平台的报价来源和点差不同，也可能是空单止损按卖价触发、而图表只显示买价。可以先对照卖价线，再提交订单核查。"
+    },
+    {
+     "q": "选平台时要看什么？",
+     "a": "除了点差和返佣，还要看监管、报价稳定性、出金顺畅程度和出现问题时的处理效率。可参考 外汇返佣靠谱吗 。"
+    }
+   ]
+  }
+ ]
+}
