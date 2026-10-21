@@ -4,7 +4,8 @@
 // index.html (zh-CN) stays the source. Its text comes from assets/home-i18n.js through
 // data-i18n attributes, which home.js swaps in the browser. This script applies the same
 // translations at build time and writes en.html, zh-hant.html, ms.html and th.html with their
-// own <title>, description, canonical URL, structured data and hreflang links. It also keeps
+// own <title>, description, canonical URL, structured data (including FAQPage from the visible
+// FAQ) and hreflang links. It also keeps
 // the head of index.html (title, description, hreflang) in step with the translation file.
 //
 //   node scripts/build-locales.mjs          -> update files
@@ -13,6 +14,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 import process from "node:process";
+import { syncFaq } from "./faq-schema.mjs";
 
 const SITE = "https://max-rebate.com";
 // key = translation key in home-i18n.js; hreflang/htmlLang = what crawlers see.
@@ -103,9 +105,9 @@ const stale = [];
 const root = LOCALES[0];
 const original = await readFile(root.file, "utf8");
 const source = setStructuredData(setHead(original, root), root);
-const outputs = new Map([[root.file, source]]);
+const outputs = new Map([[root.file, syncFaq(source)]]);
 for (const locale of LOCALES.slice(1)) {
-  outputs.set(locale.file, setBody(setStructuredData(setHead(source, locale), locale), locale));
+  outputs.set(locale.file, syncFaq(setBody(setStructuredData(setHead(source, locale), locale), locale)));
 }
 
 for (const [file, next] of outputs) {
