@@ -181,8 +181,22 @@
    "url": "https://max-rebate.com/rebate-ib-guide-en.html",
    "lang": "en",
    "title": "What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates | Max Rebate",
-   "description": "Learn how Introducing Brokers (IBs), forex rebates and full rebates work, and why TMGM rebates, STD accounts and EA high-frequency traders should focus on the actual rebate per lot.",
-   "text": "The short version: a rebate is not extra trading profit. It is part or all of an eligible commission that an Introducing Broker returns to the trader to reduce trading costs that have already been incurred. How do the trader, broker and IB relate to each other? IB stands for Introducing Broker . In simple terms, an IB introduces clients to a broker and may help with account opening, account attribution and ongoing support. When eligible clients trade, the broker may pay the IB a commission under the relevant partnership arrangement. The exact calculation differs by broker, account group and agreement, but the basic flow can be understood like this: 01 Trader trades 02 Broker earns spread / fees 03 IB receives eligible commission 04 IB returns a rebate So a rebate is not money created from nowhere. It is the amount of eligible IB commission that the IB chooses to return to the trader. Why…"
+   "description": "Understand TMGM rebate eligibility, full rebates and cost comparisons. Learn what to check for an existing account and how to reconcile eligible lots with rebates received.",
+   "answer": "A rebate returns an eligible part of trading-related commission, subject to account attribution, product rules and approval. Max Rebate is an independent service. Its published rebate table describes its own arrangement, not a rate guaranteed to every TMGM account. Check the current published table , confirm eligibility, and compare the amount received with eligible trading records. A rebate does not reimburse every trading cost or guarantee a profit.",
+   "faq": [
+    {
+     "q": "Does a 100% rebate refund all trading costs?",
+     "a": "No. At Max Rebate it refers to the eligible commission received and returnable under the arrangement. Spreads, fees and other trading costs are not automatically refunded in full."
+    },
+    {
+     "q": "Does submitting the form activate rebates?",
+     "a": "No. Submission starts a review. Account attribution, eligibility and the applicable terms must be confirmed before rebates can be treated as active."
+    },
+    {
+     "q": "How can I check a rebate payment?",
+     "a": "Compare the confirmed product rate and eligible standard lots with the amount recorded by the platform. Keep pending estimates separate from money received, and ask for a review if the records differ."
+    }
+   ]
   },
   {
    "url": "https://max-rebate.com/rebate-ib-guide.html",
@@ -344,7 +358,7 @@
    "lang": "zh-CN",
    "title": "已有TMGM账户如何申请返佣｜老账户资格查询教程",
    "description": "已有TMGM账户如何查询返佣资格：提交注册邮箱、交易账号和大致开户时间，了解转组、归属调整与人工审核流程。",
-   "text": "1 步骤 1 在满返申请表中选择“注册超过三天的老账户”。 2 步骤 2 填写注册邮箱、交易账号和可联系的社交方式。 3 步骤 3 在补充说明中填写大致开户注册时间。 4 步骤 4 提交后等待人工查询账户是否可以办理。 老账户能否调整归属或开启满返，以最终人工审核结果为准。"
+   "text": "1 步骤 1 在满返申请表中选择“注册超过三天的老账户”。 2 步骤 2 填写注册邮箱、交易账号和可联系的社交方式。 3 步骤 3 在补充说明中填写大致开户注册时间。 4 步骤 4 提交后保存申请编号，等待人工核对；未确认前，不把预计返佣当作已开通。 5 步骤 5 需要了解限制时，阅读 老账户资格说明 ；准备好后进入 返佣申请表 。 老账户能否调整归属或开启满返，以最终人工审核结果为准。不要提供交易密码、验证码、银行卡资料或证件图片。"
   },
   {
    "url": "https://max-rebate.com/tutorial-ib.html",
@@ -372,6 +386,7 @@
    "lang": "zh-CN",
    "title": "外汇点差为什么突然变大？开盘换日与数据公布｜满返网",
    "description": "外汇点差是买卖价的差额，属于隐性成本。开盘、每日换日和非农、CPI等重要数据公布前后，流动性下降，点差会明显变大，止损也更容易被触发。附五个常见原因和应对方法。",
+   "answer": "外汇点差是买价（Bid）和卖价（Ask）之间的差额，属于交易的隐性成本。点差不是固定不变的：在流动性下降的时段——市场刚开盘、每日换日前后，以及非农、CPI、利率决议等重要数据公布前后——点差可能扩大。仅凭点差变宽，不能判断某笔报价或成交是否正常。",
    "faq": [
     {
      "q": "外汇点差是什么？",
@@ -397,6 +412,31 @@
    "title": "外汇返佣靠谱吗？判断正规返佣平台的7项标准｜满返网",
    "description": "外汇返佣靠谱吗？从资金安全、开户链接、密码要求、规则透明度、到账记录和风险声明等7项标准判断返佣服务是否正规。",
    "text": "先讲结论： 可信的外汇返佣服务只处理必要的账户归属和返佣信息，不应代客交易、承诺盈利或索取密码。选择交易平台和杠杆产品前，应独立评估监管实体与个人风险承受能力。 外汇返佣的资金逻辑 交易者通过合作伙伴或IB渠道建立账户关系，符合条件的交易产生合作佣金，服务方再按约定将可返还部分给客户。返佣的合理价值是降低部分交易成本，而不是创造无风险收益。 因此，正规服务应能清楚解释返佣来源、计算口径、到账方式和不适用情况。如果只强调高额回报，却不解释账户组别和有效交易规则，应提高警惕。 判断外汇返佣是否靠谱的7项标准 不接触客户资金： 入金和出金应在交易平台提供的官方渠道内完成。 不索取密码或验证码： 返佣申请不需要交易密码、投资者密码、邮箱验证码或银行卡密码。 明确独立身份： 第三方返佣网站应说明自己不是券商官方网站，避免品牌混淆。 公开计算条件： 说明账户类型、品种、标准手数、有效交易和审核口径。 不承诺盈利： 返佣只能抵减部分成本，不能消除杠杆和市场风险。 开户链接可核对： 新账户注册前应检查HTTPS、页面品牌和最终注册域名。 有清晰的查询流程： 金额异常时能够按订单记录核对，而不是要求继续入金或加大交易量。 需要立即停止的风险信号 代客操作 要求远程控制设备、提供密码或让客服替你完成身份认证。 保证收益 用“稳赚”“保本”或返佣可以覆盖亏损等说法诱导交易。 私下转账 要求把入金、保证金或解冻费转到个人账户或陌生钱包。 开户链接也需要谨慎核对。可参阅 TMGM开户链接安全检查 ，了解新账户注册和返佣绑定的边界。 高返佣是否一定更好 不一定。外汇账户的整体成本还包括点差、手续费、滑点和隔夜费。不同账户组别可能采用不同定价方式，如果只比较每手返佣，很容易忽略更大的交易成本。 同时，频繁交易只是为了获得返佣，可能扩大手续费和市场风险。交易频率应由经过评估的交易计划决定，不应由返佣激励推动。 以TMGM返佣为例应核对什么 准备申请 TMGM返佣 或 TMGM满返 时，应确认适用账户、交易品种、返佣权限生效时间和结算记录。新账户应先核对开户链接；老账户先查询现有代理归属，不要盲目重复注…"
+  },
+  {
+   "url": "https://max-rebate.com/waihui-jiaoyi-chengben.html",
+   "lang": "zh-CN",
+   "title": "外汇交易成本怎么算？点差、手续费、隔夜利息与返佣｜满返网",
+   "description": "外汇交易成本=点差+手续费+隔夜利息+滑点−返佣。拆解每一项怎么算、谁影响最大，并附一笔黄金单的完整成本示例和对比方法。",
+   "answer": "一笔外汇或黄金单的净交易成本 = 点差 + 手续费 + 隔夜利息 + 滑点 − 返佣。 这是比较成本组成的估算口径，各项先换成同一货币。隔夜利息与滑点可能有利也可能不利，应保留方向；返佣以实际合资格金额为准，不改变市场风险。",
+   "faq": [
+    {
+     "q": "外汇交易的成本有哪些？",
+     "a": "主要有点差、手续费（部分账户收取）、隔夜利息和滑点。返佣可以抵减其中一部分。"
+    },
+    {
+     "q": "返佣能抵消隔夜利息吗？",
+     "a": "返佣按适用方案和合资格交易记录核对，可以抵减部分总成本，但不会改变平台的隔夜利息计收规则。"
+    },
+    {
+     "q": "短线交易者最该关注哪项成本？",
+     "a": "交易越频繁，点差、手续费和返佣的影响越大；是否产生隔夜利息取决于是否跨过平台结算时点。长线持仓则要重点看隔夜利息。"
+    },
+    {
+     "q": "低点差账户一定更便宜吗？",
+     "a": "不一定。低点差账户通常另收每手手续费，返佣也可能不同，要把点差、手续费和返佣放在一起算净成本。"
+    }
+   ]
   },
   {
    "url": "https://max-rebate.com/waihui-k-xian-bu-yi-yang.html",
