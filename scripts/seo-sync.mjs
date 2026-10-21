@@ -11,11 +11,16 @@
 // content update).
 // Files not yet committed get today's date. Content edits are picked up after
 // they are committed/merged; CI then runs this script on main.
+//
+// It also writes FAQPage markup from each page's visible FAQ (faq-schema.mjs),
+// gives article pages a share image, and regenerates llms.txt (a plain-text
+// map of the site for AI assistants) from page titles and descriptions.
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import process from "node:process";
+import { syncFaq } from "./faq-schema.mjs";
 
 const SITE = "https://max-rebate.com";
 const ORG = {
@@ -25,6 +30,7 @@ const ORG = {
   url: `${SITE}/`,
   logo: `${SITE}/favicon.svg`
 };
+const DEFAULT_IMAGE = `${SITE}/assets/og-image.jpg`; // 1200x630
 const EXCLUDE = new Set(["success.html"]);
 const checkOnly = process.argv.includes("--check");
 const root = process.cwd();
@@ -82,11 +88,27 @@ function breadcrumb(source, file, h1) {
   };
 }
 
+// Article pages need a share image for link previews and Article markup.
+// Social networks and search engines do not accept SVG, so fall back to the site default.
+function shareImage(source) {
+  const image = attr(source, /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i);
+  if (image && !/\.svg$/i.test(image)) return { source, image };
+  const tags = `<meta property="og:image" content="${DEFAULT_IMAGE}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">`;
+  if (image) source = source.replace(/<meta\s+property=["']og:image["'][^>]*>/i, tags);
+  else source = source.replace(/(<meta\s+property=["']og:type["'][^>]*>)/i, `$1${tags}`);
+  if (!/<meta\s+name=["']twitter:card["']/i.test(source)) {
+    source = source.replace(/(<meta\s+property=["']og:image:height["'][^>]*>)/i, `$1<meta name="twitter:card" content="summary_large_image">`);
+  }
+  return { source, image: DEFAULT_IMAGE };
+}
+
 function syncArticle(source, file) {
   const lang = attr(source, /<html[^>]*\blang=["']([^"']+)["']/i) || "zh-CN";
   const h1 = strip(attr(source, /<h1[^>]*>([\s\S]*?)<\/h1>/i));
   const description = attr(source, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
   const { published, modified } = dates(file);
+  let image;
+  ({ source, image } = shareImage(source));
 
   // Remove previously managed blocks and stand-alone Article blocks (their data is regenerated below).
   let headline = h1;
@@ -118,6 +140,7 @@ function syncArticle(source, file) {
         inLanguage: lang,
         datePublished: published,
         dateModified: modified,
+        image,
         author: { "@id": ORG["@id"] },
         publisher: { "@id": ORG["@id"] },
         mainEntityOfPage: pageUrl(file)
@@ -143,6 +166,7 @@ const files = (await readdir(root))
   .sort();
 
 const lastmod = {};
+const pages = {};
 for (const file of files) {
   const full = path.join(root, file);
   const original = await readFile(full, "utf8");
@@ -155,6 +179,12 @@ for (const file of files) {
   } else {
     lastmod[file] = dates(file).modified;
   }
+  next = syncFaq(next);
+  pages[file] = {
+    title: strip(attr(next, /<title>([\s\S]*?)<\/title>/i)).replace(/\s*[｜|]\s*(满返网|Max Rebate)[^｜|]*$/, ""),
+    description: attr(next, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i),
+    article: isArticle(next)
+  };
   if (next !== original) {
     changed.push(file);
     if (!checkOnly) await writeFile(full, next);
@@ -190,6 +220,36 @@ const newSitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http:
 if (newSitemap !== oldSitemap) {
   changed.push("sitemap.xml");
   if (!checkOnly) await writeFile(sitemapPath, newSitemap);
+}
+
+// llms.txt: what the site is and where each answer lives, in sitemap order.
+const organization = JSON.parse(attr(await readFile(path.join(root, "index.html"), "utf8"), /<script type="application\/ld\+json">([\s\S]*?)<\/script>/i))
+  ["@graph"].find((node) => node["@type"] === "Organization");
+const sections = [
+  ["首页与语言版本 / Homepage and languages", (f) => f === "index.html" || /^(en|zh-hant|ms|th)\.html$/.test(f)],
+  ["指南 / Guides", (f) => pages[f].article],
+  ["图文教程 / Step-by-step tutorials", (f) => f.startsWith("tutorial-")],
+  ["申请、联系与政策 / Apply, contact and policies", () => true]
+];
+const listed = new Set();
+const llmsLines = [`# ${organization.name}`, "", `> ${organization.description}`, "", `${pages["index.html"].description}`];
+for (const [heading, match] of sections) {
+  const items = urls
+    .map((url) => (url === `${SITE}/` ? "index.html" : url.slice(SITE.length + 1)))
+    .filter((f) => !listed.has(f) && match(f));
+  if (!items.length) continue;
+  llmsLines.push("", `## ${heading}`, "");
+  for (const f of items) {
+    listed.add(f);
+    llmsLines.push(`- [${pages[f].title}](${pageUrl(f)})${pages[f].description ? `: ${pages[f].description}` : ""}`);
+  }
+}
+const llmsPath = path.join(root, "llms.txt");
+const newLlms = `${llmsLines.join("\n")}\n`;
+const oldLlms = await readFile(llmsPath, "utf8").catch(() => "");
+if (newLlms !== oldLlms) {
+  changed.push("llms.txt");
+  if (!checkOnly) await writeFile(llmsPath, newLlms);
 }
 
 if (checkOnly && changed.length) {

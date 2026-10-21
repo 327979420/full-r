@@ -13,6 +13,9 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
   `.notice`, `.card` sections, FAQ `<details>`, 参考资料, 相关指南, footer).
 - `node scripts/seo-sync.mjs` generates Article/Breadcrumb JSON-LD, the visible 最后更新 date and sitemap.xml
   from git history. Never edit those dates, the `data-seo="managed"` block or sitemap `lastmod` by hand.
+  It also generates FAQPage JSON-LD (`data-seo="faq"`) from each page's visible `<details>` FAQ, the
+  article share image, and `llms.txt`. Never hand-write FAQPage JSON-LD: add or edit the visible
+  `<details>` and run the script.
 - `node scripts/prerender.mjs` writes the zh-CN text of script-rendered pages (about, contact, privacy, terms,
   risk-disclaimer, tutorial-*) into their HTML; run it after editing their scripts.
 - `en.html`, `zh-hant.html`, `ms.html` and `th.html` are generated from `index.html` and `assets/home-i18n.js`
@@ -43,13 +46,13 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
    (keep the main keyword near the start, end with `｜满返网`, ≤ 32 Chinese characters) and meta description
    (70–90 characters, answer + benefit). Also update the matching `og:title` / `og:description`.
 3. **Striking distance.** Queries ranking ~8–20: on the best-matching page, add a short answer-first section or
-   a FAQ entry (and its FAQPage JSON-LD entry) that directly answers that query. Do not create a new page for
+   a visible FAQ `<details>` entry that directly answers that query. Do not create a new page for
    a query an existing page already targets.
 4. **New article (max 1).** Take the highest-priority `待写` item in `.github/content-backlog.md`, write it as a
    new page, link it from 2–3 related pages (commit those link-only edits with `[skip-date]` in the message),
    and mark it `已写（待合并）` in the backlog. Skip this step if you cannot support the facts with sources.
 5. **Unanswered chat questions.** If an existing page already covers a topic in `chat-gaps.json`, add a
-   short FAQ entry there (with its FAQPage JSON-LD entry) so the assistant can answer it next time.
+   short FAQ `<details>` entry there so the assistant can answer it next time.
    Otherwise add it to the backlog. Questions about a specific account or application need a person, not a page.
 6. **GEO check (only when today's day-of-month ≤ 7).** Use WebSearch for each question below (Chinese first,
    then English). Record whether max-rebate.com appears and which domains are cited. Turn clear gaps into new
