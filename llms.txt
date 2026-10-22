@@ -25,7 +25,7 @@ Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高
 - [返佣是什么？IB、外汇返佣与满返的关系](https://max-rebate.com/rebate-ib-guide.html): 一篇看懂IB、Introducing Broker、外汇返佣和满返之间的关系，并了解TMGM返佣、STD账户与EA高频交易为什么更需要关注每手实际返佣。
 - [What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates](https://max-rebate.com/rebate-ib-guide-en.html): Understand TMGM rebate eligibility, full rebates and cost comparisons. Learn what to check for an existing account and how to reconcile eligible lots with rebates received.
 - [黄金周三三倍隔夜利息：计息条件与库存费计算](https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html): 黄金周三一定收三倍隔夜利息吗？解释常见T+2交割安排与例外，教你核对合约规格中的计价单位、每日倍率、多空费率和平台换日时间，再用假设数字估算库存费，避免把示例当成实际收费规则。
-- [为什么不同外汇平台的K线不一样？报价来源、点差与时区](https://max-rebate.com/waihui-k-xian-bu-yi-yang.html): 不同外汇、黄金平台的K线高低点不一样，是券商自己画的吗？从场外市场、流动性提供商、买价图表、服务器时区和期货现货价差五个原因讲清楚。
+- [为什么不同外汇平台的K线不一样？报价来源、点差与时区](https://max-rebate.com/waihui-k-xian-bu-yi-yang.html): 不同外汇、黄金平台的K线为什么不一样？区分Bid、Ask与Last，核对合约和K线时间区间，理解空单止损的触发口径，并按订单记录与历史报价检查差异，避免仅凭截图下结论。
 - [TMGM账户类型对比：STD、PM、DC、PRO、RAW07怎么选](https://max-rebate.com/tmgm-zhanghu-leixing.html): TMGM账户类型怎么选？对比STD、PM、DC、PRO、RAW07的黄金与外汇返佣、参考点差和手续费，说明为什么要看返佣后的净成本。
 - [外汇点差为什么突然变大？开盘换日与数据公布](https://max-rebate.com/waihui-dianchai-kuoda.html): 外汇点差是买卖价的差额，属于隐性成本。开盘、每日换日和非农、CPI等重要数据公布前后，流动性下降，点差会明显变大，止损也更容易被触发。附五个常见原因和应对方法。
 - [外汇交易成本怎么算？点差、手续费、隔夜利息与返佣](https://max-rebate.com/waihui-jiaoyi-chengben.html): 外汇交易成本=点差+手续费+隔夜利息+滑点−返佣。拆解每一项怎么算、谁影响最大，并附一笔黄金单的完整成本示例和对比方法。
