@@ -29,8 +29,9 @@ const ORG = {
   "@type": "Organization",
   "@id": `${SITE}/#organization`,
   name: "满返网 Max Rebate",
+  alternateName: ["Max Rebate", "满返网", "Max Rebate 满返网", "max-rebate.com"],
   url: `${SITE}/`,
-  logo: `${SITE}/favicon.svg`
+  logo: `${SITE}/assets/logo-512.png` // raster 512x512; search engines do not use SVG logos reliably
 };
 const DEFAULT_IMAGE = `${SITE}/assets/og-image.jpg`; // 1200x630
 const EXCLUDE = new Set(["success.html"]);
