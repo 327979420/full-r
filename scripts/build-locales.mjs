@@ -25,6 +25,10 @@ const LOCALES = [
   { key: "ms", file: "ms.html", hreflang: "ms", htmlLang: "ms" },
   { key: "th", file: "th.html", hreflang: "th", htmlLang: "th" }
 ];
+// Links that have a page in the reader's language. Tutorials translate themselves with ?lang=.
+const LOCAL_LINKS = {
+  en: { "tmgm-fan-yong.html": "rebate-ib-guide-en.html", "tmgm-dai-li.html": "tutorial-ib.html?lang=en" }
+};
 const checkOnly = process.argv.includes("--check");
 
 const escapeText = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -93,6 +97,10 @@ function setBody(html, locale) {
     if (typeof t[key] !== "string") return whole;
     const text = key === "heroTitle" ? t[key].split("\n").map(escapeText).join("<br>") : escapeText(t[key]);
     return `${open}${text}${close}`;
+  });
+  html = html.replace(/(<a\b[^>]*\bhref=")([^"#?]+\.html)"/gi, (whole, start, href) => {
+    const local = LOCAL_LINKS[locale.key]?.[href] || (href.startsWith("tutorial-") ? `${href}?lang=${locale.key}` : href);
+    return `${start}${local}"`;
   });
   // Pre-select this language in the switcher.
   html = html.replace(/<option value="([^"]+)"( selected)?>/g, (_, value) =>
