@@ -14,13 +14,15 @@
 //
 // It also writes FAQPage markup from each page's visible FAQ (faq-schema.mjs),
 // gives article pages a share image, and regenerates llms.txt (a plain-text
-// map of the site for AI assistants) from page titles and descriptions.
+// map of the site for AI assistants) from page titles and descriptions, plus key facts
+// (rates, languages, contacts) and the homepage FAQ in Chinese and English.
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
 import process from "node:process";
-import { syncFaq } from "./faq-schema.mjs";
+import vm from "node:vm";
+import { syncFaq, faqItems, text as faqText } from "./faq-schema.mjs";
 
 const SITE = "https://max-rebate.com";
 const ORG = {
@@ -233,6 +235,44 @@ const sections = [
 ];
 const listed = new Set();
 const llmsLines = [`# ${organization.name}`, "", `> ${organization.description}`, "", `${pages["index.html"].description}`];
+
+// Key facts and FAQ, quoted from what the site already shows so AI answers can cite one place.
+// Rates come from the answer table on tmgm-fan-yong.html; contacts from assets/site-config.js.
+const homeSource = await readFile(path.join(root, "index.html"), "utf8");
+const configContext = { window: {} };
+vm.createContext(configContext);
+vm.runInContext(await readFile(path.join(root, "assets/site-config.js"), "utf8"), configContext);
+const { contacts } = configContext.window.MAX_REBATE_CONFIG;
+const LANGUAGE_NAMES = { "zh-CN": "简体中文", "zh-Hant": "繁體中文", en: "English", ms: "Bahasa Melayu", th: "ไทย" };
+const languages = [...homeSource.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)]
+  .filter(([, lang]) => LANGUAGE_NAMES[lang])
+  .map(([, lang, href]) => `[${LANGUAGE_NAMES[lang]}](${href})`);
+const rateTable = attr(
+  attr(await readFile(path.join(root, "tmgm-fan-yong.html"), "utf8"), /<section class="card answer" id="answer">([\s\S]*?)<\/section>/i),
+  /<table>([\s\S]*?)<\/table>/i
+);
+const rateRows = [...rateTable.matchAll(/<tr>([\s\S]*?)<\/tr>/gi)].map(([, row]) =>
+  [...row.matchAll(/<t[hd]>([\s\S]*?)<\/t[hd]>/gi)].map(([, cell]) => faqText(cell))
+);
+llmsLines.push("", "## 关键事实 / Key facts", "");
+llmsLines.push(`- 网站 / Website: ${SITE}/ — ${organization.alternateName.join(" · ")}`);
+if (languages.length) llmsLines.push(`- 语言 / Languages: ${languages.join(" · ")}`);
+llmsLines.push(`- 提交申请 / Apply: ${SITE}/apply.html`);
+llmsLines.push(`- 联系 / Contact: Discord ${contacts.discord} · Telegram ${contacts.telegram}`);
+if (rateRows.length > 1) {
+  llmsLines.push("", `TMGM ${rateRows[0][0]}，满返网当前方案；实际资格和金额以账户组别、平台后台记录与审核为准（来源：${SITE}/tmgm-fan-yong.html）：`, "");
+  rateRows.forEach((row, i) => {
+    llmsLines.push(`| ${row.join(" | ")} |`);
+    if (i === 0) llmsLines.push(`|${" --- |".repeat(row.length)}`);
+  });
+}
+for (const [heading, file] of [["常见问题", "index.html"], ["FAQ (English)", "en.html"]]) {
+  const items = faqItems(await readFile(path.join(root, file), "utf8"));
+  if (!items.length) continue;
+  llmsLines.push("", `## ${heading}`, "", `Source: ${pageUrl(file)}#faq`, "");
+  for (const item of items) llmsLines.push(`- **${item.question}** ${item.answer}`);
+}
+
 for (const [heading, match] of sections) {
   const items = urls
     .map((url) => (url === `${SITE}/` ? "index.html" : url.slice(SITE.length + 1)))
