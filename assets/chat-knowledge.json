@@ -69,7 +69,7 @@
     },
     {
      "q": "What does “100% rebate” mean?",
-     "a": "100% means that after we actually receive the broker rebate, we return 100% of the eligible client rebate portion to the client. The spread is a fixed trading cost and cannot be refunded."
+     "a": "We return 100% of the eligible client rebate portion we actually receive and can return. This does not mean that all trading costs are refunded."
     },
     {
      "q": "Can an existing TMGM account apply?",
@@ -77,7 +77,7 @@
     },
     {
      "q": "When is the rebate credited?",
-     "a": "Under normal circumstances, the rebate is credited within one business day. For example, positions closed on Monday can be credited on Tuesday. Exceptional cases may take longer."
+     "a": "Actual crediting time depends on account review, eligible trading records and the platform’s settlement rules."
     },
     {
      "q": "Will you ask for my trading password?",
@@ -89,7 +89,7 @@
     },
     {
      "q": "What permissions does an agent receive?",
-     "a": "Once agent access is activated, the agent receives a dedicated account-opening link and invitation code for business development. Agent rebates are determined by the client account group, trading instrument and eligible trading volume. Client account profits or losses do not affect agent income."
+     "a": "Once agent access is activated, the agent can receive a dedicated account-opening link and invitation code for business development."
     }
    ],
    "zh-CN": [
@@ -99,7 +99,7 @@
     },
     {
      "q": "“100%返佣”是什么意思？",
-     "a": "100% 指我们在实际收到券商返佣后，把其中属于客户的合资格返佣部分 100% 返还给客户。点差属于固定的交易成本，无法返还。"
+     "a": "指我们把实际收到并可返还给客户的合资格返佣部分 100% 返还，不代表所有交易成本都能被返还。"
     },
     {
      "q": "已有 TMGM 账户还能申请吗？",
@@ -107,7 +107,7 @@
     },
     {
      "q": "返佣什么时候到账？",
-     "a": "正常情况下，实际到账时间为 1 个工作日。例如周一关单，周二即可到账；特殊情况除外。"
+     "a": "实际到账时间以账户审核、有效交易记录和平台结算规则为准。"
     },
     {
      "q": "网站会要求我的交易密码吗？",
@@ -119,7 +119,7 @@
     },
     {
      "q": "代理有什么权限？",
-     "a": "代理权限开通后，可以获得专属的开户链接和邀请码用于展业。代理返佣只和客户的账户类别、交易标的、合资格交易手数有关。客户账户的收益或亏损与代理收入无关。"
+     "a": "代理权限开通后，可以获得专属开户链接和邀请码用于展业。"
     }
    ]
   }
