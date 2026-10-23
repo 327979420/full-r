@@ -4,6 +4,45 @@
 
 Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，正常情况约 1 个工作日到账。
 
+## 关键事实 / Key facts
+
+- 网站 / Website: https://max-rebate.com/ — Max Rebate · 满返网 · max-rebate.com
+- 语言 / Languages: [简体中文](https://max-rebate.com/) · [繁體中文](https://max-rebate.com/zh-hant.html) · [English](https://max-rebate.com/en.html) · [Bahasa Melayu](https://max-rebate.com/ms.html) · [ไทย](https://max-rebate.com/th.html)
+- 提交申请 / Apply: https://max-rebate.com/apply.html
+- 联系 / Contact: Discord https://discord.gg/7zYmxR42KY · Telegram https://t.me/LiangFreddy
+
+TMGM 每标准手返佣（美元），满返网当前方案；实际资格和金额以账户组别、平台后台记录与审核为准（来源：https://max-rebate.com/tmgm-fan-yong.html）：
+
+| 每标准手返佣（美元） | STD | PM | DC | PRO | RAW07 |
+| --- | --- | --- | --- | --- | --- |
+| 黄金 | 20 | 15 | 10 | 10 | 2–3.5 |
+| 外汇 | 10 | 4 | 7 | 2 | 2 |
+| 比特币 | 1.5 | 1.5 | 10 | 1.5 | 1.5 |
+
+## 常见问题
+
+Source: https://max-rebate.com/#faq
+
+- **返佣会影响我的点差或交易条件吗？** 按满返网当前方案，不因为返佣服务额外加点差；实际交易条件仍由平台、账户组别和市场环境决定。
+- **“100%返佣”是什么意思？** 指我们把实际收到并可返还给客户的合资格返佣部分 100% 返还，不代表所有交易成本都能被返还。
+- **已有 TMGM 账户还能申请吗？** 可以先提交查询。能否调整归属、转组或开启返佣，需要按平台规则人工确认。
+- **返佣什么时候到账？** 实际到账时间以账户审核、有效交易记录和平台结算规则为准。
+- **网站会要求我的交易密码吗？** 不会。不要提交交易密码、投资者密码、验证码、银行卡密码或证件图片。
+- **返佣是不是稳赚？** 不是。返佣只能抵减部分符合条件的交易成本，不降低市场风险，也不保证盈利。
+- **代理有什么权限？** 代理权限开通后，可以获得专属开户链接和邀请码用于展业。
+
+## FAQ (English)
+
+Source: https://max-rebate.com/en.html#faq
+
+- **Does the rebate change my spread or trading conditions?** Under the current Max Rebate plan, the rebate service does not add a spread markup. Actual conditions still depend on the platform, account group and market.
+- **What does “100% rebate” mean?** We return 100% of the eligible client rebate portion we actually receive and can return. This does not mean that all trading costs are refunded.
+- **Can an existing TMGM account apply?** You can request a review. Attribution or group changes remain subject to platform rules.
+- **When is the rebate credited?** Actual crediting time depends on account review, eligible trading records and the platform’s settlement rules.
+- **Will you ask for my trading password?** No. Never send passwords, verification codes, card passwords or identity-document images.
+- **Does a rebate guarantee profit?** No. A rebate may reduce eligible costs but does not reduce market risk or guarantee profit.
+- **What permissions does an agent receive?** Once agent access is activated, the agent can receive a dedicated account-opening link and invitation code for business development.
+
 ## 首页与语言版本 / Homepage and languages
 
 - [TMGM返佣最高$20/手·100%返还](https://max-rebate.com/): Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，正常情况约 1 个工作日到账。
