@@ -8,12 +8,19 @@
 
 const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", nbsp: " " };
 
-const text = (html) =>
+export const text = (html) =>
   html
     .replace(/<[^>]+>/g, " ")
     .replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (_, name) => ENTITIES[name])
     .replace(/\s+/g, " ")
     .trim();
+
+// The visible FAQ as plain-text question/answer pairs (also used for llms.txt).
+export function faqItems(html) {
+  return [...html.matchAll(/<details\b[^>]*>\s*<summary\b[^>]*>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)]
+    .map(([, question, answer]) => ({ question: text(question), answer: text(answer) }))
+    .filter((item) => item.question && item.answer);
+}
 
 export function syncFaq(html) {
   html = html.replace(/\s*<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi, (whole, json) => {
@@ -26,9 +33,7 @@ export function syncFaq(html) {
     return whole;
   });
 
-  const items = [...html.matchAll(/<details\b[^>]*>\s*<summary\b[^>]*>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/gi)]
-    .map(([, question, answer]) => ({ question: text(question), answer: text(answer) }))
-    .filter((item) => item.question && item.answer);
+  const items = faqItems(html);
   if (!items.length) return html;
 
   const data = {
