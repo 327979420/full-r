@@ -2,7 +2,7 @@
 
 > 独立的外汇与黄金交易返佣信息服务网站，目前专注TMGM返佣与Introducing Broker合作，并非任何交易平台官方网站。
 
-Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，正常情况约 1 个工作日到账。
+Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，到账时间以审核和结算规则为准。
 
 ## 关键事实 / Key facts
 
@@ -45,15 +45,15 @@ Source: https://max-rebate.com/en.html#faq
 
 ## 首页与语言版本 / Homepage and languages
 
-- [TMGM返佣最高$20/手·100%返还](https://max-rebate.com/): Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，正常情况约 1 个工作日到账。
-- [TMGM返佣最高$20/手·100%返還](https://max-rebate.com/zh-hant.html): Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，正常情況約 1 個工作日到帳。
-- [TMGM Rebate up to $20/lot, 100% Returned](https://max-rebate.com/en.html): Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned, usually credited within one business day.
-- [Rebat TMGM sehingga $20/lot, 100% dipulangkan](https://max-rebate.com/ms.html): Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan, biasanya dikreditkan dalam satu hari bekerja.
-- [รีเบต TMGM สูงสุด $20/ล็อต คืน 100%](https://max-rebate.com/th.html): Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% โดยปกติเข้าบัญชีภายใน 1 วันทำการ
+- [TMGM返佣最高$20/手·100%返还](https://max-rebate.com/): Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，到账时间以审核和结算规则为准。
+- [TMGM返佣最高$20/手·100%返還](https://max-rebate.com/zh-hant.html): Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，到帳時間以審核和結算規則為準。
+- [TMGM Rebate up to $20/lot, 100% Returned](https://max-rebate.com/en.html): Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned; crediting time depends on account review and settlement rules.
+- [Rebat TMGM sehingga $20/lot, 100% dipulangkan](https://max-rebate.com/ms.html): Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan; masa pengkreditan bergantung pada semakan dan peraturan penyelesaian.
+- [รีเบต TMGM สูงสุด $20/ล็อต คืน 100%](https://max-rebate.com/th.html): Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% เวลาเข้าบัญชีขึ้นอยู่กับการตรวจสอบและกฎการชำระบัญชี
 
 ## 指南 / Guides
 
-- [TMGM返佣申请｜返佣标准、结算方式和常见问题](https://max-rebate.com/tmgm-fan-yong.html): TMGM返佣申请指南：了解TMGM账户类型、返佣计算、一个工作日结算、新老账户区别、TMGM代理与IB合作关系及申请步骤。
+- [TMGM返佣申请｜返佣标准、结算方式和常见问题](https://max-rebate.com/tmgm-fan-yong.html): TMGM返佣申请指南：了解TMGM账户类型、返佣计算、结算与到账规则、新老账户区别、TMGM代理与IB合作关系及申请步骤。
 - [TMGM代理申请｜IB权限、开户链接与代理返佣说明](https://max-rebate.com/tmgm-dai-li.html): TMGM代理与IB合作说明：了解代理权限、专属开户链接、邀请码、代理返佣计算逻辑、客户交易量关系及申请流程。满返网为独立服务网站，并非TMGM官方网站。
 - [TMGM开户链接｜开户注册与返佣绑定教程](https://max-rebate.com/tmgm-kai-hu.html): 通过TMGM开户链接完成注册、身份认证和交易账户开通，并了解返佣绑定、新老账户区别及开户安全注意事项。独立客户服务网站，非TMGM官网。
 - [TMGM满返是什么？满返标准与申请流程](https://max-rebate.com/tmgm-man-fan.html): 了解TMGM满返的含义、适用账户、返佣计算、申请条件、到账方式及老账户处理流程。满返网为独立客户服务网站，并非TMGM官方网站。
