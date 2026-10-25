@@ -178,7 +178,7 @@
     "contactChoose": "Choose how to connect",
     "closeContact": "Close",
     "metaTitle": "TMGM Rebate up to $20/lot, 100% Returned | Max Rebate",
-    "metaDesc": "Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned, usually credited within one business day."
+    "metaDesc": "Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned; crediting time depends on account review and settlement rules."
   },
   "zh-CN": {
     "brandSub": "满返网",
@@ -356,7 +356,7 @@
     "contactChoose": "选择联系渠道",
     "closeContact": "关闭",
     "metaTitle": "TMGM返佣最高$20/手·100%返还｜Max Rebate 满返网",
-    "metaDesc": "Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，正常情况约 1 个工作日到账。"
+    "metaDesc": "Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，到账时间以审核和结算规则为准。"
   },
   "zh-TW": {
     "brandSub": "滿返網",
@@ -484,7 +484,7 @@
     "faq3q": "舊 TMGM 帳戶可以申請嗎？",
     "faq3a": "可先查詢，最終按平台規則確認。",
     "faq4q": "返佣何時到帳？",
-    "faq4a": "正常情況下約 1 個工作日。例如週一關單，週二即可到帳；特殊情況除外。",
+    "faq4a": "實際到帳時間以帳戶審核、有效交易記錄和平台結算規則為準。",
     "faq5q": "會要求交易密碼嗎？",
     "faq5a": "不會，請勿提交密碼、驗證碼或證件圖片。",
     "faq6q": "返佣是否等於穩賺？",
@@ -534,7 +534,7 @@
     "contactChoose": "選擇聯絡渠道",
     "closeContact": "關閉",
     "metaTitle": "TMGM返佣最高$20/手·100%返還｜Max Rebate 滿返網",
-    "metaDesc": "Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，正常情況約 1 個工作日到帳。"
+    "metaDesc": "Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，到帳時間以審核和結算規則為準。"
   },
   "ms": {
     "brandSub": "TRADING CASHBACK",
@@ -662,7 +662,7 @@
     "faq3q": "Bolehkah akaun TMGM sedia ada memohon?",
     "faq3a": "Anda boleh meminta semakan. Perubahan atribusi atau kumpulan akaun tertakluk kepada peraturan platform.",
     "faq4q": "Bilakah rebat dikreditkan?",
-    "faq4a": "Biasanya dalam satu hari bekerja. Contohnya, posisi ditutup pada Isnin boleh dikreditkan pada Selasa. Kes luar biasa mungkin mengambil masa lebih lama.",
+    "faq4a": "Masa pengkreditan sebenar bergantung pada semakan akaun, rekod dagangan yang layak dan peraturan penyelesaian platform.",
     "faq5q": "Adakah anda akan meminta kata laluan dagangan saya?",
     "faq5a": "Tidak. Jangan sekali-kali hantar kata laluan, kod pengesahan, PIN kad atau imej dokumen pengenalan.",
     "faq6q": "Adakah rebat menjamin keuntungan?",
@@ -712,7 +712,7 @@
     "contactChoose": "Pilih cara untuk berhubung",
     "closeContact": "Tutup",
     "metaTitle": "Rebat TMGM sehingga $20/lot, 100% dipulangkan | Max Rebate",
-    "metaDesc": "Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan, biasanya dikreditkan dalam satu hari bekerja."
+    "metaDesc": "Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan; masa pengkreditan bergantung pada semakan dan peraturan penyelesaian."
   },
   "th": {
     "brandSub": "TRADING CASHBACK",
@@ -840,7 +840,7 @@
     "faq3q": "บัญชี TMGM ที่มีอยู่แล้วสมัครได้ไหม?",
     "faq3a": "คุณสามารถขอให้ตรวจสอบได้ การเปลี่ยนสังกัดหรือกลุ่มบัญชีเป็นไปตามกฎของแพลตฟอร์ม",
     "faq4q": "รีเบตเข้าบัญชีเมื่อไร?",
-    "faq4a": "โดยปกติใช้เวลา 1 วันทำการ เช่น ปิดรายการวันจันทร์ รีเบตสามารถเข้าวันอังคารได้ กรณีพิเศษอาจใช้เวลานานกว่า",
+    "faq4a": "เวลาที่รีเบตเข้าบัญชีจริงขึ้นอยู่กับการตรวจสอบบัญชี บันทึกการซื้อขายที่มีสิทธิ์ และกฎการชำระบัญชีของแพลตฟอร์ม",
     "faq5q": "จะขอรหัสผ่านเทรดของฉันไหม?",
     "faq5a": "ไม่ อย่าส่งรหัสผ่าน รหัสยืนยัน รหัสบัตร หรือรูปเอกสารยืนยันตัวตนเด็ดขาด",
     "faq6q": "รีเบตรับประกันกำไรไหม?",
@@ -890,7 +890,7 @@
     "contactChoose": "เลือกช่องทางติดต่อ",
     "closeContact": "ปิด",
     "metaTitle": "รีเบต TMGM สูงสุด $20/ล็อต คืน 100% | Max Rebate",
-    "metaDesc": "Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% โดยปกติเข้าบัญชีภายใน 1 วันทำการ"
+    "metaDesc": "Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% เวลาเข้าบัญชีขึ้นอยู่กับการตรวจสอบและกฎการชำระบัญชี"
   }
 });
 })();
