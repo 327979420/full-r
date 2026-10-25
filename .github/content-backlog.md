@@ -14,3 +14,4 @@
 | — | 黄金周三三倍隔夜利息（大利息日） | 黄金三倍库存费、周三隔夜费高 | `huangjin-san-bei-ge-ye-li-xi.html` | 已写 |
 | — | 为什么不同外汇平台的 K 线不一样 | 平台K线不一样、券商自己画K线 | `waihui-k-xian-bu-yi-yang.html` | 已写 |
 | 暂缓 | 客户经理 / IB 能帮客户做什么（客诉、赔付申请） | 平台故障能赔吗、出问题找谁 | 关于我们 / FAQ | 等站长确认身份表述 |
+| — | 外汇交易成本英文版，与中文指南互链 | forex trading costs, spread commission swap rebates | `forex-trading-costs-en.html` | 已写（待合并） |
