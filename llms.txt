@@ -29,6 +29,7 @@ Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高
 - [TMGM账户类型对比：STD、PM、DC、PRO、RAW07怎么选](https://max-rebate.com/tmgm-zhanghu-leixing.html): TMGM账户类型怎么选？对比STD、PM、DC、PRO、RAW07的黄金与外汇返佣、参考点差和手续费，说明为什么要看返佣后的净成本。
 - [外汇点差为什么突然变大？开盘换日与数据公布](https://max-rebate.com/waihui-dianchai-kuoda.html): 外汇点差是买卖价的差额，属于隐性成本。开盘、每日换日和非农、CPI等重要数据公布前后，流动性下降，点差会明显变大，止损也更容易被触发。附五个常见原因和应对方法。
 - [外汇交易成本怎么算？点差、手续费、隔夜利息与返佣](https://max-rebate.com/waihui-jiaoyi-chengben.html): 外汇交易成本=点差+手续费+隔夜利息+滑点−返佣。拆解每一项怎么算、谁影响最大，并附一笔黄金单的完整成本示例和对比方法。
+- [Forex Trading Costs: Spread, Commission, Swap & Rebates](https://max-rebate.com/forex-trading-costs-en.html): Calculate forex trading costs in one currency. Compare spreads, commissions, swaps, slippage and rebates, with a worked example and a checklist to avoid double counting.
 
 ## 图文教程 / Step-by-step tutorials
 

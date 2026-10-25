@@ -147,6 +147,31 @@
    "text": "联系渠道 Discord 社群交流与服务更新 加入 Discord ↗ Telegram 直接联系 @LiangFreddy 通过 Telegram 联系 ↗ 查询申请 建议提供申请编号及平台注册邮箱，方便快速定位记录。 不要发送： 交易密码、验证码、银行卡密码或证件图片。"
   },
   {
+   "url": "https://max-rebate.com/forex-trading-costs-en.html",
+   "lang": "en",
+   "title": "Forex Trading Costs: Spread, Commission, Swap & Rebates | Max Rebate",
+   "description": "Calculate forex trading costs in one currency. Compare spreads, commissions, swaps, slippage and rebates, with a worked example and a checklist to avoid double counting.",
+   "answer": "For a cost estimate, add the spread cost, round-trip commission, overnight financing and execution slippage, then subtract any eligible rebate. Convert every item to the same currency and use the same position size and holding period. Estimated net cost = spread cost + commission + signed swap cost + signed slippage cost − eligible rebate. Treat a financing charge or adverse slippage as a positive cost; treat a credit or favourable slippage as negative. This is a comparison framework, not an extra deduction from an already calculated trade profit.",
+   "faq": [
+    {
+     "q": "Are spread and commission the same cost?",
+     "a": "No. Spread is the bid/ask price gap; commission is a separate charge where applicable. Check both and whether commission is quoted per side or round trip."
+    },
+    {
+     "q": "Does a rebate refund every trading cost?",
+     "a": "No. Subtract only the eligible rebate under the confirmed arrangement. Do not assume that spreads, commissions, financing or losses will all be refunded."
+    },
+    {
+     "q": "Should I subtract the spread from my statement profit?",
+     "a": "Not again if that profit was calculated from actual entry and exit prices. Check separately whether the figure already includes commissions, fees, swaps and any rebate."
+    },
+    {
+     "q": "Can I compare a rebate in dollars with a spread in points?",
+     "a": "Only after converting both to the same currency and position size using the instrument's specifications. Confirm the units and use eligible trading volume, not an assumed universal value per point."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html",
    "lang": "zh-CN",
    "title": "黄金周三三倍隔夜利息：计息条件与库存费计算｜满返网",
