@@ -147,6 +147,31 @@
    "text": "联系渠道 Discord 社群交流与服务更新 加入 Discord ↗ Telegram 直接联系 @LiangFreddy 通过 Telegram 联系 ↗ 查询申请 建议提供申请编号及平台注册邮箱，方便快速定位记录。 不要发送： 交易密码、验证码、银行卡密码或证件图片。"
   },
   {
+   "url": "https://max-rebate.com/forex-spread-widening-en.html",
+   "lang": "en",
+   "title": "Why Forex Spreads Widen: News, Rollover & Stop Losses | Max Rebate",
+   "description": "Why forex spreads widen around news, rollover and thin markets. Check Bid/Ask, point units and stop-loss triggers before judging an unexpected fill.",
+   "answer": "A variable spread can widen when available liquidity falls or uncertainty rises, including around market openings, rollover and important news. The spread is Ask minus Bid. A wider gap alone does not prove that a particular quote or fill was correct or incorrect.",
+   "faq": [
+    {
+     "q": "Why can spreads widen around rollover or news?",
+     "a": "Available liquidity and pricing uncertainty can change. Check the instrument's schedule and the actual quotes; there is no guaranteed widening amount or recovery time."
+    },
+    {
+     "q": "Does 20 points always mean 20 pips?",
+     "a": "No. Confirm the point size and pip convention for the symbol. Under the example assumptions above, 20 points equals 2 pips."
+    },
+    {
+     "q": "Does a wider spread always trigger a stop loss?",
+     "a": "No. The relevant trigger price must reach the order condition. Check the order direction and symbol rules, rather than treating spread widening alone as a trigger."
+    },
+    {
+     "q": "Is spread widening the same as slippage?",
+     "a": "No. Spread is the gap between simultaneous quotes; slippage concerns the fill relative to a reference price. Review them separately for the event in question."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/forex-trading-costs-en.html",
    "lang": "en",
    "title": "Forex Trading Costs: Spread, Commission, Swap & Rebates | Max Rebate",
@@ -614,7 +639,7 @@
    "faq": [
     {
      "q": "外汇点差是什么？",
-     "a": "点差是买价（Bid）和卖价（Ask）之间的差额，通常以点（pip）计价，是交易的隐性成本之一。"
+     "a": "点差为 Ask 减去 Bid，是交易成本的一部分。比较点差数字前，先核对 point、pip 等单位及品种规格，不能直接把它们当作相同单位。"
     },
     {
      "q": "点差为什么会突然变大？",
@@ -622,7 +647,7 @@
     },
     {
      "q": "点差扩大会不会让止损更容易被触发？",
-     "a": "会。止损按对应方向的成交价触发，点差扩大时其中一侧价格会更快到达止损价。"
+     "a": "有可能，但不是必然。常见场外外汇规则按 Bid 检查多单止损、按 Ask 检查空单止损；只有对应价格达到条件才触发。部分交易所品种的规则不同，以具体品种为准。"
     },
     {
      "q": "怎么减少点差扩大带来的影响？",
