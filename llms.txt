@@ -76,7 +76,7 @@ Source: https://max-rebate.com/en.html#faq
 
 - [TMGM开户链接教程｜开户注册与身份认证步骤](https://max-rebate.com/tutorial-open.html): TMGM开户链接图文教程：完成开户注册、邮箱验证、身份认证并保存交易账号，随后提交返佣申请。独立客户服务网站，非TMGM官网。
 - [TMGM返佣申请教程｜满返申请步骤与资料要求](https://max-rebate.com/tutorial-rebate.html): TMGM返佣与满返申请图文教程：填写注册邮箱、账户状态并保存申请编号，了解返佣权限确认流程。独立客户服务网站，非TMGM官网。
-- [已有TMGM账户如何申请返佣｜老账户资格查询教程](https://max-rebate.com/tutorial-existing.html): 已有TMGM账户如何查询返佣资格：提交注册邮箱、交易账号和大致开户时间，了解转组、归属调整与人工审核流程。
+- [已有TMGM账户如何申请返佣｜老账户资格查询教程](https://max-rebate.com/tutorial-existing.html): 已有TMGM账户如何申请返佣：注册超过3天的，提交注册邮箱并在“3天内注册”选“否”，我们通过邮件说明怎么处理；注册3天内的直接提交注册邮箱即可。
 - [TMGM Introducing Broker申请教程｜IB合作流程](https://max-rebate.com/tutorial-ib.html): 了解TMGM Introducing Broker申请流程、客户渠道与行业经验资料要求、审核和协议确认步骤。独立客户服务网站，非TMGM官网。
 
 ## 申请、联系与政策 / Apply, contact and policies
