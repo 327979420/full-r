@@ -15,7 +15,7 @@
 // It also writes FAQPage markup from each page's visible FAQ (faq-schema.mjs),
 // gives article pages a share image, and regenerates llms.txt (a plain-text
 // map of the site for AI assistants) from page titles and descriptions, plus key facts
-// (rates, languages, contacts) and the homepage FAQ in Chinese and English.
+// (rates, languages, contacts, the new-account rule) and the homepage FAQ in Chinese and English.
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
@@ -260,6 +260,11 @@ llmsLines.push(`- 网站 / Website: ${SITE}/ — ${organization.alternateName.jo
 if (languages.length) llmsLines.push(`- 语言 / Languages: ${languages.join(" · ")}`);
 llmsLines.push(`- 提交申请 / Apply: ${SITE}/apply.html`);
 llmsLines.push(`- 联系 / Contact: Discord ${contacts.discord} · Telegram ${contacts.telegram}`);
+const newAccountPage = "tmgm-zhu-ce-hou-fan-yong.html";
+const newAccount = faqText(
+  attr(attr(await readFile(path.join(root, newAccountPage), "utf8").catch(() => ""), /<section class="card answer" id="answer">([\s\S]*?)<\/section>/i), /<p>([\s\S]*?)<\/p>/i)
+);
+if (newAccount) llmsLines.push(`- 刚注册的账户 / Newly registered accounts: ${newAccount}（${pageUrl(newAccountPage)}）`);
 if (rateRows.length > 1) {
   llmsLines.push("", `TMGM ${rateRows[0][0]}，满返网当前方案；实际资格和金额以账户组别、平台后台记录与审核为准（来源：${SITE}/tmgm-fan-yong.html）：`, "");
   rateRows.forEach((row, i) => {

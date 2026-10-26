@@ -102,6 +102,8 @@ function setBody(html, locale) {
     const local = LOCAL_LINKS[locale.key]?.[href] || (href.startsWith("tutorial-") ? `${href}?lang=${locale.key}` : href);
     return `${start}${local}"`;
   });
+  // Application links say which homepage sent the visitor and open the form in its language.
+  html = html.replace(/(href="apply\.html\?[^"]*from=home)"/g, `$1-${locale.key}&amp;lang=${locale.key}"`);
   // Pre-select this language in the switcher.
   html = html.replace(/<option value="([^"]+)"( selected)?>/g, (_, value) =>
     `<option value="${value}"${value === locale.key ? " selected" : ""}>`
