@@ -72,6 +72,7 @@ Source: https://max-rebate.com/en.html#faq
 - [Forex Trading Costs: Spread, Commission, Swap & Rebates](https://max-rebate.com/forex-trading-costs-en.html): Calculate forex trading costs in one currency. Compare spreads, commissions, swaps, slippage and rebates, with a worked example and a checklist to avoid double counting.
 - [刚注册TMGM怎么申请返佣？3天内提交注册邮箱即可](https://max-rebate.com/tmgm-zhu-ce-hou-fan-yong.html): 刚在TMGM官网注册、没有用其他代理链接？注册3天内只需提交注册邮箱，就能申请返佣权限，不用账号、密码或证件。超过3天也可以先提交，我们通过邮件回复处理方式。
 - [TMGM出入金方式与到账时间：USDT、人民币与电汇](https://max-rebate.com/tmgm-chu-ru-jin.html): TMGM怎么入金出金、多久到账？对比USDT、极付宝、支付宝、微信和电汇的到账时间与限额，说明本金原路返回、USDT链路和出金审核的常见卡点。
+- [Why Forex Spreads Widen: News, Rollover &amp; Stop Losses](https://max-rebate.com/forex-spread-widening-en.html): Why forex spreads widen around news, rollover and thin markets. Check Bid/Ask, point units and stop-loss triggers before judging an unexpected fill.
 
 ## 图文教程 / Step-by-step tutorials
 
