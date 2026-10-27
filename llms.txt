@@ -76,7 +76,7 @@ Source: https://max-rebate.com/en.html#faq
 - [Why Forex Spreads Widen: News, Rollover &amp; Stop Losses](https://max-rebate.com/forex-spread-widening-en.html): Why forex spreads widen around news, rollover and thin markets. Check Bid/Ask, point units and stop-loss triggers before judging an unexpected fill.
 - [MT4和MT5有什么区别？周期、挂单与持仓模式](https://max-rebate.com/mt4-mt5-qubie.html): MT5提供21个图表周期，MT4标准周期为9个；MT5多两种止损限价挂单，并有对冲与净持仓两种账户模式。返佣是否相同，以平台和账户类型为准。
 - [TMGM Deposit & Withdrawal Methods and Processing Times](https://max-rebate.com/tmgm-deposit-withdrawal-en.html): How to deposit and withdraw with TMGM and how long it takes: USDT, USDC, Chinese yuan channels and bank wire compared, plus the return-to-source rule, USDT networks and common reasons withdrawals are rejected.
-- [Just Opened a TMGM Account? Claim Rebates Within 3 Days](https://max-rebate.com/tmgm-new-account-rebate-en.html): Registered on TMGM
+- [Just Opened a TMGM Account? Claim Rebates Within 3 Days](https://max-rebate.com/tmgm-new-account-rebate-en.html): Registered on TMGM's own website without an agent link? Within 3 days of registering, submit only your registered email to apply for rebates. No account number, password or ID needed.
 
 ## 图文教程 / Step-by-step tutorials
 
