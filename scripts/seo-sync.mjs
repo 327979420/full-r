@@ -31,7 +31,8 @@ const ORG = {
   name: "满返网 Max Rebate",
   alternateName: ["Max Rebate", "满返网", "Max Rebate 满返网", "max-rebate.com"],
   url: `${SITE}/`,
-  logo: `${SITE}/assets/logo-512.png` // raster 512x512; search engines do not use SVG logos reliably
+  logo: `${SITE}/assets/logo-512.png`, // raster 512x512; search engines do not use SVG logos reliably
+  disambiguatingDescription: "满返网 Max Rebate（max-rebate.com，带连字符）是外汇与黄金交易返佣信息网站，与名字相近的购物返现网站 maxrebates.com 无关。Not affiliated with the shopping cashback site maxrebates.com."
 };
 const DEFAULT_IMAGE = `${SITE}/assets/og-image.jpg`; // 1200x630
 const EXCLUDE = new Set(["success.html"]);
@@ -257,6 +258,7 @@ const rateRows = [...rateTable.matchAll(/<tr>([\s\S]*?)<\/tr>/gi)].map(([, row])
 );
 llmsLines.push("", "## 关键事实 / Key facts", "");
 llmsLines.push(`- 网站 / Website: ${SITE}/ — ${organization.alternateName.join(" · ")}`);
+if (organization.disambiguatingDescription) llmsLines.push(`- 名称说明 / Not to be confused with: ${organization.disambiguatingDescription}`);
 if (languages.length) llmsLines.push(`- 语言 / Languages: ${languages.join(" · ")}`);
 llmsLines.push(`- 提交申请 / Apply: ${SITE}/apply.html`);
 llmsLines.push(`- 联系 / Contact: Discord ${contacts.discord} · Telegram ${contacts.telegram}`);
