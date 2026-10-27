@@ -23,6 +23,7 @@ import path from "node:path";
 import process from "node:process";
 import vm from "node:vm";
 import { syncFaq, faqItems, text as faqText } from "./faq-schema.mjs";
+import { metaDescription } from "./meta-description.mjs";
 
 const SITE = "https://max-rebate.com";
 const ORG = {
@@ -109,7 +110,7 @@ function shareImage(source) {
 function syncArticle(source, file) {
   const lang = attr(source, /<html[^>]*\blang=["']([^"']+)["']/i) || "zh-CN";
   const h1 = strip(attr(source, /<h1[^>]*>([\s\S]*?)<\/h1>/i));
-  const description = attr(source, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i);
+  const description = metaDescription(source);
   const { published, modified } = dates(file);
   let image;
   ({ source, image } = shareImage(source));
@@ -186,7 +187,7 @@ for (const file of files) {
   next = syncFaq(next);
   pages[file] = {
     title: strip(attr(next, /<title>([\s\S]*?)<\/title>/i)).replace(/\s*[｜|]\s*(满返网|Max Rebate)[^｜|]*$/, ""),
-    description: attr(next, /<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i),
+    description: metaDescription(next),
     article: isArticle(next)
   };
   if (next !== original) {
