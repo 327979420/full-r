@@ -89,7 +89,9 @@ in commits, files or the PR text. Describe them qualitatively ("高展现、低�
 0. Run `gh pr list --state open` first. Weekly PRs that are still open have not reached `main`, so their
    pages and backlog changes are invisible to you. Never repeat a page or topic that an open PR already
    covers. If two or more `seo/weekly-*` PRs are still open, make no changes and open no PR — the owner
-   has a review backlog.
+   has a review backlog. To see what an open PR covers, run `gh pr view <number> --json title,body,files`,
+   or `git fetch origin <branch>` and then `git diff --stat origin/main...origin/<branch>`. Run each
+   command on its own (no `cd`, `;` or `&&` chaining), or it will be denied.
 1. `git checkout -b seo/weekly-<YYYY-MM-DD>`; make focused commits.
 2. `node scripts/seo-sync.mjs` then `npm run check`; fix anything that fails; commit generated changes with
    `[seo-sync]` in the message.
