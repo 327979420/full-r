@@ -416,6 +416,39 @@
    ]
   },
   {
+   "url": "https://max-rebate.com/tmgm-deposit-withdrawal-en.html",
+   "lang": "en",
+   "title": "TMGM Deposit & Withdrawal Methods and Processing Times | Max Rebate",
+   "description": "How to deposit and withdraw with TMGM and how long it takes: USDT, USDC, Chinese yuan channels and bank wire compared, plus the return-to-source rule, USDT networks and common reasons withdrawals are rejected.",
+   "answer": "TMGM deposits: USDT and USDC are usually credited instantly, Chinese yuan channels such as Jifubao (极付宝), Alipay and WeChat Pay take about 10–15 minutes, and bank wire takes about 1–4 business days. Withdrawals: deposited funds must go back the way they came in, and only to an account in your own name. USDT withdrawals usually arrive 30 minutes to 3 hours after approval, and more slowly during US trading hours.",
+   "faq": [
+    {
+     "q": "How long does a TMGM deposit take?",
+     "a": "As shown in the client portal in October 2026: USDT and USDC are instant, Alipay and WeChat Pay take about 10 minutes, Jifubao about 15 minutes, and bank wire about 1–4 business days. Rely on the deposit page."
+    },
+    {
+     "q": "How long does a TMGM withdrawal take?",
+     "a": "Withdrawal requests are normally reviewed within 24 hours and paid only on business days. USDT withdrawals usually arrive 30 minutes to 3 hours after approval, more slowly during US trading hours; for other channels, rely on the withdrawal page."
+    },
+    {
+     "q": "I deposited in Chinese yuan. Can I withdraw in USDT?",
+     "a": "Not for the deposited amount, which must go back the way it came in. Profits above your deposits are less restricted and can usually go through any channel you have used; rely on the options the withdrawal page shows."
+    },
+    {
+     "q": "I deposited through Alipay. Can I withdraw back to Alipay?",
+     "a": "Not directly at present. The deposited amount goes to the bank card linked to that Alipay account, and yuan withdrawals must go to an account in your own name."
+    },
+    {
+     "q": "Why is my deposit still not credited?",
+     "a": "Usually the payment proof was not uploaded, or the network fee made the credited amount differ from the submitted amount. Include the fee when you submit and upload the proof as the page asks."
+    },
+    {
+     "q": "Why was my withdrawal request rejected?",
+     "a": "Usually because you deposited through several channels but did not withdraw in proportion to each channel's total, or because the withdrawal would take your margin level below 150%. Adjust the amount or channel as the review email explains, then submit again."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/tmgm-fan-yong-zenme-suan.html",
    "lang": "zh-CN",
    "title": "TMGM返佣怎么算？账户类型、品种与手数计算指南｜满返网",
@@ -578,6 +611,39 @@
     {
      "q": "满返会不会改变我的交易账户安全？",
      "a": "正常申请不需要提供密码或验证码。申请主要核对注册邮箱、账户状态和返佣归属。任何索要密码或要求远程控制账户的行为都应拒绝。"
+    }
+   ]
+  },
+  {
+   "url": "https://max-rebate.com/tmgm-new-account-rebate-en.html",
+   "lang": "en",
+   "title": "Just Opened a TMGM Account? Claim Rebates Within 3 Days | Max Rebate",
+   "description": "Registered on TMGM's own website without an agent link? Within 3 days of registering, submit only your registered email to apply for rebates. No account number, password or ID needed.",
+   "answer": "If you registered your TMGM account within the last 3 days and did not use another agent's link or invitation code, you only need to submit your registered email to apply for rebates. No account number, password or ID is needed, and approval is subject to platform review. Accounts older than 3 days can submit their email too, and we will reply by email with your options.",
+   "faq": [
+    {
+     "q": "I just registered with TMGM. Can I still get rebates?",
+     "a": "Yes. If you registered within the last 3 days and did not use another agent's link or invitation code, submit your registered email to apply. Approval is subject to platform review."
+    },
+    {
+     "q": "I forgot to enter an invitation code when registering. What now?",
+     "a": "Within 3 days of registering, simply submit your registered email; you do not need to register again. If more than 3 days have passed, submit your email anyway and we will reply by email with your options."
+    },
+    {
+     "q": "What do I need to provide?",
+     "a": "Only the email address you used to register with TMGM. No trading account number, password, verification code, card details or ID images."
+    },
+    {
+     "q": "I registered through another agent's link. Can I apply?",
+     "a": "No. Accounts opened through another agent's link or invitation code already belong to that agent and cannot be moved this way."
+    },
+    {
+     "q": "When does the 3-day window start?",
+     "a": "From the moment you complete your TMGM registration. Submit within 3 days to apply directly."
+    },
+    {
+     "q": "Will I get spam or sales messages after submitting?",
+     "a": "No. Your registered email is used only to process this application and tell you the result."
     }
    ]
   },
