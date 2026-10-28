@@ -98,3 +98,4 @@ Source: https://max-rebate.com/en.html#faq
 - [Terms of Use](https://max-rebate.com/terms.html): 满返网 Max Rebate 使用条款。
 - [Risk Disclaimer](https://max-rebate.com/risk-disclaimer.html): 满返网 Max Rebate 风险声明。
 - [Contact｜联系满返网 Max Rebate](https://max-rebate.com/contact.html): 联系满返网 Max Rebate：Discord、Telegram。
+- [TMGM指南目录：开户、返佣、出入金、交易问题、代理](https://max-rebate.com/zhinan.html): 满返网TMGM指南目录，按开户、返佣、出入金、交易问题和代理分组，汇总中文指南与操作教程，并附英文指南入口。新用户可先阅读开户和账户类型说明，再按需要查找申请、资金操作或问题排查步骤。
