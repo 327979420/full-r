@@ -78,6 +78,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM Deposit & Withdrawal Methods and Processing Times](https://max-rebate.com/tmgm-deposit-withdrawal-en.html): How to deposit and withdraw with TMGM and how long it takes: USDT, USDC, Chinese yuan channels and bank wire compared, plus the return-to-source rule, USDT networks and common reasons withdrawals are rejected.
 - [Just Opened a TMGM Account? Claim Rebates Within 3 Days](https://max-rebate.com/tmgm-new-account-rebate-en.html): Registered on TMGM's own website without an agent link? Within 3 days of registering, submit only your registered email to apply for rebates. No account number, password or ID needed.
 - [TMGM交易时间（北京时间）：黄金、白银、外汇几点开盘休市](https://max-rebate.com/tmgm-jiaoyi-shijian.html): TMGM黄金夏令时北京时间周一06:01开盘，周二至周五04:59休市、06:01重开，周六04:55收盘；美国夏令时结束后通常各晚1小时。附白银、欧元美元换算表，以及停盘前和数据公布时的杠杆调整。
+- [TMGM的MT4/MT5第一次登录不上怎么办？三个原因按顺序排查](https://max-rebate.com/mt4-deng-lu-bu-liao.html): TMGM的MT4/MT5第一次登录不上，约六成是服务器选错（AU和Global后缀、服务器编号），约三成是密码问题，约一成是交易账号还没激活、需要平台人工处理。按这个顺序排查即可。
 
 ## 图文教程 / Step-by-step tutorials
 
