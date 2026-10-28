@@ -20,3 +20,4 @@
 | — | TMGM 官网 / 客户门户打不开：换备用地址、辨别真假网址、交易不受影响（页面不列地址，引导联系获取） | TMGM官网打不开、TMGM最新网址、TMGM备用域名 | `tmgm-guanwang-da-bu-kai.html` | 已写（待合并），地址清单只私发，不上网页 |
 | 暂缓 | 客户经理 / IB 能帮客户做什么（客诉、赔付申请） | 平台故障能赔吗、出问题找谁 | 关于我们 / FAQ | 等站长确认身份表述 |
 | — | 外汇交易成本英文版，与中文指南互链 | forex trading costs, spread commission swap rebates | `forex-trading-costs-en.html` | 已写（待合并） |
+| — | TMGM指南目录：开户、返佣、出入金、交易问题、代理 | TMGM指南、TMGM教程目录 | `zhinan.html` | 已写(待合并) |
