@@ -62,6 +62,9 @@ for (const file of contentPages) {
     if (!/\brel=["'][^"']*noopener/i.test(match[1])) fail(file, "target=_blank link missing rel=noopener");
   }
 
+  // Visitor analytics on every page, so traffic and application/contact clicks are counted everywhere.
+  if (!source.includes("assets/analytics.js")) fail(file, "missing assets/analytics.js (copy the script tag next to assets/site-config.js from an existing page)");
+
   // Support assistant on every page (it reads contact links from site-config.js, loaded first).
   if (file !== "success.html") {
     const configAt = source.indexOf("assets/site-config.js");
