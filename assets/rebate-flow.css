@@ -1,0 +1,11 @@
+/* One semantic HTML flow, shared by articles and all About translations. */
+.rebate-flow{margin:26px 0;padding:26px;background:#061a44;border:1px solid #174875;border-radius:16px;color:#fff}
+.rebate-flow figcaption{margin:0 0 22px;color:#fff;font-size:inherit}.rebate-flow figcaption strong{display:block;font-size:25px;line-height:1.3;letter-spacing:-.02em}.rebate-flow figcaption span{display:block;margin-top:8px;color:#c3d5e9;font-size:14px}
+.rebate-flow ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:0;counter-reset:rebate-flow}
+.rebate-flow li{position:relative;counter-increment:rebate-flow;margin:0;padding:15px 13px;border:1px solid #527394;border-top:3px solid #67d6e6;border-radius:9px;background:#0b2851;min-width:0;color:#fff}
+.rebate-flow li:before{content:counter(rebate-flow,decimal-leading-zero);display:block;color:#7ce2ed;font-size:12px;font-weight:800;margin-bottom:13px}
+.rebate-flow li:not(:last-child):after{content:"→";position:absolute;right:-23px;top:50%;color:#7ce2ed;font-size:20px;line-height:1}
+.rebate-flow li:last-child{border-color:#d7b156;border-top-color:#f0cc72;background:#263042}.rebate-flow li:last-child:before{color:#f0cc72}
+.rebate-flow li strong{display:block;font-size:17px;line-height:1.4}.rebate-flow li p{margin:8px 0 0;color:#d3e2f1;font-size:14px;line-height:1.65}
+.rebate-flow .flow-boundary{border-top:1px solid #ffffff30;padding-top:15px;margin:20px 0 0;font-size:13px;color:#d3e2f1;line-height:1.7}.rebate-flow .flow-boundary strong{color:#f0cc72}
+@media(max-width:760px){.rebate-flow{padding:22px 18px}.rebate-flow figcaption strong{font-size:23px}.rebate-flow ol{grid-template-columns:1fr;gap:20px}.rebate-flow li{padding:13px 15px 13px 48px}.rebate-flow li:before{position:absolute;left:14px;top:15px;margin:0}.rebate-flow li:not(:last-child):after{content:"↓";right:auto;left:20px;top:auto;bottom:-21px}.rebate-flow li p{margin-top:5px}.rebate-flow li strong{font-size:17px}}

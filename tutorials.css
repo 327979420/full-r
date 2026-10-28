@@ -8,3 +8,4 @@
 .steps .step h2{display:block;color:#061a44;line-height:1.4}.steps .step p{color:#40546b;margin-top:9px}
 .steps .step:last-child{margin-bottom:0}.steps .step:last-child b{background:#0b6c89;color:#fff}
 @media(max-width:760px){.content{padding:30px 0 42px}.steps{padding-left:16px}.steps:before{left:17px}.steps .step{margin-left:26px;padding:20px}.steps .step b{left:-44px;top:15px;width:36px;height:36px}.steps .step h2{font-size:19px}}
+.steps{list-style:none}.registration-photo{margin:20px 0 0;max-width:560px}.registration-photo img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:9px}.registration-photo figcaption{font-size:13px;line-height:1.65;color:#52657a;margin-top:9px}.step .tutorial-action{display:inline-flex;padding:10px 15px;border-radius:8px;background:#e7f7fc;color:#074d75;font-weight:700;text-decoration:none}
