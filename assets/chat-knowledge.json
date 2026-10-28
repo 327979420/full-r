@@ -44,19 +44,19 @@
    "比特币 | $1.5 / 手 参考点差 14 | $1.5 / 手 参考点差 14 | $10 / 手 参考点差 25 | $1.5 / 手 参考点差 14 | $1.5 / 手 参考点差 14"
   ],
   "facts": [
-   "Max Rebate provides TMGM traders with a transparent rebate service. We return 100% of the eligible client rebate we receive, with no extra deduction or added spread markup.",
+   "Max Rebate provides TMGM traders with a rebate service. It returns 100% of the eligible client rebate received, with no extra deduction or added spread markup.",
    "TMGM Standard Gold rebate: $20 per lot.",
    "Figures use one standard lot. Final eligibility, rebate amount, spreads and conditions depend on the account group, executed trades and platform review.",
    "“Highest rebate online” is based on publicly visible TMGM client-rebate pages reviewed on 10 Aug 2026. Publicly advertised rates can change.",
-   "Public rebate pages we reviewed commonly advertise around $18–18.4/lot; Max Rebate offers $20/lot on TMGM Standard Gold.",
-   "100% of the eligible returnable rebate we receive goes to the client.",
+   "Public rebate pages reviewed by Max Rebate commonly advertise around $18–18.4/lot; Max Rebate offers $20/lot on TMGM Standard Gold.",
+   "100% of the eligible returnable rebate Max Rebate receives goes to the client.",
    "The rebate service does not add an extra spread markup.",
    "Your account and execution conditions remain those of the platform and account group.",
    "After approval, follow-up continues through Max Rebate's contact channels.",
    "Register through the correct link and establish rebate attribution",
    "Just submit your registered email. No spam, no pressure.",
    "For trading teams, communities and client channels",
-   "You complete the process yourself. We never request passwords, codes or bank-card details.",
+   "You complete the process yourself. Max Rebate never requests passwords, codes or bank-card details.",
    "Gold rebate only. Spread, slippage, swaps and other costs are not included.",
    "Independent multi-platform trading rebate service. Not the official website of any trading platform.",
    "CFDs, FX and other leveraged products are high risk and may cause rapid losses. This site does not provide personal financial advice. Platform names and marks are used only for identification."
@@ -64,12 +64,12 @@
   "faq": {
    "en": [
     {
-     "q": "Does the rebate change my spread or trading conditions?",
+     "q": "Does the rebate change spreads or trading conditions?",
      "a": "Under the current Max Rebate plan, the rebate service does not add a spread markup. Actual conditions still depend on the platform, account group and market."
     },
     {
      "q": "What does “100% rebate” mean?",
-     "a": "We return 100% of the eligible client rebate portion we actually receive and can return. This does not mean that all trading costs are refunded."
+     "a": "Max Rebate returns 100% of the eligible client rebate portion it actually receives and can return. This does not mean that all trading costs are refunded."
     },
     {
      "q": "Can an existing TMGM account apply?",
@@ -80,7 +80,7 @@
      "a": "Actual crediting time depends on account review, eligible trading records and the platform’s settlement rules."
     },
     {
-     "q": "Will you ask for my trading password?",
+     "q": "Will the site ask for trading passwords?",
      "a": "No. Never send passwords, verification codes, card passwords or identity-document images."
     },
     {
@@ -94,7 +94,7 @@
    ],
    "zh-CN": [
     {
-     "q": "返佣会影响我的点差或交易条件吗？",
+     "q": "返佣会影响点差或交易条件吗？",
      "a": "按满返网当前方案，不因为返佣服务额外加点差；实际交易条件仍由平台、账户组别和市场环境决定。"
     },
     {
@@ -110,7 +110,7 @@
      "a": "实际到账时间以账户审核、有效交易记录和平台结算规则为准。"
     },
     {
-     "q": "网站会要求我的交易密码吗？",
+     "q": "网站会要求交易密码吗？",
      "a": "不会。不要提交交易密码、投资者密码、验证码、银行卡密码或证件图片。"
     },
     {
@@ -137,7 +137,7 @@
    "lang": "zh-CN",
    "title": "提交返佣申请｜满返网 Max Rebate",
    "description": "提交满返网 TMGM 返佣或 Introducing Broker 申请。",
-   "text": "申请返佣 100%返还合资格返佣 申请 IB 合作 团队、社群与客户渠道合作 平台 TMGM EC Markets — Coming soon IC Markets — Coming soon Exness — Coming soon 平台注册邮箱 账户是否在 3 天内注册？ 请选择 是 否 是否可以通过该注册邮箱联系你？ 请选择 是 否 不要提交交易密码、验证码、银行卡资料或证件图片。申请结果和返佣资格以对应平台审核为准。 我同意满返网使用以上资料联系我并处理本次申请。 提交申请 提交后会生成申请编号，请保留编号用于后续查询。"
+   "text": "选择申请类型 申请返佣 100%返还合资格返佣 申请 IB 合作 团队、社群与客户渠道合作 平台 TMGM EC Markets — Coming soon IC Markets — Coming soon Exness — Coming soon 平台注册邮箱 填写注册 TMGM 时使用的邮箱，核查结果会发送到此邮箱。 账户是否在 3 天内注册？ 请选择 是 否 从完成平台注册的那一刻起算。超过 3 天也可以提交，请选「否」。 是否能通过该注册邮箱接收通知？ 请选择 是 否 若选「否」，提交后请通过 Discord 或 Telegram 联系满返网，并提供申请编号。 不要提交交易密码、验证码、银行卡资料或证件图片。申请结果和返佣资格以对应平台审核为准。 同意满返网使用以上资料处理本次申请并联系申请人。 提交申请 联系满返网 提交后会生成申请编号，请保留编号用于后续查询。"
   },
   {
    "url": "https://max-rebate.com/contact.html",

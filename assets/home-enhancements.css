@@ -381,3 +381,98 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Keep decorative labels in flow so they cannot collide with proof cards. */
+.hero-market-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+.hero-market-tags .market-chip {
+  display: inline-flex;
+  position: static;
+  font-size: 10px;
+}
+.hero .hero-grid > *, .hero .metric { min-width: 0; }
+.hero .hero-proof .metric { min-height: 152px; }
+.hero .hero-proof .metric b { line-height: 1.12; }
+.hero .hero-proof .hero-rate b { flex-wrap: wrap; }
+.hero .hero-proof .hero-rate b > em { white-space: nowrap; }
+.hero .hero-proof .metric > span { font-size: 14px; }
+.hero .hero-proof .hero-rate b > small { font-size: 12px; }
+.hero-safety { color: #d0ddf0; font-weight: 500; }
+.btn-primary { background: #1267b5; }
+.floating-open { background: #f4b942; color: #302300; }
+.btn, .lang, .mobilebar a { min-height: 44px; }
+:focus-visible {
+  outline: 3px solid #087da7;
+  outline-offset: 4px;
+}
+.hero :focus-visible, .top :focus-visible, .footer :focus-visible {
+  outline-color: #ffd879;
+}
+html { scroll-padding-top: 150px; scroll-padding-bottom: 140px; }
+.path-card a, .field input, .field select { scroll-margin-block: 150px; }
+.path-card { display: flex; flex-direction: column; }
+.path-card a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 16px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.path-card a:hover { color: #061a44; }
+.path-card h3 { line-height: 1.45; }
+.paths-eyebrow, .path-card > span { color: #08738a; }
+.path-card p, .path-card small { color: #526178; }
+.section-head .contact-language {
+  margin-top: 12px;
+  padding-left: 14px;
+  border-left: 3px solid #087da7;
+  color: #25476a;
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer-links { gap: 0 18px; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.home-obscured { visibility: hidden; pointer-events: none; }
+@media (max-width: 1100px) {
+  .navlinks { gap: 14px; font-size: 13px; }
+  .nav { gap: 14px; }
+}
+@media (min-width: 761px) and (max-width: 980px) {
+  .navlinks { display: none; }
+  .hero .hero-grid { gap: 28px; }
+}
+@media (max-width: 760px) {
+  .hero { padding: 26px 0 28px; }
+  .hero .hero-grid { gap: 20px; }
+  .hero .hero-copy h1 { margin-bottom: 16px; }
+  .hero-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+  .hero-actions .btn { min-height: 48px; font-size: 14px; }
+  .hero-safety { gap: 6px 12px; margin-top: 14px; font-size: 11px; }
+  .hero .hero-proof { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; }
+  .hero-market-tags { display: none; }
+  .hero .hero-proof .metric { min-height: 108px; padding: 14px; border-radius: 13px; box-shadow: none; }
+  .hero .hero-proof .metric b { font-size: 36px; }
+  .hero .hero-proof .hero-rate b { gap: 4px; }
+  .hero .hero-proof .hero-rate b > small { font-size: 10px; }
+  .hero .hero-proof .hero-rate b > span { font-size: 12px; }
+  .hero .hero-proof .metric > span { font-size: 12px; line-height: 1.45; }
+  .account-paths { padding: 30px 0; }
+  .account-paths .section-head h2 { font-size: 28px; line-height: 1.25; }
+  .account-paths .section-head p { font-size: 14px; }
+  .path-grid { margin-top: 20px; }
+  .path-card { padding: 20px; }
+  .path-card h3 { margin-top: 10px; }
+  .mobilebar { padding-bottom: env(safe-area-inset-bottom); }
+  .mobilebar a { display: flex; align-items: center; justify-content: center; }
+  body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ticker-track { animation: none; }
+  .btn, .faq details, .channel-card { transition: none; }
+}

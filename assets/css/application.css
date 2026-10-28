@@ -1,3 +1,51 @@
 
 :root{--navy:#061a44;--blue:#0b3f91;--cyan:#16b8d7;--bg:#f4f7fb;--text:#14213d;--muted:#667085;--line:#dbe3ef;--gold:#d7a52a}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.55}a{text-decoration:none;color:inherit}.wrap{width:min(860px,92%);margin:auto}.top{background:var(--navy);color:#fff}.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-size:22px;font-weight:950}.right{display:flex;gap:10px;align-items:center}.lang,.back{border:0;border-radius:9px;padding:9px 12px;font:inherit}.back{background:#16b8d7;color:#fff;font-weight:850}.hero{background:radial-gradient(circle at 85% 10%,#0d5db8 0,transparent 34%),linear-gradient(135deg,#041333,#082c67);color:#fff;padding:54px 0}.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.5px;color:#7de4f3}.hero h1{font-size:clamp(36px,6vw,56px);margin:7px 0 9px;line-height:1.05}.hero p{color:#dbe8fb;margin:0;max-width:680px}.main{padding:38px 0 58px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 16px 40px #061a4410}.choice{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.choice label{position:relative;border:2px solid var(--line);border-radius:13px;padding:15px;cursor:pointer}.choice input{position:absolute;opacity:0}.choice label:has(input:checked){border-color:var(--cyan);background:#effbfe}.choice strong{display:block;font-size:17px;color:var(--navy)}.choice span{font-size:13px;color:var(--muted)}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-weight:800}.field input,.field select{width:100%;border:1px solid #cbd5e1;border-radius:9px;padding:11px;background:#fff;font:inherit}.check{display:flex;gap:9px;color:var(--muted);font-size:13px;margin:16px 0}.btn{width:100%;border:0;border-radius:10px;padding:13px 16px;background:linear-gradient(135deg,var(--cyan),#1678d2);color:#fff;font-weight:900;font:inherit;cursor:pointer}.btn:disabled{opacity:.6;cursor:not-allowed}.note{margin:0 0 20px;padding:13px 15px;border-left:4px solid var(--gold);border-radius:9px;background:#fff7dc;color:#5a4300;font-size:13px}.result{display:none;margin-top:14px;padding:12px;border-radius:9px;background:#fff0ea;color:#9c341b}.mini{margin-top:16px;color:var(--muted);font-size:12px}.footer{background:#020b1e;color:#b8c5dc;padding:28px 0;font-size:13px}.footer-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}.footer a{text-decoration:underline}.risk{color:#ffdede}@media(max-width:620px){.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.right{width:100%}.lang,.back{flex:1}.choice{grid-template-columns:1fr}.card{padding:20px}}
 
+
+/* Clear groups, visible selection and errors without changing form fields. */
+.choice { min-width: 0; padding: 0; border: 0; margin-inline: 0; }
+.choice legend { margin-bottom: 12px; padding: 0; font-weight: 800; }
+.choice label { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 4px 10px; align-content: start; }
+.choice input { position: static; opacity: 1; width: 20px; height: 20px; margin: 3px 0 0; grid-row: 1 / 3; accent-color: #1267b5; }
+.choice span { grid-column: 2; color: #526178; }
+.choice .field-error { grid-column: 1 / -1; }
+.choice label:has(input:checked) { border-color: #1267b5; background: #edf6ff; }
+.choice label:has(input:focus-visible) { outline: 3px solid #087da7; outline-offset: 3px; }
+.field { margin-bottom: 24px; }
+.field input, .field select, .lang, .back, .btn { min-height: 48px; }
+.field input, .field select { min-width: 0; border-color: #94a3b8; }
+.field input[aria-invalid="true"], .field select[aria-invalid="true"] { border: 2px solid #b42318; background: #fffafa; }
+.choice label:has([aria-invalid="true"]) { border-color: #b42318; }
+.field-hint { margin: 0; font-size: 13px; line-height: 1.6; color: #526178; }
+.field-error { margin: 0; font-size: 14px; color: #a32318; font-weight: 600; }
+[hidden] { display: none !important; }
+.check { min-height: 44px; align-items: flex-start; padding: 10px 0; color: #44546b; cursor: pointer; }
+.check input { width: 20px; height: 20px; flex: 0 0 20px; margin: 1px 0 0; accent-color: #1267b5; }
+#consentError { margin: -10px 0 18px; }
+.btn, .back { background: #1267b5; }
+.btn:hover:not(:disabled), .back:hover { background: #084c8b; }
+:focus-visible { outline: 3px solid #087da7; outline-offset: 4px; }
+.top :focus-visible, .footer :focus-visible { outline-color: #ffd879; }
+.result:not([hidden]) { display: block; border: 1px solid #e2a08d; }
+.result p { margin: 0 0 8px; }
+.result a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; font-weight: 700; }
+.error-reference { overflow-wrap: anywhere; }
+.mini { font-size: 13px; color: #526178; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+input, select, button, .result { scroll-margin-block: 24px; }
+/* Keep the existing assistant accessible after the form, out of the field area. */
+body .mr-chat-launcher { position: static; display: flex; margin: 24px auto; max-width: calc(100% - 32px); }
+@media (max-width: 620px) {
+  .hero { padding: 30px 0; }
+  .hero h1 { font-size: 34px; line-height: 1.2; }
+  .main { padding: 22px 0 32px; }
+  .choice label { padding: 14px; }
+  .right { flex-wrap: wrap; }
+  .back { display: inline-flex; align-items: center; justify-content: center; font-size: 14px; }
+  .lang { min-width: 0; }
+  .card { padding: 20px 18px; }
+}
+
+/* Same MR mark as the rest of the site; the wordmark text stays translatable. */
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand::before{content:"MR";display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;border-radius:10px;background:linear-gradient(135deg,#18c8df,#1678d2);box-shadow:0 9px 22px #16b8d73b;color:#fff;font-family:"Arial Black",Impact,sans-serif;font-size:14px;font-style:italic;font-weight:900;letter-spacing:-.08em}
