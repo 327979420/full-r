@@ -1,11 +1,11 @@
 (() => {
   'use strict';
   const common = {
-    'zh-CN':{brand:'满返网',back:'返回网站',footerBrand:'© 2026 Max Rebate · 满返网',about:'关于我们',privacy:'隐私政策',terms:'使用条款',riskLink:'风险声明',contact:'联系我们',risk:'CFD及其他杠杆产品具有高风险。本网站不提供个人投资建议。'},
-    'zh-TW':{brand:'滿返網',back:'返回網站',footerBrand:'© 2026 Max Rebate · 滿返網',about:'關於我們',privacy:'私隱政策',terms:'使用條款',riskLink:'風險聲明',contact:'聯絡我們',risk:'CFD及其他槓桿產品具有高風險。本網站不提供個人投資建議。'},
-    'en':{brand:'Max Rebate',back:'Back to website',footerBrand:'© 2026 Max Rebate',about:'About Us',privacy:'Privacy Policy',terms:'Terms of Use',riskLink:'Risk Disclaimer',contact:'Contact',risk:'CFDs and other leveraged products are high risk. This website does not provide personal financial advice.'},
-    'ms':{brand:'Max Rebate',back:'Kembali',footerBrand:'© 2026 Max Rebate',about:'Tentang Kami',privacy:'Privasi',terms:'Terma',riskLink:'Risiko',contact:'Hubungi',risk:'Produk berleveraj berisiko tinggi. Tiada nasihat kewangan peribadi.'},
-    'th':{brand:'Max Rebate',back:'กลับเว็บไซต์',footerBrand:'© 2026 Max Rebate',about:'เกี่ยวกับเรา',privacy:'ความเป็นส่วนตัว',terms:'ข้อกำหนด',riskLink:'ความเสี่ยง',contact:'ติดต่อ',risk:'ผลิตภัณฑ์เลเวอเรจมีความเสี่ยงสูง เว็บไซต์นี้ไม่ให้คำแนะนำทางการเงินส่วนบุคคล'}
+    'zh-CN':{brand:'满返网',back:'指南',footerBrand:'© 2026 Max Rebate · 满返网',about:'关于我们',privacy:'隐私政策',terms:'使用条款',riskLink:'风险声明',contact:'联系我们',risk:'CFD及其他杠杆产品具有高风险。本网站不提供个人投资建议。'},
+    'zh-TW':{brand:'滿返網',back:'指南',footerBrand:'© 2026 Max Rebate · 滿返網',about:'關於我們',privacy:'私隱政策',terms:'使用條款',riskLink:'風險聲明',contact:'聯絡我們',risk:'CFD及其他槓桿產品具有高風險。本網站不提供個人投資建議。'},
+    'en':{brand:'Max Rebate',back:'Guides',footerBrand:'© 2026 Max Rebate',about:'About Us',privacy:'Privacy Policy',terms:'Terms of Use',riskLink:'Risk Disclaimer',contact:'Contact',risk:'CFDs and other leveraged products are high risk. This website does not provide personal financial advice.'},
+    'ms':{brand:'Max Rebate',back:'Panduan',footerBrand:'© 2026 Max Rebate',about:'Tentang Kami',privacy:'Privasi',terms:'Terma',riskLink:'Risiko',contact:'Hubungi',risk:'Produk berleveraj berisiko tinggi. Tiada nasihat kewangan peribadi.'},
+    'th':{brand:'Max Rebate',back:'คู่มือ',footerBrand:'© 2026 Max Rebate',about:'เกี่ยวกับเรา',privacy:'ความเป็นส่วนตัว',terms:'ข้อกำหนด',riskLink:'ความเสี่ยง',contact:'ติดต่อ',risk:'ผลิตภัณฑ์เลเวอเรจมีความเสี่ยงสูง เว็บไซต์นี้ไม่ให้คำแนะนำทางการเงินส่วนบุคคล'}
   };
   const pages = {
     privacy:{
