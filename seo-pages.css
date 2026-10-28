@@ -8,3 +8,6 @@
 .card figure{margin:14px 0}
 .card figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px}
 .card figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+/* Quieter article surfaces make section hierarchy easier to scan. */
+.card{box-shadow:none;border-radius:12px}.card h2{font-size:26px;line-height:1.4}.hero h1{max-width:900px}.card p,.card li{overflow-wrap:break-word}
+@media(max-width:760px){main{padding-top:28px}.card{padding:21px 19px}.card h2{font-size:23px}.card th,.card td{min-width:78px}.related{gap:9px}}
