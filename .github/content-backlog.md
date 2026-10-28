@@ -15,6 +15,7 @@
 | — | 黄金周三三倍隔夜利息（大利息日） | 黄金三倍库存费、周三隔夜费高 | `huangjin-san-bei-ge-ye-li-xi.html` | 已写 |
 | — | 为什么不同外汇平台的 K 线不一样 | 平台K线不一样、券商自己画K线 | `waihui-k-xian-bu-yi-yang.html` | 已写 |
 | — | TMGM 交易时间（北京时间，夏令时 / 冬令时），停盘前和数据公布时的杠杆调整 | TMGM黄金几点开盘、TMGM交易时间北京时间、冬令时开盘时间 | `tmgm-jiaoyi-shijian.html` | 已写 |
-| — | TMGM 的 MT4/MT5 第一次登录不上：服务器、密码、账号未激活 | MT4登录不上、TMGM MT5无效账户、服务器选哪个 | `mt4-deng-lu-bu-liao.html` | 已写（待合并） |
+| — | TMGM 的 MT4/MT5 第一次登录不上：服务器、密码、账号未激活 | MT4登录不上、TMGM MT5无效账户、服务器选哪个 | `mt4-deng-lu-bu-liao.html` | 已写 |
+| — | TMGM 返佣网站对比（按公开页面，只比标准账户；带核对日期） | TMGM返佣哪家高、TMGM返佣网站推荐 | `tmgm-fan-yong-dui-bi.html` | 已写（待合并），竞品数字需定期复核 |
 | 暂缓 | 客户经理 / IB 能帮客户做什么（客诉、赔付申请） | 平台故障能赔吗、出问题找谁 | 关于我们 / FAQ | 等站长确认身份表述 |
 | — | 外汇交易成本英文版，与中文指南互链 | forex trading costs, spread commission swap rebates | `forex-trading-costs-en.html` | 已写（待合并） |
