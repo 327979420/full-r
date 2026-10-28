@@ -46,4 +46,38 @@
   if(accountSelect)accountSelect.addEventListener('change',updateCalculator);
   if(lotInput)lotInput.addEventListener('input',updateCalculator);
   setLang(pageLang);
+
+  // Hide only an obstructing floating action; retain its geometry for the next check.
+  // This also protects links reached by scrolling, not just keyboard focus.
+  const floatingActions = [...document.querySelectorAll('.floating-open, .floating-contact, .mobilebar')];
+  const protectedControls = [...document.querySelectorAll('.path-card a, #calculator .field')];
+  let scheduled = false;
+  function protectControls() {
+    scheduled = false;
+    const bounds = protectedControls.map(el => el.getBoundingClientRect());
+    floatingActions.forEach(action => {
+      const box = action.getBoundingClientRect();
+      const overlaps = box.width > 0 && bounds.some(rect =>
+        rect.width > 0 && rect.bottom > box.top - 8 && rect.top < box.bottom + 8 &&
+        rect.right > box.left - 8 && rect.left < box.right + 8);
+      const hasFocus = action.contains(document.activeElement);
+      const chooserOpen = action.getAttribute('aria-expanded') === 'true';
+      action.classList.toggle('home-obscured', overlaps && !hasFocus && !chooserOpen);
+    });
+  }
+  function scheduleProtection() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(protectControls);
+  }
+  addEventListener('scroll', scheduleProtection, {passive: true});
+  addEventListener('resize', scheduleProtection);
+  document.addEventListener('focusin', scheduleProtection);
+  document.addEventListener('focusout', scheduleProtection);
+  document.getElementById('contact-widget')?.addEventListener('click', scheduleProtection);
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(scheduleProtection);
+    protectedControls.forEach(el => observer.observe(el));
+  }
+  scheduleProtection();
 })();

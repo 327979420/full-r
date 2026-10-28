@@ -1,3 +1,35 @@
 
 :root{--navy:#061a44;--blue:#0b3f91;--cyan:#16b8d7;--gold:#d7a52a;--bg:#f4f7fb;--text:#14213d;--muted:#667085;--line:#dbe3ef;--success:#11845b}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(160deg,#eef5ff,#f8fafc);color:var(--text);line-height:1.65}.top{background:var(--navy);color:#fff}.nav,.wrap{width:min(900px,92%);margin:auto}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-size:24px;font-weight:950}.lang{border:0;border-radius:9px;padding:9px 10px}.main{padding:58px 0 76px}.success-card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 60px #061a4418;overflow:hidden}.success-head{padding:34px;background:linear-gradient(135deg,#061a44,#0b3f91);color:#fff}.check{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#e6fff5;color:var(--success);font-size:30px;font-weight:950;margin-bottom:18px}.success-head h1{font-size:clamp(32px,6vw,50px);line-height:1.12;margin:0 0 10px}.success-head p{margin:0;color:#dce9ff}.reference{display:inline-flex;gap:8px;align-items:center;margin-top:18px;padding:9px 12px;border-radius:999px;background:#ffffff16;border:1px solid #ffffff26;font-weight:800}.body{padding:34px}.critical{padding:20px;border-radius:15px;background:#fff2c9;border-left:6px solid var(--gold);margin-bottom:26px}.critical strong{display:block;font-size:21px;color:#4a3400;margin-bottom:6px}.critical p{margin:0;color:#5d470f;font-weight:700}.steps{display:grid;gap:14px;margin:24px 0}.step{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:17px;border:1px solid var(--line);border-radius:14px;background:#fbfdff}.num{width:38px;height:38px;border-radius:12px;background:#eaf6fb;color:#087289;display:grid;place-items:center;font-weight:950}.step h3{margin:0 0 3px}.step p{margin:0;color:var(--muted)}.warning{font-weight:900;color:#a13b00;background:#fff0e6;border-radius:12px;padding:14px 16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:850;text-decoration:none}.primary{background:linear-gradient(135deg,var(--cyan),#1678d2);color:#fff}.secondary{background:#edf4ff;color:var(--navy)}.foot{padding:22px 34px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}@media(max-width:600px){.main{padding:28px 0}.success-head,.body{padding:24px}.nav{padding:12px 0}.step{grid-template-columns:38px 1fr}.actions{display:grid}.btn{width:100%}}
 
+
+/* A pending process timeline, not a set of completed activation tasks. */
+.steps { list-style: none; padding: 0; gap: 0; }
+.step { position: relative; padding: 0 0 28px; border: 0; background: transparent; border-radius: 0; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; }
+.step:not(:last-child)::after { content: ''; position: absolute; top: 42px; bottom: 6px; left: 18px; width: 2px; background: #dbe3ef; }
+.step:last-child { padding-bottom: 0; }
+.num { border: 1px solid #b6c9df; background: #eff5fc; color: #25476a; border-radius: 50%; }
+.step h3 { font-size: 18px; line-height: 1.45; margin: 4px 0 6px; }
+.step p { color: #526178; font-size: 15px; }
+.reference { max-width: 100%; border-radius: 12px; flex-wrap: wrap; }
+#ref { overflow-wrap: anywhere; min-width: 0; }
+.btn, .lang { min-height: 48px; }
+.lang { min-width: 0; font: inherit; }
+.primary { background: #1267b5; }
+.primary:hover { background: #084c8b; }
+.warning { font-size: 14px; font-weight: 600; }
+:focus-visible { outline: 3px solid #087da7; outline-offset: 4px; }
+.top :focus-visible { outline-color: #ffd879; }
+@media (max-width: 600px) {
+  .main { padding: 20px 0 32px; }
+  .success-head, .body { padding: 22px 20px; }
+  .foot { padding: 20px; }
+  .critical { padding: 16px; }
+  .critical strong { font-size: 18px; }
+  .critical p { font-size: 14px; font-weight: 500; }
+  .step { gap: 12px; }
+  .brand { font-size: 21px; }
+}
+
+/* Same MR mark as the rest of the site; the wordmark text stays translatable. */
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand::before{content:"MR";display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;border-radius:10px;background:linear-gradient(135deg,#18c8df,#1678d2);box-shadow:0 9px 22px #16b8d73b;color:#fff;font-family:"Arial Black",Impact,sans-serif;font-size:14px;font-style:italic;font-weight:900;letter-spacing:-.08em}
