@@ -1,6 +1,6 @@
 /* Shared article, tutorial and trust-page navigation. Home styles stay independent. */
 .secondary-page .top{position:relative;background:#061a44;border-bottom:1px solid #ffffff20}
-.secondary-page .nav{width:min(1120px,92%);margin:auto;min-height:76px;display:flex;flex-direction:row;align-items:center;gap:24px;padding:12px 0;flex-wrap:wrap}
+.secondary-page .nav{width:min(960px,92%);margin:auto;min-height:76px;display:flex;flex-direction:row;align-items:center;gap:24px;padding:12px 0;flex-wrap:wrap}
 .secondary-page .brand{display:flex;align-items:center;gap:10px;flex-shrink:0;text-decoration:none;color:#fff}
 .brand-mark{display:grid;place-items:center;width:35px;height:35px;border-radius:10px;background:linear-gradient(135deg,#18c8df,#1678d2);box-shadow:0 9px 22px #16b8d73b;color:#fff;font-family:"Arial Black",Impact,sans-serif;font-size:14px;font-style:italic;letter-spacing:-.08em;transform:skew(-7deg)}
 .brand-copy{display:flex;flex-direction:column;line-height:1}.brand-word{font-family:"Arial Black",Impact,sans-serif;font-size:20px;font-style:italic;font-weight:950;letter-spacing:-.055em}.brand-word span{color:#7ee7f5}.brand-sub{margin-top:5px;font-size:10px;letter-spacing:.14em;font-weight:800;color:#a9bddc}
