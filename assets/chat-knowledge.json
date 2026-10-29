@@ -328,6 +328,14 @@
     {
      "q": "How can I check a rebate payment?",
      "a": "Compare the confirmed product rate and eligible standard lots with the amount recorded by the platform. Keep pending estimates separate from money received, and ask for a review if the records differ."
+    },
+    {
+     "q": "Why can a rebate differ from my estimate for the same trading volume?",
+     "a": "Check that both records cover the same account, instrument and reporting period, using the confirmed account rate and eligible standard lots. Estimates, pending amounts (if shown) and actual credits are different states. Ask for a review if the records still differ; order count alone does not establish an underpayment."
+    },
+    {
+     "q": "What should I prepare before asking about a rebate difference?",
+     "a": "Prepare your application reference, if available, the instrument, the reporting period and time zone, and the eligible volume, estimate and actual credit shown in the relevant records. Confirm the required supporting details through the existing contact channels. Do not publish full account records or share passwords or verification codes."
     }
    ]
   },
@@ -349,6 +357,14 @@
     {
      "q": "怎么核对一笔返佣到账？",
      "a": "用已确认的品种费率乘以合资格标准手数，再和平台记录的金额对比。预估金额和实际到账要分开看；记录对不上时可以申请复核。"
+    },
+    {
+     "q": "同样交易了几手，为什么返佣和预估不同？",
+     "a": "先确认比较的是同一账户、品种和统计期间，并使用该账户已确认的费率与合资格标准手数。预估、待结算（如有）和实际到账是不同状态；记录不一致时应申请核对，不能只凭订单数量判断少返。"
+    },
+    {
+     "q": "查询返佣差额前应该整理什么？",
+     "a": "整理申请编号（如有）、交易品种、统计起止时间和时区，以及相关记录显示的合资格手数、预估金额与已到账金额。通过现有联系方式确认所需资料，不公开完整账户记录，不提供密码或验证码。"
     }
    ]
   },
