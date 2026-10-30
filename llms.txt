@@ -2,7 +2,7 @@
 
 > 独立的外汇与黄金交易返佣信息服务网站，目前专注TMGM返佣与Introducing Broker合作，并非任何交易平台官方网站。
 
-Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，到账时间以审核和结算规则为准。
+Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，每天结算，次日到交易账户。
 
 ## 关键事实 / Key facts
 
@@ -28,7 +28,7 @@ Source: https://max-rebate.com/#faq
 - **返佣会影响点差或交易条件吗？** 按满返网当前方案，不因为返佣服务额外加点差；实际交易条件仍由平台、账户组别和市场环境决定。
 - **“100%返佣”是什么意思？** 指满返网把实际收到并可返还给客户的合资格返佣部分 100% 返还，不代表所有交易成本都能被返还。
 - **已有 TMGM 账户还能申请吗？** 可以先提交查询。能否调整归属、转组或开启返佣，需要按平台规则人工确认。
-- **返佣什么时候到账？** 实际到账时间以账户审核、有效交易记录和平台结算规则为准。
+- **返佣什么时候到账？** 返佣每天结算：当天平仓订单的返佣，次日打入对应的 MT4/MT5 交易账户。只计已平仓订单，持仓平仓后才计入。首次到账前，账户需要先完成归属并开启返佣权限。
 - **网站会要求交易密码吗？** 不会。不要提交交易密码、投资者密码、验证码、银行卡密码或证件图片。
 - **返佣是不是稳赚？** 不是。返佣只能抵减部分符合条件的交易成本，不降低市场风险，也不保证盈利。
 - **代理有什么权限？** 代理权限开通后，可以获得专属开户链接和邀请码用于展业。
@@ -40,18 +40,18 @@ Source: https://max-rebate.com/en.html#faq
 - **Does the rebate change spreads or trading conditions?** Under the current Max Rebate plan, the rebate service does not add a spread markup. Actual conditions still depend on the platform, account group and market.
 - **What does “100% rebate” mean?** Max Rebate returns 100% of the eligible client rebate portion it actually receives and can return. This does not mean that all trading costs are refunded.
 - **Can an existing TMGM account apply?** You can request a review. Attribution or group changes remain subject to platform rules.
-- **When is the rebate credited?** Actual crediting time depends on account review, eligible trading records and the platform’s settlement rules.
+- **When is the rebate credited?** Rebates are settled daily: the rebate on orders closed today is credited to the matching MT4/MT5 trading account the next day. Only closed orders count; open positions count once they are closed. Before the first payment, the account must be linked and rebate access switched on.
 - **Will the site ask for trading passwords?** No. Never send passwords, verification codes, card passwords or identity-document images.
 - **Does a rebate guarantee profit?** No. A rebate may reduce eligible costs but does not reduce market risk or guarantee profit.
 - **What permissions does an agent receive?** Once agent access is activated, the agent can receive a dedicated account-opening link and invitation code for business development.
 
 ## 首页与语言版本 / Homepage and languages
 
-- [TMGM返佣最高$20/手·100%返还](https://max-rebate.com/): Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，到账时间以审核和结算规则为准。
-- [TMGM返佣最高$20/手·100%返還](https://max-rebate.com/zh-hant.html): Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，到帳時間以審核和結算規則為準。
-- [TMGM Rebate up to $20/lot, 100% Returned](https://max-rebate.com/en.html): Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned; crediting time depends on account review and settlement rules.
-- [Rebat TMGM sehingga $20/lot, 100% dipulangkan](https://max-rebate.com/ms.html): Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan; masa pengkreditan bergantung pada semakan dan peraturan penyelesaian.
-- [รีเบต TMGM สูงสุด $20/ล็อต คืน 100%](https://max-rebate.com/th.html): Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% เวลาเข้าบัญชีขึ้นอยู่กับการตรวจสอบและกฎการชำระบัญชี
+- [TMGM返佣最高$20/手·100%返还](https://max-rebate.com/): Max Rebate 满返网提供独立的 TMGM 返佣服务：标准账户黄金最高 $20/手，合资格返佣 100% 返还，每天结算，次日到交易账户。
+- [TMGM返佣最高$20/手·100%返還](https://max-rebate.com/zh-hant.html): Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，每天結算，次日到交易帳戶。
+- [TMGM Rebate up to $20/lot, 100% Returned](https://max-rebate.com/en.html): Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned, settled daily and credited to the trading account the next day.
+- [Rebat TMGM sehingga $20/lot, 100% dipulangkan](https://max-rebate.com/ms.html): Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan, diselesaikan setiap hari dan dikreditkan ke akaun dagangan pada hari berikutnya.
+- [รีเบต TMGM สูงสุด $20/ล็อต คืน 100%](https://max-rebate.com/th.html): Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% จ่ายทุกวัน เข้าบัญชีเทรดในวันถัดไป
 
 ## 指南 / Guides
 
@@ -82,6 +82,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM滑点和卡盘怎么办？什么情况可以申诉、怎么申诉](https://max-rebate.com/tmgm-hua-dian-shen-su.html): 滑点是成交价和挂单价不一致。CPI、非农等行情急变时的单笔滑点属于市场现象，一般不会补偿；只有平台大范围出现、并确认是平台自身原因的滑点或卡盘，申诉才可能获得处理。附申诉步骤和减少滑点的方法。
 - [TMGM返佣网站对比：满返网、Cashback Island、TradingFinder每手返多少](https://max-rebate.com/tmgm-fan-yong-dui-bi.html): 按各站公开页面对比TMGM标准账户返佣：满返网外汇每手10美元、黄金20美元；Cashback Island外汇8美元、黄金16美元；TradingFinder外汇5美元、黄金10美元（2026年10月28日核对）。附选择返佣网站时要核对的6件事。
 - [TMGM官网打不开怎么办？备用地址怎么拿、真假怎么分、交易受不受影响](https://max-rebate.com/tmgm-guanwang-da-bu-kai.html): TMGM官网或客户门户打不开，多数是大陆网络下地址被替换，换一个最新的备用地址即可。备用地址会不定时更换，本页不列清单，可通过满返网获取最近核对过的地址；另附辨别真假网址的方法。
+- [TMGM返佣多久到账？每天结算，次日到交易账户](https://max-rebate.com/tmgm-fan-yong-duo-jiu-dao-zhang.html): 满返网的TMGM返佣每天结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户，只计已平仓订单。本页说明首次到账前要满足什么、怎么核对金额、没到账先查什么，以及日结、周结、月结的区别。
 
 ## 图文教程 / Step-by-step tutorials
 
@@ -97,5 +98,5 @@ Source: https://max-rebate.com/en.html#faq
 - [Privacy Policy](https://max-rebate.com/privacy.html): 满返网 Max Rebate 隐私政策。
 - [Terms of Use](https://max-rebate.com/terms.html): 满返网 Max Rebate 使用条款。
 - [Risk Disclaimer](https://max-rebate.com/risk-disclaimer.html): 满返网 Max Rebate 风险声明。
-- [Contact｜联系满返网 Max Rebate](https://max-rebate.com/contact.html): 联系满返网 Max Rebate：Discord、Telegram。
+- [Contact｜联系满返网 Max Rebate](https://max-rebate.com/contact.html): 联系满返网 Max Rebate：Discord、Telegram。北京时间白天在线，消息当天回复。
 - [TMGM指南目录：开户、返佣、出入金、交易问题、代理](https://max-rebate.com/zhinan.html): 满返网TMGM指南目录，按开户、返佣、出入金、交易问题和代理分组，汇总中文指南与操作教程，并附英文指南入口。新用户可先阅读开户和账户类型说明，再按需要查找申请、资金操作或问题排查步骤。

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://max-rebate.com/</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://max-rebate.com/</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://max-rebate.com/zh-hant.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://max-rebate.com/en.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://max-rebate.com/ms.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://max-rebate.com/th.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://max-rebate.com/tmgm-fan-yong.html</loc><lastmod>2026-10-29</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://max-rebate.com/tmgm-fan-yong.html</loc><lastmod>2026-10-30</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://max-rebate.com/tmgm-dai-li.html</loc><lastmod>2026-10-26</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://max-rebate.com/tmgm-kai-hu.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://max-rebate.com/tmgm-man-fan.html</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://max-rebate.com/tmgm-man-fan.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://max-rebate.com/tmgm-fan-yong-zenme-suan.html</loc><lastmod>2026-10-25</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://max-rebate.com/tmgm-huangjin-fan-yong.html</loc><lastmod>2026-10-26</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
   <url><loc>https://max-rebate.com/waihui-fan-yong-kaopu-ma.html</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -20,7 +20,7 @@
   <url><loc>https://max-rebate.com/privacy.html</loc><lastmod>2026-10-28</lastmod><priority>0.4</priority></url>
   <url><loc>https://max-rebate.com/terms.html</loc><lastmod>2026-10-05</lastmod><priority>0.4</priority></url>
   <url><loc>https://max-rebate.com/risk-disclaimer.html</loc><lastmod>2026-10-05</lastmod><priority>0.4</priority></url>
-  <url><loc>https://max-rebate.com/contact.html</loc><lastmod>2026-10-05</lastmod><priority>0.5</priority></url>
+  <url><loc>https://max-rebate.com/contact.html</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
   <url><loc>https://max-rebate.com/tutorial-open.html</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
   <url><loc>https://max-rebate.com/tutorial-rebate.html</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
   <url><loc>https://max-rebate.com/tutorial-existing.html</loc><lastmod>2026-10-29</lastmod><priority>0.4</priority></url>
@@ -43,4 +43,5 @@
   <url><loc>https://max-rebate.com/tmgm-fan-yong-dui-bi.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://max-rebate.com/tmgm-guanwang-da-bu-kai.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://max-rebate.com/zhinan.html</loc><lastmod>2026-10-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://max-rebate.com/tmgm-fan-yong-duo-jiu-dao-zhang.html</loc><lastmod>2026-10-30</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
