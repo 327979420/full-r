@@ -51,7 +51,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM返佣最高$20/手·100%返還](https://max-rebate.com/zh-hant.html): Max Rebate 滿返網提供獨立的 TMGM 返佣服務：標準帳戶黃金最高 $20/手，合資格返佣 100% 返還，每天結算，次日到交易帳戶。
 - [TMGM Rebate up to $20/lot, 100% Returned](https://max-rebate.com/en.html): Max Rebate is an independent TMGM rebate service: up to $20 per lot on Standard-account gold, 100% of the eligible rebate returned, settled daily and credited to the trading account the next day.
 - [Rebat TMGM sehingga $20/lot, 100% dipulangkan](https://max-rebate.com/ms.html): Max Rebate ialah perkhidmatan rebat TMGM yang bebas: sehingga $20 setiap lot untuk emas akaun Standard, 100% rebat layak dipulangkan, diselesaikan setiap hari dan dikreditkan ke akaun dagangan pada hari berikutnya.
-- [รีเบต TMGM สูงสุด $20/ล็อต คืน 100%](https://max-rebate.com/th.html): Max Rebate บริการรีเบต TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% จ่ายทุกวัน เข้าบัญชีเทรดในวันถัดไป
+- [รีเบต (เงินคืน) TMGM สูงสุด $20/ล็อต คืน 100%](https://max-rebate.com/th.html): Max Rebate บริการรีเบต (เงินคืนค่าคอมมิชชัน) TMGM อิสระ: ทองคำบัญชี Standard สูงสุด $20 ต่อล็อต คืนรีเบตที่มีสิทธิ์ 100% จ่ายทุกวัน เข้าบัญชีเทรดในวันถัดไป
 
 ## 指南 / Guides
 
@@ -63,7 +63,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM黄金返佣指南｜XAUUSD每手返佣与成本计算](https://max-rebate.com/tmgm-huangjin-fan-yong.html): TMGM黄金返佣怎么计算？了解XAUUSD标准手、账户类型、点差手续费与返佣后的净成本，适合黄金短线和高频交易者参考。
 - [外汇返佣靠谱吗？判断正规返佣平台的7项标准](https://max-rebate.com/waihui-fan-yong-kaopu-ma.html): 外汇返佣靠谱吗？从资金安全、开户链接、密码要求、规则透明度、到账记录和风险声明等7项标准判断返佣服务是否正规。
 - [已有TMGM账户怎么申请返佣？老账户资格查询指南](https://max-rebate.com/tmgm-lao-zhanghu-fan-yong.html): 已有TMGM账户还能申请返佣吗？了解老账户代理归属查询、转组限制、所需信息、安全注意事项及无法调整时的处理方式。
-- [返佣是什么？IB、外汇返佣与满返的关系](https://max-rebate.com/rebate-ib-guide.html): 一篇看懂IB、Introducing Broker、外汇返佣和满返之间的关系，并了解TMGM返佣、STD账户与EA高频交易为什么更需要关注每手实际返佣。
+- [外汇返佣是什么？IB是什么意思，和满返有什么关系](https://max-rebate.com/rebate-ib-guide.html): 外汇返佣是IB把券商支付的佣金按约定返还给交易者，用来降低交易成本；IB是Introducing Broker（介绍经纪人），中文常叫代理。一篇看懂IB、外汇返佣和满返的关系，以及怎么核对每手实际返佣。
 - [What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates](https://max-rebate.com/rebate-ib-guide-en.html): Understand TMGM rebate eligibility, full rebates and cost comparisons. Learn what to check for an existing account and how to reconcile eligible lots with rebates received.
 - [黄金周三三倍隔夜利息：计息条件与库存费计算](https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html): 黄金周三一定收三倍隔夜利息吗？解释常见T+2交割安排与例外，教你核对合约规格中的计价单位、每日倍率、多空费率和平台换日时间，再用假设数字估算库存费，避免把示例当成实际收费规则。
 - [为什么不同外汇平台的K线不一样？报价来源、点差与时区](https://max-rebate.com/waihui-k-xian-bu-yi-yang.html): 不同外汇、黄金平台的K线为什么不一样？区分Bid、Ask与Last，核对合约和K线时间区间，理解空单止损的触发口径，并按订单记录与历史报价检查差异，避免仅凭截图下结论。
