@@ -77,7 +77,7 @@
     },
     {
      "q": "When is the rebate credited?",
-     "a": "Actual crediting time depends on account review, eligible trading records and the platform’s settlement rules."
+     "a": "Rebates are settled daily: the rebate on orders closed today is credited to the matching MT4/MT5 trading account the next day. Only closed orders count; open positions count once they are closed. Before the first payment, the account must be linked and rebate access switched on."
     },
     {
      "q": "Will the site ask for trading passwords?",
@@ -107,7 +107,7 @@
     },
     {
      "q": "返佣什么时候到账？",
-     "a": "实际到账时间以账户审核、有效交易记录和平台结算规则为准。"
+     "a": "返佣每天结算：当天平仓订单的返佣，次日打入对应的 MT4/MT5 交易账户。只计已平仓订单，持仓平仓后才计入。首次到账前，账户需要先完成归属并开启返佣权限。"
     },
     {
      "q": "网站会要求交易密码吗？",
@@ -143,7 +143,7 @@
    "url": "https://max-rebate.com/contact.html",
    "lang": "zh-CN",
    "title": "Contact｜联系满返网 Max Rebate",
-   "description": "联系满返网 Max Rebate：Discord、Telegram。",
+   "description": "联系满返网 Max Rebate：Discord、Telegram。北京时间白天在线，消息当天回复。",
    "text": "联系渠道 Discord 社群交流与服务更新 加入 Discord ↗ Telegram 直接联系 @LiangFreddy 通过 Telegram 联系 ↗ 查询申请 建议提供申请编号及平台注册邮箱，方便快速定位记录。 不要发送： 交易密码、验证码、银行卡密码或证件图片。"
   },
   {
@@ -523,6 +523,35 @@
    ]
   },
   {
+   "url": "https://max-rebate.com/tmgm-fan-yong-duo-jiu-dao-zhang.html",
+   "lang": "zh-CN",
+   "title": "TMGM返佣多久到账？每天结算，次日到交易账户｜满返网",
+   "description": "满返网的TMGM返佣每天结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户，只计已平仓订单。本页说明首次到账前要满足什么、怎么核对金额、没到账先查什么，以及日结、周结、月结的区别。",
+   "answer": "满返网的TMGM返佣每天结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户。只计已平仓的订单，持仓中的订单平仓后才计入。",
+   "faq": [
+    {
+     "q": "TMGM返佣多久到账？",
+     "a": "满返网的TMGM返佣每天结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户。"
+    },
+    {
+     "q": "还没平仓的订单有返佣吗？",
+     "a": "持仓期间不计返佣。订单平仓后才计入，返佣在平仓的次日到账。"
+    },
+    {
+     "q": "返佣打到哪个账户？",
+     "a": "打入对应的MT4/MT5交易账户，到账后计入账户余额。"
+    },
+    {
+     "q": "返佣可以提现吗？",
+     "a": "可以。返佣到账后在交易账户里，提现走TMGM正常的出金流程，见 TMGM出入金方式与到账时间 。"
+    },
+    {
+     "q": "开户后第一笔返佣为什么没到？",
+     "a": "首次到账前，账户需要已归属到满返网，并在平台确认协议、开启返佣权限。权限开启后平仓的订单开始计返佣。"
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/tmgm-fan-yong-zenme-suan.html",
    "lang": "zh-CN",
    "title": "TMGM返佣怎么算？账户类型、品种与手数计算指南｜满返网",
@@ -552,7 +581,7 @@
    "lang": "zh-CN",
    "title": "TMGM返佣申请｜返佣标准、结算方式和常见问题｜满返网",
    "description": "TMGM返佣申请指南：了解TMGM账户类型、返佣计算、结算与到账规则、新老账户区别、TMGM代理与IB合作关系及申请步骤。",
-   "answer": "TMGM返佣是按账户组别、交易品种和合资格标准手数，把交易产生的部分佣金返还给客户。以满返网当前方案为例，标准账户（STD）黄金每手返20美元；合资格返佣的到账时间以账户审核、有效交易记录和平台结算规则为准。 每标准手返佣（美元） STD PM DC PRO RAW07 黄金 20 15 10 10 2–3.5 外汇 10 4 7 2 2 比特币 1.5 1.5 10 1.5 1.5 数据来自满返网首页当前返佣表；RAW07 另收手续费。实际资格和金额以平台后台记录及审核为准。",
+   "answer": "TMGM返佣是按账户组别、交易品种和合资格标准手数，把交易产生的部分佣金返还给客户。以满返网当前方案为例，标准账户（STD）黄金每手返20美元；合资格返佣每天结算，当天平仓订单的返佣次日打入对应的 MT4/MT5 交易账户。 每标准手返佣（美元） STD PM DC PRO RAW07 黄金 20 15 10 10 2–3.5 外汇 10 4 7 2 2 比特币 1.5 1.5 10 1.5 1.5 数据来自满返网首页当前返佣表；RAW07 另收手续费。实际资格和金额以平台后台记录及审核为准。",
    "faq": [
     {
      "q": "“100%返佣”是什么意思？",
@@ -791,7 +820,7 @@
    "faq": [
     {
      "q": "TMGM满返多久到账？",
-     "a": "当前方案通常在合资格订单平仓后的处理周期内结算，具体时间取决于平台后台处理和账户状态，不能把任何固定时间理解为无条件保证。"
+     "a": "每天结算：当天平仓订单的返佣，次日打入对应的 MT4/MT5 交易账户。前提是账户已完成归属并开启返佣权限，详见 TMGM返佣多久到账 。"
     },
     {
      "q": "老账户一定可以转成满返账户吗？",
