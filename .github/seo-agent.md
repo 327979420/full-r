@@ -57,7 +57,9 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
 6. **GEO check (only when today's day-of-month ≤ 7).** Use WebSearch for each question below (Chinese first,
    then English). Record whether max-rebate.com appears and which domains are cited. Turn clear gaps into new
    backlog items. Questions: TMGM返佣怎么申请 · TMGM返佣多少 · TMGM黄金返佣 · 外汇返佣靠谱吗 · 黄金周三三倍隔夜利息 ·
-   为什么不同外汇平台K线不一样 · TMGM代理怎么申请 · best TMGM rebate.
+   为什么不同外汇平台K线不一样 · TMGM代理怎么申请 · TMGM交易时间北京时间 · MT4登录不上 ·
+   TMGM滑点能赔吗 · TMGM官网打不开 · TMGM返佣哪家高 · TMGM返佣多久到账 · 外汇IB是什么 · best TMGM rebate ·
+   เงินคืน TMGM.
 
 ## Writing rules (GEO-friendly and compliant)
 
