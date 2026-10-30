@@ -64,6 +64,7 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
 - Answer first: the first sentence under each H2 states the answer, with the number, unit and condition.
 - Use tables for comparisons; plain HTML text, never text inside images.
 - Cite external sources for facts (regulators, broker help/academy pages, reputable references) in a 参考资料 card.
+- Facts listed under 站长确认的事实 in `.github/content-backlog.md` were confirmed by the owner and may be used as written.
 - TMGM rebate numbers may only come from `assets/site-config.js` or pages already on the site. Never invent
   spreads, swap rates, statistics, client counts, testimonials or reviews.
 - No profit promises (稳赚/保本/躺赚). Keep the risk notice. Say rules are "以平台为准" where they vary.
