@@ -172,7 +172,7 @@
       "PM": "PM · Premium · $15/lot",
       "DC": "DC · Bitcoin · $10/lot",
       "PRO": "PRO · Professional · $10/lot",
-      "RAW07": "RAW07 · ECN · $2–3.5/lot"
+      "RAW07": "RAW07 · ECN · $2/lot"
     },
     "telegramDesc": "Message @LiangFreddy directly",
     "discordAction": "Join Discord",
@@ -363,7 +363,7 @@
       "PM": "PM · 高级账户 · $15/手",
       "DC": "DC · 比特账户 · $10/手",
       "PRO": "PRO · 专业账户 · $10/手",
-      "RAW07": "RAW07 · ECN · $2–3.5/手"
+      "RAW07": "RAW07 · ECN · $2/手"
     },
     "telegramDesc": "直接联系 @LiangFreddy",
     "discordAction": "加入 Discord",
@@ -554,7 +554,7 @@
       "PM": "PM · 高級帳戶 · $15/手",
       "DC": "DC · 比特帳戶 · $10/手",
       "PRO": "PRO · 專業帳戶 · $10/手",
-      "RAW07": "RAW07 · ECN · $2–3.5/手"
+      "RAW07": "RAW07 · ECN · $2/手"
     },
     "telegramDesc": "直接聯絡 @LiangFreddy",
     "discordAction": "加入 Discord",
@@ -745,7 +745,7 @@
       "PM": "PM · Premium · $15/lot",
       "DC": "DC · Bitcoin · $10/lot",
       "PRO": "PRO · Profesional · $10/lot",
-      "RAW07": "RAW07 · ECN · $2–3.5/lot"
+      "RAW07": "RAW07 · ECN · $2/lot"
     },
     "telegramDesc": "Mesej terus kepada @LiangFreddy",
     "discordAction": "Sertai Discord",
@@ -936,7 +936,7 @@
       "PM": "PM · Premium · $15/ล็อต",
       "DC": "DC · Bitcoin · $10/ล็อต",
       "PRO": "PRO · Professional · $10/ล็อต",
-      "RAW07": "RAW07 · ECN · $2–3.5/ล็อต"
+      "RAW07": "RAW07 · ECN · $2/ล็อต"
     },
     "telegramDesc": "ส่งข้อความถึง @LiangFreddy โดยตรง",
     "discordAction": "เข้าร่วม Discord",
