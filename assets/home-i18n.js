@@ -186,6 +186,10 @@
     "footerTerms": "Terms of Use",
     "footerRisk": "Risk Disclaimer",
     "footerContact": "Contact",
+    "footerPartner": "Partnerships",
+    "partnerTitle": "Platform partnerships, open to discussion",
+    "partnerDesc": "Trading platforms that want to offer a rebate programme through Max Rebate are welcome to get in touch.",
+    "partnerCta": "Platform partnerships",
     "footerApply": "Apply",
     "chineseService": "Account opening, applications, account checks and questions can all be handled in Chinese."
   },
@@ -373,6 +377,10 @@
     "footerTerms": "使用条款",
     "footerRisk": "风险声明",
     "footerContact": "联系我们",
+    "footerPartner": "平台合作",
+    "partnerTitle": "平台合作，可以详聊",
+    "partnerDesc": "交易平台想在满返网上线返佣方案，欢迎联系。",
+    "partnerCta": "了解平台合作",
     "footerApply": "提交申请",
     "chineseService": "开户、申请、账户查询和问题咨询，都可以用中文沟通。"
   },
@@ -560,6 +568,10 @@
     "footerTerms": "使用條款",
     "footerRisk": "風險聲明",
     "footerContact": "聯絡我們",
+    "footerPartner": "平台合作",
+    "partnerTitle": "平台合作，可以詳聊",
+    "partnerDesc": "交易平台想在滿返網上線返佣方案，歡迎聯絡。",
+    "partnerCta": "了解平台合作",
     "footerApply": "提交申請",
     "chineseService": "開戶、申請、帳戶查詢和問題諮詢，都可以用中文溝通。"
   },
@@ -747,6 +759,10 @@
     "footerTerms": "Syarat Penggunaan",
     "footerRisk": "Penafian Risiko",
     "footerContact": "Hubungi",
+    "footerPartner": "Kerjasama",
+    "partnerTitle": "Kerjasama platform: mari berbincang",
+    "partnerDesc": "Platform dagangan yang ingin menawarkan program rebat melalui Max Rebate dialu-alukan untuk menghubungi.",
+    "partnerCta": "Kerjasama platform",
     "footerApply": "Mohon",
     "chineseService": "Pembukaan akaun, permohonan, semakan akaun dan pertanyaan boleh diuruskan dalam bahasa Cina."
   },
@@ -934,6 +950,10 @@
     "footerTerms": "ข้อกำหนดการใช้งาน",
     "footerRisk": "คำชี้แจงความเสี่ยง",
     "footerContact": "ติดต่อ",
+    "footerPartner": "ความร่วมมือ",
+    "partnerTitle": "ร่วมมือกับแพลตฟอร์ม คุยรายละเอียดได้",
+    "partnerDesc": "แพลตฟอร์มเทรดที่ต้องการเสนอโปรแกรมรีเบตผ่าน Max Rebate ติดต่อได้เลย",
+    "partnerCta": "ความร่วมมือกับแพลตฟอร์ม",
     "footerApply": "สมัคร",
     "chineseService": "การเปิดบัญชี การสมัคร การตรวจสอบบัญชี และการสอบถาม สามารถติดต่อเป็นภาษาจีนได้ทั้งหมด"
   }
