@@ -84,6 +84,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM官网打不开怎么办？备用地址怎么拿、真假怎么分、交易受不受影响](https://max-rebate.com/tmgm-guanwang-da-bu-kai.html): TMGM官网或客户门户打不开，多数是大陆网络下地址被替换，换一个最新的备用地址即可。备用地址会不定时更换，本页不列清单，可通过满返网获取最近核对过的地址；另附辨别真假网址的方法。
 - [TMGM返佣多久到账？每天结算，次日到交易账户](https://max-rebate.com/tmgm-fan-yong-duo-jiu-dao-zhang.html): 满返网的TMGM返佣每天结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户，只计已平仓订单。本页说明首次到账前要满足什么、怎么核对金额、没到账先查什么，以及日结、周结、月结的区别。
 - [TMGM能用EA吗？剥头皮、对冲和免费VPS条件](https://max-rebate.com/tmgm-ea-vps.html): 能。TMGM官网写明MT4支持EA自动交易、不限制剥头皮、可以用EA对冲。免费VPS有条件：已是客户每月交易满7手；新客户Basic版需入金3,000美元、高频版20,000美元。另说明EA和高频交易为什么更要看每手返佣。核对于2026-11-02。
+- [TMGM跟单怎么用？HUBx主账户和跟单账户设置步骤](https://max-rebate.com/tmgm-gen-dan.html): TMGM客户可以用HUBx跟单：在客户门户申请HUBx权限后，交易账户可以做主账户或跟单子账户。跟单方只需提供MT4账号和PIN码，可设跟单比例、最大手数、最大回撤和可跟品种。本页说明设置步骤、风控选项和注意事项。
 
 ## 图文教程 / Step-by-step tutorials
 
