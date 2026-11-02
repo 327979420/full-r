@@ -13,7 +13,7 @@
       PM: Object.freeze({ min: 15, max: 15, fee: null }),
       DC: Object.freeze({ min: 10, max: 10, fee: null }),
       PRO: Object.freeze({ min: 10, max: 10, fee: null }),
-      RAW07: Object.freeze({ min: 2, max: 3.5, fee: 5 })
+      RAW07: Object.freeze({ min: 2, max: 2, fee: 5 })
     })
   });
 })();
