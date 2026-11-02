@@ -30,3 +30,4 @@
 | 暂缓 | 客户经理 / IB 能帮客户做什么（客诉、赔付申请） | 平台故障能赔吗、出问题找谁 | 关于我们 / FAQ | 等站长确认身份表述 |
 | — | 外汇交易成本英文版，与中文指南互链 | forex trading costs, spread commission swap rebates | `forex-trading-costs-en.html` | 已写 |
 | — | TMGM指南目录：开户、返佣、出入金、交易问题、代理 | TMGM指南、TMGM教程目录 | `zhinan.html` | 已写 |
+| — | TMGM能不能用EA、剥头皮、对冲，免费VPS条件（来自站长的客户问题；按官网核对于2026-11-02） | TMGM能用EA吗、TMGM剥头皮、TMGM VPS免费吗 | `tmgm-ea-vps.html` | 已写 |
