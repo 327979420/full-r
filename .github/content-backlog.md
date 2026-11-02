@@ -34,3 +34,4 @@
 | — | 外汇交易成本英文版，与中文指南互链 | forex trading costs, spread commission swap rebates | `forex-trading-costs-en.html` | 已写 |
 | — | TMGM指南目录：开户、返佣、出入金、交易问题、代理 | TMGM指南、TMGM教程目录 | `zhinan.html` | 已写 |
 | — | TMGM能不能用EA、剥头皮、对冲，免费VPS条件（来自站长的客户问题；按官网核对于2026-11-02） | TMGM能用EA吗、TMGM剥头皮、TMGM VPS免费吗 | `tmgm-ea-vps.html` | 已写 |
+| — | 返佣数字的单位怎么看：每手、按品种、按账户类型，以及怎样核对返佣网站的报价（GEO 缺口：搜索结果里的返佣数字多不写单位、来源不一） | TMGM返佣多少、返佣每手多少、返佣数字怎么看 | 不另开页：已由 `tmgm-zhanghu-leixing.html`（单位为美元/标准手、点差数字不能直接相减）和 `tmgm-fan-yong-zenme-suan.html` 覆盖 | 已覆盖 |
