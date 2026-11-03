@@ -321,12 +321,24 @@
    "url": "https://max-rebate.com/rebate-ib-guide-en.html",
    "lang": "en",
    "title": "What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates | Max Rebate",
-   "description": "Understand TMGM rebate eligibility, full rebates and cost comparisons. Learn what to check for an existing account and how to reconcile eligible lots with rebates received.",
-   "answer": "A rebate returns an eligible part of trading-related commission, subject to account attribution, product rules and approval. Max Rebate is an independent service. Its published rebate table describes its own arrangement, not a rate guaranteed to every TMGM account. Check the current published table , confirm eligibility, and compare the amount received with eligible trading records. A rebate does not reimburse every trading cost or guarantee a profit.",
+   "description": "A trading rebate pays back a fixed amount per standard lot traded. TMGM STD rebates at Max Rebate: USD 10 per lot forex, USD 20 per lot gold. How IBs fund rebates, what full rebate means and how to check payments.",
+   "answer": "A trading rebate is a fixed amount paid back to the trader for every standard lot traded, funded by the commission the broker pays the Introducing Broker (IB). On a TMGM STD account, Max Rebate currently returns USD 10 per lot on forex and USD 20 per lot on gold. A rebate returns an eligible part of trading-related commission, subject to account attribution, product rules and approval. Max Rebate is an independent service. Its published rebate table describes its own arrangement, not a rate guaranteed to every TMGM account. Check the current published table , confirm eligibility, and compare the amount received with eligible trading records. A rebate does not reimburse every trading cost or guarantee a profit.",
    "faq": [
     {
      "q": "Does a 100% rebate refund all trading costs?",
      "a": "No. At Max Rebate it refers to the eligible commission received and returnable under the arrangement. Spreads, fees and other trading costs are not automatically refunded in full."
+    },
+    {
+     "q": "Do losing trades earn rebates?",
+     "a": "Yes. Rebates are based on eligible lots traded, not on whether a trade made or lost money. A rebate reduces part of the cost of a trade; it does not cover the loss itself."
+    },
+    {
+     "q": "Does using a rebate service raise my spread?",
+     "a": "No. The rebate comes from the commission the broker already pays the IB. Spreads and trading conditions are set by the platform and account group, not by the rebate service."
+    },
+    {
+     "q": "When are TMGM rebates paid at Max Rebate?",
+     "a": "Rebates are settled daily. Rebates for trades closed on one day are credited to the matching MT4/MT5 trading account the next day, subject to platform records and approval."
     },
     {
      "q": "Does submitting the form activate rebates?",
