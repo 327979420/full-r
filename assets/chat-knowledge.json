@@ -341,6 +341,14 @@
      "a": "Rebates are settled daily. Rebates for trades closed on one day are credited to the matching MT4/MT5 trading account the next day, subject to platform records and approval."
     },
     {
+     "q": "Are forex rebate services legit?",
+     "a": "The rebate itself is a common arrangement: the broker pays the IB a commission on eligible lots, and the service returns part of it to the trader. Whether a particular service can be trusted depends on how it works. A reliable one does not handle client funds, never asks for passwords or verification codes, states clearly that it is not the broker's official website, publishes how rebates are calculated and does not promise profits."
+    },
+    {
+     "q": "Do I need to give my trading password to get rebates?",
+     "a": "No. A rebate application needs only the email address registered with TMGM. Max Rebate never asks for trading or investor passwords, verification codes or card details. Treat any rebate service that asks for them as a warning sign."
+    },
+    {
      "q": "Does submitting the form activate rebates?",
      "a": "No. Submission starts a review. Account attribution, eligibility and the applicable terms must be confirmed before rebates can be treated as active."
     },
@@ -419,6 +427,10 @@
     {
      "q": "TMGM出金多久到账？",
      "a": "出金申请一般在24小时内审核，只在工作日付款。USDT出金在审核通过后通常30分钟到3小时到账，美盘时段会慢一些；其他渠道以出金页面显示为准。"
+    },
+    {
+     "q": "出金一直显示“审核中”，是怎么回事？",
+     "a": "出金申请一般在24小时内审核，只在工作日付款，周末提交的顺延到下一个工作日。超过一个工作日还是“审核中”，先看注册邮箱里有没有TMGM的审核邮件。常见卡点有两个：用过多个渠道入金，却没有按各渠道的累计入金比例出金；或者出金后保证金比例会低于150%。邮件里没有说明的，联系TMGM客服查询。"
     },
     {
      "q": "用人民币入金，可以用USDT出金吗？",
@@ -586,6 +598,10 @@
      "a": "满返网的TMGM返佣每天结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户。"
     },
     {
+     "q": "返佣是自动到账的吗？每次交易都要申请吗？",
+     "a": "不用每次申请。只有第一次需要提交申请，确认账户归属到满返网并开通返佣权限。开通以后返佣每天自动结算：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户。"
+    },
+    {
      "q": "还没平仓的订单有返佣吗？",
      "a": "持仓期间不计返佣。订单平仓后才计入，返佣在平仓的次日到账。"
     },
@@ -708,6 +724,10 @@
     {
      "q": "怎么判断一个TMGM网址是不是真的？",
      "a": "只用TMGM客服、TMGM官方邮件或满返网提供的地址，登录前逐字核对地址栏，并确认是 https 开头。拿不准的网址不要输入密码，先找客服核对。"
+    },
+    {
+     "q": "有人自称TMGM客服加微信、拉群带单，可信吗？",
+     "a": "不要轻信。账户问题只通过TMGM官方客服、官方邮件或客户门户处理。陌生人主动加好友、拉群推荐“带单”“稳赚”，或者让你把钱转到个人账户、提供密码和验证码，都是诈骗的常见做法。TMGM和满返网都不会向你索要密码或验证码；入金、出金只在TMGM客户门户里操作。拿不准时，先通过TMGM客服核实对方身份。"
     },
     {
      "q": "出金、入金要用哪个地址？",
@@ -930,7 +950,7 @@
     },
     {
      "q": "I forgot to enter an invitation code when registering. What now?",
-     "a": "Within 3 days of registering, simply submit your registered email; you do not need to register again. If more than 3 days have passed, submit ythe reply from Max Rebate anyway and Max Rebate will reply by email with your options."
+     "a": "Within 3 days of registering, simply submit your registered email; you do not need to register again. If more than 3 days have passed, submit your registered email anyway and Max Rebate will reply by email with your options."
     },
     {
      "q": "What do I need to provide?",
@@ -943,6 +963,10 @@
     {
      "q": "When does the 3-day window start?",
      "a": "From the moment you complete your TMGM registration. Submit within 3 days to apply directly."
+    },
+    {
+     "q": "I've had my TMGM account for months. Can I still get rebates?",
+     "a": "You can ask, but it is not guaranteed. Submit your registered email and answer “No” to “Was the account registered within 3 days?”. Max Rebate will reply by email. Whether the account can be adjusted depends on its registration time, any existing agent relationship, account status, region and platform policy. Accounts opened through another agent's link or invitation code cannot be moved this way."
     },
     {
      "q": "Will I get spam or sales messages after submitting?",
