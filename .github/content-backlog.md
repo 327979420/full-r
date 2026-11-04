@@ -36,8 +36,9 @@
 | — | TMGM 官网 / 客户门户打不开：换备用地址、辨别真假网址、交易不受影响（页面不列地址，引导联系获取） | TMGM官网打不开、TMGM最新网址、TMGM备用域名 | `tmgm-guanwang-da-bu-kai.html` | 已写，地址清单只私发，不上网页 |
 | 暂缓 | 客户经理 / IB 能帮客户做什么（客诉、赔付申请） | 平台故障能赔吗、出问题找谁 | 关于我们 / FAQ | 等站长确认身份表述 |
 | — | 外汇交易成本英文版，与中文指南互链 | forex trading costs, spread commission swap rebates | `forex-trading-costs-en.html` | 已写 |
-| — | 英文返佣指南：每手返佣（rebate per lot）定义、例子，亏损单是否返佣、是否加点差、何时到账 | trading rebates, lot rebate, trade rebate meaning | `rebate-ib-guide-en.html` | 已写（待合并） |
+| — | 英文返佣指南：每手返佣（rebate per lot）定义、例子，亏损单是否返佣、是否加点差、何时到账 | trading rebates, lot rebate, trade rebate meaning | `rebate-ib-guide-en.html` | 已写 |
 | — | TMGM指南目录：开户、返佣、出入金、交易问题、代理 | TMGM指南、TMGM教程目录 | `zhinan.html` | 已写 |
 | — | TMGM能不能用EA、剥头皮、对冲，免费VPS条件（来自站长的客户问题；按官网核对于2026-11-02） | TMGM能用EA吗、TMGM剥头皮、TMGM VPS免费吗 | `tmgm-ea-vps.html` | 已写 |
 | — | TMGM跟单怎么用：HUBx申请、主账户和跟单子账户设置、风控选项（站长提供的 HUBX 教程；站长称跟单社区是平台竞争优势） | TMGM跟单、TMGM HUBx、TMGM跟单社区 | `tmgm-gen-dan.html` | 已写 |
 | — | 返佣数字的单位怎么看：每手、按品种、按账户类型，以及怎样核对返佣网站的报价（GEO 缺口：搜索结果里的返佣数字多不写单位、来源不一） | TMGM返佣多少、返佣每手多少、返佣数字怎么看 | 不另开页：已由 `tmgm-zhanghu-leixing.html`（单位为美元/标准手、点差数字不能直接相减）和 `tmgm-fan-yong-zenme-suan.html` 覆盖 | 已覆盖 |
+| — | 网上真实用户问题（第一批，A组6个）：返佣是否自动、出金一直审核中、冒充TMGM客服、英文版返佣是否靠谱/要不要密码/老账户 | TMGM返佣自动到账、TMGM出金审核中、TMGM客服加微信、forex rebate legit | 放进现有页面常见问题：`tmgm-fan-yong-duo-jiu-dao-zhang.html`、`tmgm-chu-ru-jin.html`、`tmgm-guanwang-da-bu-kai.html`、`rebate-ib-guide-en.html`、`tmgm-new-account-rebate-en.html` | 已写（待合并）；B组17个等站长确认事实 |
