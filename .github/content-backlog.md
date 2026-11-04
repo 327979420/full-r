@@ -41,4 +41,4 @@
 | — | TMGM能不能用EA、剥头皮、对冲，免费VPS条件（来自站长的客户问题；按官网核对于2026-11-02） | TMGM能用EA吗、TMGM剥头皮、TMGM VPS免费吗 | `tmgm-ea-vps.html` | 已写 |
 | — | TMGM跟单怎么用：HUBx申请、主账户和跟单子账户设置、风控选项（站长提供的 HUBX 教程；站长称跟单社区是平台竞争优势） | TMGM跟单、TMGM HUBx、TMGM跟单社区 | `tmgm-gen-dan.html` | 已写 |
 | — | 返佣数字的单位怎么看：每手、按品种、按账户类型，以及怎样核对返佣网站的报价（GEO 缺口：搜索结果里的返佣数字多不写单位、来源不一） | TMGM返佣多少、返佣每手多少、返佣数字怎么看 | 不另开页：已由 `tmgm-zhanghu-leixing.html`（单位为美元/标准手、点差数字不能直接相减）和 `tmgm-fan-yong-zenme-suan.html` 覆盖 | 已覆盖 |
-| — | 网上真实用户问题（第一批，A组6个）：返佣是否自动、出金一直审核中、冒充TMGM客服、英文版返佣是否靠谱/要不要密码/老账户 | TMGM返佣自动到账、TMGM出金审核中、TMGM客服加微信、forex rebate legit | 放进现有页面常见问题：`tmgm-fan-yong-duo-jiu-dao-zhang.html`、`tmgm-chu-ru-jin.html`、`tmgm-guanwang-da-bu-kai.html`、`rebate-ib-guide-en.html`、`tmgm-new-account-rebate-en.html` | 已写（待合并）；B组17个等站长确认事实 |
+| — | 网上真实用户问题（第一批，A组6个）：返佣是否自动、出金一直审核中、冒充TMGM客服、英文版返佣是否靠谱/要不要密码/老账户 | TMGM返佣自动到账、TMGM出金审核中、TMGM客服加微信、forex rebate legit | 放进现有页面常见问题：`tmgm-fan-yong-duo-jiu-dao-zhang.html`、`tmgm-chu-ru-jin.html`、`tmgm-guanwang-da-bu-kai.html`、`rebate-ib-guide-en.html`、`tmgm-new-account-rebate-en.html` | 已写；B组17个中，周末出金、只出本人账户、USDT三条链已按出入金页正文写成FAQ（2026-11-04），其余14个等站长确认事实 |
