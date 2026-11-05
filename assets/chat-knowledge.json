@@ -206,8 +206,8 @@
   {
    "url": "https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html",
    "lang": "zh-CN",
-   "title": "黄金周三三倍隔夜利息：计息条件与库存费计算｜满返网",
-   "description": "黄金周三一定收三倍隔夜利息吗？解释常见T+2交割安排与例外，教你核对合约规格中的计价单位、每日倍率、多空费率和平台换日时间，再用假设数字估算库存费，避免把示例当成实际收费规则。",
+   "title": "黄金（XAUUSD）周三三倍隔夜利息：计息条件与库存费计算｜满返网",
+   "description": "黄金（XAUUSD）周三一定收三倍隔夜利息吗？解释常见T+2交割安排与例外，教你核对合约规格中的计价单位、每日倍率、多空费率和平台换日时间，再用假设数字估算库存费，避免把示例当成实际收费规则。",
    "answer": "黄金周三三倍隔夜利息是常见安排，并非所有账户和日期都适用。只有在该品种周三倍率为3、仓位符合计息条件时，才按对应规则计算。 常见解释是T+2交割跨过周末；节假日、品种和账户规则可能改变安排。先看合约规格，再核对实际扣费或入账记录。",
    "faq": [
     {
@@ -369,8 +369,8 @@
   {
    "url": "https://max-rebate.com/rebate-ib-guide.html",
    "lang": "zh-CN",
-   "title": "外汇返佣是什么？IB是什么意思，和满返有什么关系｜满返网",
-   "description": "外汇返佣是IB把券商支付的佣金按约定返还给交易者，用来降低交易成本；IB是Introducing Broker（介绍经纪人），中文常叫代理。一篇看懂IB、外汇返佣和满返的关系，以及怎么核对每手实际返佣。",
+   "title": "返佣是什么？外汇返佣、IB与每手返佣怎么算｜满返网",
+   "description": "返佣是IB把券商按交易手数支付的佣金返还给交易者，用来降低交易成本。满返网TMGM标准账户外汇每手返10美元、黄金每手返20美元，每天结算、次日到账。一篇看懂IB、返佣和满返。",
    "answer": "外汇返佣，是IB把券商按客户交易手数支付给自己的佣金，按约定比例返还给客户，用来降低已经发生的交易成本。以满返网当前TMGM方案为例，STD账户黄金每手返20美元，交易2手对应40美元，每天结算，次日打入交易账户。前提是账户归属正确、交易符合品种规则并通过审核。满返网是独立服务网站，公布的返佣标准是满返网自己的方案，不代表每个TMGM账户都能拿到同样的费率。 先查看 当前公布的返佣标准 ，确认资格，再把到账金额和合资格交易记录核对。返佣不会报销所有交易成本，也不保证盈利。",
    "faq": [
     {
@@ -510,8 +510,8 @@
   {
    "url": "https://max-rebate.com/tmgm-deposit-withdrawal-en.html",
    "lang": "en",
-   "title": "TMGM Deposit & Withdrawal Methods and Processing Times | Max Rebate",
-   "description": "How to deposit and withdraw with TMGM and how long it takes: USDT, USDC, Chinese yuan channels and bank wire compared, plus the return-to-source rule, USDT networks and common reasons withdrawals are rejected.",
+   "title": "TMGM Withdrawal & Deposit Times, Methods and Rules | Max Rebate",
+   "description": "How long a TMGM withdrawal takes: reviewed within 24 hours, paid on business days, USDT usually 30 minutes to 3 hours after approval. Plus deposit times by channel, the return-to-source rule and why withdrawals are rejected.",
    "answer": "TMGM deposits: USDT and USDC are usually credited instantly, Chinese yuan channels such as Jifubao (极付宝), Alipay and WeChat Pay take about 10–15 minutes, and bank wire takes about 1–4 business days. Withdrawals: deposited funds must go back the way they came in, and only to an account in your own name. USDT withdrawals usually arrive 30 minutes to 3 hours after approval, and more slowly during US trading hours.",
    "faq": [
     {
@@ -523,12 +523,28 @@
      "a": "Withdrawal requests are normally reviewed within 24 hours and paid only on business days. USDT withdrawals usually arrive 30 minutes to 3 hours after approval, more slowly during US trading hours; for other channels, rely on the withdrawal page."
     },
     {
+     "q": "My withdrawal has been “under review” for a while. Why?",
+     "a": "Withdrawal requests are normally reviewed within 24 hours and paid only on business days; requests made at the weekend move to the next business day. If a request is still under review after one business day, check your registered email for a review email from TMGM. The usual holdups are withdrawing without following each deposit channel's share of your total deposits, or a withdrawal that would take your margin level below 150%. If the email does not explain it, ask TMGM support."
+    },
+    {
+     "q": "Can I withdraw at the weekend?",
+     "a": "You can submit a request, but TMGM pays only on business days, so a request made at the weekend is processed on the next business day."
+    },
+    {
      "q": "I deposited in Chinese yuan. Can I withdraw in USDT?",
      "a": "Not for the deposited amount, which must go back the way it came in. Profits above your deposits are less restricted and can usually go through any channel you have used; rely on the options the withdrawal page shows."
     },
     {
+     "q": "Which network do USDT withdrawals use?",
+     "a": "TRC20, ERC20 and BEP20 are supported. Withdraw only to your own personal wallet address, not another platform's deposit address, or the funds may be lost. A wallet address can be linked to only one TMGM account. USDT withdrawals usually arrive 30 minutes to 3 hours after approval."
+    },
+    {
      "q": "I deposited through Alipay. Can I withdraw back to Alipay?",
      "a": "Not directly at present. The deposited amount goes to the bank card linked to that Alipay account, and yuan withdrawals must go to an account in your own name."
+    },
+    {
+     "q": "Can I withdraw to a family member's or friend's bank card?",
+     "a": "No. TMGM pays only to accounts in your own name, a standard anti-money-laundering requirement. Yuan withdrawals must go to a bank card in your own name, and USDT only to your own wallet."
     },
     {
      "q": "Why is my deposit still not credited?",

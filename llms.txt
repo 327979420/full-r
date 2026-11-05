@@ -63,9 +63,9 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM黄金返佣指南｜XAUUSD每手返佣与成本计算](https://max-rebate.com/tmgm-huangjin-fan-yong.html): TMGM黄金返佣怎么计算？了解XAUUSD标准手、账户类型、点差手续费与返佣后的净成本，适合黄金短线和高频交易者参考。
 - [外汇返佣靠谱吗？判断正规返佣平台的7项标准](https://max-rebate.com/waihui-fan-yong-kaopu-ma.html): 外汇返佣靠谱吗？从资金安全、开户链接、密码要求、规则透明度、到账记录和风险声明等7项标准判断返佣服务是否正规。
 - [已有TMGM账户怎么申请返佣？老账户资格查询指南](https://max-rebate.com/tmgm-lao-zhanghu-fan-yong.html): 已有TMGM账户还能申请返佣吗？了解老账户代理归属查询、转组限制、所需信息、安全注意事项及无法调整时的处理方式。
-- [外汇返佣是什么？IB是什么意思，和满返有什么关系](https://max-rebate.com/rebate-ib-guide.html): 外汇返佣是IB把券商支付的佣金按约定返还给交易者，用来降低交易成本；IB是Introducing Broker（介绍经纪人），中文常叫代理。一篇看懂IB、外汇返佣和满返的关系，以及怎么核对每手实际返佣。
+- [返佣是什么？外汇返佣、IB与每手返佣怎么算](https://max-rebate.com/rebate-ib-guide.html): 返佣是IB把券商按交易手数支付的佣金返还给交易者，用来降低交易成本。满返网TMGM标准账户外汇每手返10美元、黄金每手返20美元，每天结算、次日到账。一篇看懂IB、返佣和满返。
 - [What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates](https://max-rebate.com/rebate-ib-guide-en.html): A trading rebate pays back a fixed amount per standard lot traded. TMGM STD rebates at Max Rebate: USD 10 per lot forex, USD 20 per lot gold. How IBs fund rebates, what full rebate means and how to check payments.
-- [黄金周三三倍隔夜利息：计息条件与库存费计算](https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html): 黄金周三一定收三倍隔夜利息吗？解释常见T+2交割安排与例外，教你核对合约规格中的计价单位、每日倍率、多空费率和平台换日时间，再用假设数字估算库存费，避免把示例当成实际收费规则。
+- [黄金（XAUUSD）周三三倍隔夜利息：计息条件与库存费计算](https://max-rebate.com/huangjin-san-bei-ge-ye-li-xi.html): 黄金（XAUUSD）周三一定收三倍隔夜利息吗？解释常见T+2交割安排与例外，教你核对合约规格中的计价单位、每日倍率、多空费率和平台换日时间，再用假设数字估算库存费，避免把示例当成实际收费规则。
 - [为什么不同外汇平台的K线不一样？报价来源、点差与时区](https://max-rebate.com/waihui-k-xian-bu-yi-yang.html): 不同外汇、黄金平台的K线为什么不一样？区分Bid、Ask与Last，核对合约和K线时间区间，理解空单止损的触发口径，并按订单记录与历史报价检查差异，避免仅凭截图下结论。
 - [TMGM账户类型对比：STD、PM、DC、PRO、RAW07怎么选](https://max-rebate.com/tmgm-zhanghu-leixing.html): TMGM账户类型怎么选？对比STD、PM、DC、PRO、RAW07的黄金与外汇返佣、参考点差和手续费，说明为什么要看返佣后的净成本。
 - [外汇点差为什么突然变大？开盘换日与数据公布](https://max-rebate.com/waihui-dianchai-kuoda.html): 外汇点差是买卖价的差额，属于隐性成本。开盘、每日换日和非农、CPI等重要数据公布前后，流动性下降，点差会明显变大，止损也更容易被触发。附五个常见原因和应对方法。
@@ -75,7 +75,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM出入金方式与到账时间：USDT、人民币与电汇](https://max-rebate.com/tmgm-chu-ru-jin.html): TMGM怎么入金出金、多久到账？对比USDT、极付宝、支付宝、微信和电汇的到账时间与限额，说明本金原路返回、USDT链路和出金审核的常见卡点。
 - [Why Forex Spreads Widen: News, Rollover &amp; Stop Losses](https://max-rebate.com/forex-spread-widening-en.html): Why forex spreads widen around news, rollover and thin markets. Check Bid/Ask, point units and stop-loss triggers before judging an unexpected fill.
 - [MT4和MT5有什么区别？周期、挂单与持仓模式](https://max-rebate.com/mt4-mt5-qubie.html): MT5提供21个图表周期，MT4标准周期为9个；MT5多两种止损限价挂单，并有对冲与净持仓两种账户模式。返佣是否相同，以平台和账户类型为准。
-- [TMGM Deposit & Withdrawal Methods and Processing Times](https://max-rebate.com/tmgm-deposit-withdrawal-en.html): How to deposit and withdraw with TMGM and how long it takes: USDT, USDC, Chinese yuan channels and bank wire compared, plus the return-to-source rule, USDT networks and common reasons withdrawals are rejected.
+- [TMGM Withdrawal & Deposit Times, Methods and Rules](https://max-rebate.com/tmgm-deposit-withdrawal-en.html): How long a TMGM withdrawal takes: reviewed within 24 hours, paid on business days, USDT usually 30 minutes to 3 hours after approval. Plus deposit times by channel, the return-to-source rule and why withdrawals are rejected.
 - [Just Opened a TMGM Account? Claim Rebates Within 3 Days](https://max-rebate.com/tmgm-new-account-rebate-en.html): Registered on TMGM's own website without an agent link? Within 3 days of registering, submit only your registered email to apply for rebates. No account number, password or ID needed.
 - [TMGM交易时间（北京时间）：黄金、白银、外汇几点开盘休市](https://max-rebate.com/tmgm-jiaoyi-shijian.html): TMGM黄金冬令时（2026年11月2日起）北京时间周一07:01开盘，周二至周五05:59休市、07:01重开，周六05:55收盘；美国夏令时期间各早1小时。附白银、欧元美元换算表，以及停盘前和数据公布时的杠杆调整。
 - [TMGM的MT4/MT5第一次登录不上怎么办？三个原因按顺序排查](https://max-rebate.com/mt4-deng-lu-bu-liao.html): TMGM的MT4/MT5第一次登录不上，约六成是服务器选错（AU和Global后缀、服务器编号），约三成是密码问题，约一成是交易账号还没激活、需要平台人工处理。按这个顺序排查即可。
