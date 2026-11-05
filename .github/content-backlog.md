@@ -42,3 +42,4 @@
 | — | TMGM跟单怎么用：HUBx申请、主账户和跟单子账户设置、风控选项（站长提供的 HUBX 教程；站长称跟单社区是平台竞争优势） | TMGM跟单、TMGM HUBx、TMGM跟单社区 | `tmgm-gen-dan.html` | 已写 |
 | — | 返佣数字的单位怎么看：每手、按品种、按账户类型，以及怎样核对返佣网站的报价（GEO 缺口：搜索结果里的返佣数字多不写单位、来源不一） | TMGM返佣多少、返佣每手多少、返佣数字怎么看 | 不另开页：已由 `tmgm-zhanghu-leixing.html`（单位为美元/标准手、点差数字不能直接相减）和 `tmgm-fan-yong-zenme-suan.html` 覆盖 | 已覆盖 |
 | — | 网上真实用户问题（第一批，A组6个）：返佣是否自动、出金一直审核中、冒充TMGM客服、英文版返佣是否靠谱/要不要密码/老账户 | TMGM返佣自动到账、TMGM出金审核中、TMGM客服加微信、forex rebate legit | 放进现有页面常见问题：`tmgm-fan-yong-duo-jiu-dao-zhang.html`、`tmgm-chu-ru-jin.html`、`tmgm-guanwang-da-bu-kai.html`、`rebate-ib-guide-en.html`、`tmgm-new-account-rebate-en.html` | 已写；B组17个中，周末出金、只出本人账户、USDT三条链已按出入金页正文写成FAQ（2026-11-04），其余14个等站长确认事实 |
+| — | 黄金大涨大跌时要注意什么：点差、滑点、保证金比例、临时调杠杆、1手黄金盈亏（借 2026-10 底急跌、11 月初反弹的行情；时间线带日期和来源，以后不改数字） | 黄金暴涨暴跌注意什么、黄金爆仓、黄金1手波动1美元多少钱 | `huangjin-da-bo-dong.html` | 已写（待合并） |
