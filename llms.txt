@@ -86,6 +86,8 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM能用EA吗？剥头皮、对冲和免费VPS条件](https://max-rebate.com/tmgm-ea-vps.html): 能。TMGM官网写明MT4支持EA自动交易、不限制剥头皮、可以用EA对冲。免费VPS有条件：已是客户每月交易满7手；新客户Basic版需入金3,000美元、高频版20,000美元。另说明EA和高频交易为什么更要看每手返佣。核对于2026-11-02。
 - [TMGM跟单怎么用？HUBx主账户和跟单账户设置步骤](https://max-rebate.com/tmgm-gen-dan.html): TMGM客户可以用HUBx跟单：在客户门户申请HUBx权限后，交易账户可以做主账户或跟单子账户。跟单方只需提供MT4账号和PIN码，可设跟单比例、最大手数、最大回撤和可跟品种。本页说明设置步骤、风控选项和注意事项。
 - [黄金大涨大跌时要注意什么：点差、滑点、保证金与杠杆](https://max-rebate.com/huangjin-da-bo-dong.html): 金价短时间大涨大跌时，点差可能扩大，止损可能滑点成交，保证金比例下降更快，平台还可能临时调低杠杆。1手黄金是100盎司，金价每动1美元盈亏约100美元。交易前先看这几项。
+- [MT4/MT5交易记录怎么导出：按平仓日核对返佣手数](https://max-rebate.com/jiaoyi-jilu-he-dui-fan-yong.html): 返佣按平仓日每天结算、次日到账。在MT4/MT5历史记录里选前一天，把平仓订单的手数加起来，乘以每手返佣标准，就能和到账金额对上。电脑版和手机版的查看、导出步骤都在本页。
+- [1手是多少：外汇、黄金、原油的1点和点值换算](https://max-rebate.com/yi-shou-dian-zhi.html): TMGM外汇1手是10万单位基础货币，EURUSD每动1个点1手盈亏10美元；黄金1手100盎司，金价动1美元盈亏100美元；原油1手100桶。附0.01手换算和返佣算法。
 
 ## 图文教程 / Step-by-step tutorials
 
