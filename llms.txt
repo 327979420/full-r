@@ -88,6 +88,7 @@ Source: https://max-rebate.com/en.html#faq
 - [黄金大涨大跌时要注意什么：点差、滑点、保证金与杠杆](https://max-rebate.com/huangjin-da-bo-dong.html): 金价短时间大涨大跌时，点差可能扩大，止损可能滑点成交，保证金比例下降更快，平台还可能临时调低杠杆。1手黄金是100盎司，金价每动1美元盈亏约100美元。交易前先看这几项。
 - [MT4/MT5交易记录怎么导出：按平仓日核对返佣手数](https://max-rebate.com/jiaoyi-jilu-he-dui-fan-yong.html): 返佣按平仓日每天结算、次日到账。在MT4/MT5历史记录里选前一天，把平仓订单的手数加起来，乘以每手返佣标准，就能和到账金额对上。电脑版和手机版的查看、导出步骤都在本页。
 - [1手是多少：外汇、黄金、原油的1点和点值换算](https://max-rebate.com/yi-shou-dian-zhi.html): TMGM外汇1手是10万单位基础货币，EURUSD每动1个点1手盈亏10美元；黄金1手100盎司，金价动1美元盈亏100美元；原油1手100桶。附0.01手换算和返佣算法。
+- [爆仓是什么？保证金比例怎么算、怎样避免爆仓](https://max-rebate.com/waihui-bao-cang.html): 爆仓是保证金比例跌到平台强平线，系统自动平仓。保证金比例 = 净值 ÷ 已用保证金 × 100%，在MT4/MT5“交易”标签页可以随时看。附仓位举例、锁仓风险和新手避免第一次爆仓的清单。
 
 ## 图文教程 / Step-by-step tutorials
 
