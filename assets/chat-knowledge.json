@@ -176,7 +176,7 @@
    "lang": "en",
    "title": "Forex Trading Costs: Spread, Commission, Swap & Rebates | Max Rebate",
    "description": "Calculate forex trading costs in one currency. Compare spreads, commissions, swaps, slippage and rebates, with a worked example and a checklist to avoid double counting.",
-   "answer": "For a cost estimate, add the spread cost, round-trip commission, overnight financing and execution slippage, then subtract any eligible rebate. Convert every item to the same currency and use the same position size and holding period. Estimated net cost = spread cost + commission + signed swap cost + signed slippage cost − eligible rebate. Treat a financing charge or adverse slippage as a positive cost; treat a credit or favourable slippage as negative. This is a comparison framework, not an extra deduction from an already calculated trade profit.",
+   "answer": "Estimated net cost = spread cost + commission + signed swap cost + signed slippage cost − eligible rebate. Convert every item to the same currency and use the same position size and holding period. Count a financing charge or adverse slippage as a positive cost, and a credit or favourable slippage as negative. Use it to compare accounts. It is not an extra deduction from a trade profit you have already calculated.",
    "faq": [
     {
      "q": "Are spread and commission the same cost?",
@@ -208,7 +208,7 @@
    "lang": "zh-CN",
    "title": "黄金大涨大跌时要注意什么：点差、滑点、保证金与杠杆｜满返网",
    "description": "金价短时间大涨大跌时，点差可能扩大，止损可能滑点成交，保证金比例下降更快，平台还可能临时调低杠杆。1手黄金是100盎司，金价每动1美元盈亏约100美元。交易前先看这几项。",
-   "answer": "金价大涨大跌时，交易成本和爆仓风险会一起变大：点差可能扩大，止损可能以更差的价格成交，保证金比例下降更快，停盘前和重要数据公布前后平台还可能临时调低杠杆。 黄金1标准手是100盎司，金价每变动1美元，盈亏约100美元；金价走100美元，1手就是约1万美元。先按这个数字算好仓位、留足保证金，再决定要不要交易。返佣按合资格手数计，不因行情大小改变，也不能抵消亏损。",
+   "answer": "金价大涨大跌时，交易成本和爆仓风险会一起变大。 1手黄金是100盎司，金价每走1美元，盈亏约100美元。 点差可能扩大。 止损可能以更差的价格成交（滑点）。 保证金比例下降更快。 休市前和重要数据公布前后，平台可能临时调低杠杆。 返佣按合资格手数计，不因行情大小改变，也不能抵消亏损。",
    "faq": [
     {
      "q": "黄金1手波动1美元，赚亏多少？",
@@ -274,7 +274,7 @@
    "lang": "zh-CN",
    "title": "MT4/MT5交易记录怎么导出：按平仓日核对返佣手数｜满返网",
    "description": "返佣按平仓日每天结算、次日到账。在MT4/MT5历史记录里选前一天，把平仓订单的手数加起来，乘以每手返佣标准，就能和到账金额对上。电脑版和手机版的查看、导出步骤都在本页。",
-   "answer": "满返网的TMGM返佣每天结算，当天平仓订单的返佣次日打入对应的MT4/MT5交易账户。核对时，在MT4/MT5的历史记录里选前一天，把平仓订单的手数加起来，乘以账户和品种的每手返佣标准，再和次日到账的金额对比。 电脑版MT4看“账户历史”，电脑版MT5看“工具箱”里的“历史”，手机版MT5看底部的“历史”标签页。持仓中的订单不计，平仓后才计入。",
+   "answer": "在MT4/MT5历史记录里选前一天，把已平仓订单的手数加起来，乘以账户和品种的每手返佣标准，再和次日到账的金额对比。 满返网的TMGM返佣每天结算，当天平仓订单的返佣次日打入对应的MT4/MT5交易账户。 持仓中的订单不计，平仓后才计入。 在哪看：电脑版MT4“账户历史”；电脑版MT5“工具箱”里的“历史”；手机版MT5底部“历史”标签页。",
    "faq": [
     {
      "q": "怎么查自己一天平仓了多少手？",
@@ -380,7 +380,7 @@
    "lang": "en",
    "title": "What Is a Trading Rebate? IBs, Forex Rebates & Full Rebates | Max Rebate",
    "description": "A trading rebate pays back a fixed amount per standard lot traded. TMGM STD rebates at Max Rebate: USD 10 per lot forex, USD 20 per lot gold. How IBs fund rebates, what full rebate means and how to check payments.",
-   "answer": "A trading rebate is a fixed amount paid back to the trader for every standard lot traded, funded by the commission the broker pays the Introducing Broker (IB). On a TMGM STD account, Max Rebate currently returns USD 10 per lot on forex and USD 20 per lot on gold. A rebate returns an eligible part of trading-related commission, subject to account attribution, product rules and approval. Max Rebate is an independent service. Its published rebate table describes its own arrangement, not a rate guaranteed to every TMGM account. Check the current published table , confirm eligibility, and compare the amount received with eligible trading records. A rebate does not reimburse every trading cost or guarantee a profit.",
+   "answer": "A trading rebate is a fixed amount paid back to the trader for every standard lot traded, funded by the commission the broker pays the Introducing Broker (IB). On a TMGM STD account, Max Rebate currently returns USD 10 per lot on forex and USD 20 per lot on gold. Eligibility depends on account attribution, product rules and approval. The published table is Max Rebate's own arrangement, not a rate guaranteed to every TMGM account. A rebate does not reimburse every trading cost or guarantee a profit.",
    "faq": [
     {
      "q": "Does a 100% rebate refund all trading costs?",
@@ -400,7 +400,7 @@
     },
     {
      "q": "Are forex rebate services legit?",
-     "a": "The rebate itself is a common arrangement: the broker pays the IB a commission on eligible lots, and the service returns part of it to the trader. Whether a particular service can be trusted depends on how it works. A reliable one does not handle client funds, never asks for passwords or verification codes, states clearly that it is not the broker's official website, publishes how rebates are calculated and does not promise profits."
+     "a": "The rebate itself is a common arrangement: the broker pays the IB a commission on eligible lots, and the service returns part of it to the trader. Whether a particular service can be trusted depends on how it works. A reliable one:"
     },
     {
      "q": "Do I need to give my trading password to get rebates?",
@@ -429,7 +429,7 @@
    "lang": "zh-CN",
    "title": "返佣是什么？外汇返佣、IB与每手返佣怎么算｜满返网",
    "description": "返佣是IB把券商按交易手数支付的佣金返还给交易者，用来降低交易成本。满返网TMGM标准账户外汇每手返10美元、黄金每手返20美元，每天结算、次日到账。一篇看懂IB、返佣和满返。",
-   "answer": "外汇返佣，是IB把券商按客户交易手数支付给自己的佣金，按约定比例返还给客户，用来降低已经发生的交易成本。以满返网当前TMGM方案为例，STD账户黄金每手返20美元，交易2手对应40美元，每天结算，次日打入交易账户。前提是账户归属正确、交易符合品种规则并通过审核。满返网是独立服务网站，公布的返佣标准是满返网自己的方案，不代表每个TMGM账户都能拿到同样的费率。 先查看 当前公布的返佣标准 ，确认资格，再把到账金额和合资格交易记录核对。返佣不会报销所有交易成本，也不保证盈利。",
+   "answer": "外汇返佣是IB把券商按客户交易手数支付的佣金，按约定比例返还给客户，用来降低交易成本。 例：满返网TMGM方案，STD账户黄金每手返20美元，交易2手返40美元。 每天结算，次日打入交易账户。 前提：账户归属正确、交易符合品种规则并通过审核。 返佣不报销全部交易成本，也不保证盈利。 满返网是独立服务网站，标准为满返网自己的方案，见 当前返佣标准 。",
    "faq": [
     {
      "q": "外汇IB和“代理”是一回事吗？",
@@ -570,7 +570,7 @@
    "lang": "en",
    "title": "TMGM Withdrawal & Deposit Times, Methods and Rules | Max Rebate",
    "description": "How long a TMGM withdrawal takes: reviewed within 24 hours, paid on business days, USDT usually 30 minutes to 3 hours after approval. Plus deposit times by channel, the return-to-source rule and why withdrawals are rejected.",
-   "answer": "TMGM deposits: USDT and USDC are usually credited instantly, Chinese yuan channels such as Jifubao (极付宝), Alipay and WeChat Pay take about 10–15 minutes, and bank wire takes about 1–4 business days. Withdrawals: deposited funds must go back the way they came in, and only to an account in your own name. USDT withdrawals usually arrive 30 minutes to 3 hours after approval, and more slowly during US trading hours.",
+   "answer": "TMGM deposits by USDT or USDC are usually credited instantly. Withdrawals must go back the way the money came in, and only to an account in your own name. Chinese yuan channels (Jifubao 极付宝, Alipay, WeChat Pay): about 10–15 minutes. Bank wire: about 1–4 business days. USDT withdrawals: usually 30 minutes to 3 hours after approval, more slowly during US trading hours.",
    "faq": [
     {
      "q": "How long does a TMGM deposit take?",
@@ -582,7 +582,7 @@
     },
     {
      "q": "My withdrawal has been “under review” for a while. Why?",
-     "a": "Withdrawal requests are normally reviewed within 24 hours and paid only on business days; requests made at the weekend move to the next business day. If a request is still under review after one business day, check your registered email for a review email from TMGM. The usual holdups are withdrawing without following each deposit channel's share of your total deposits, or a withdrawal that would take your margin level below 150%. If the email does not explain it, ask TMGM support."
+     "a": "Withdrawal requests are normally reviewed within 24 hours and paid only on business days; requests made at the weekend move to the next business day. If a request is still under review after one business day, check your registered email for a review email from TMGM."
     },
     {
      "q": "Can I withdraw at the weekend?",
@@ -619,7 +619,7 @@
    "lang": "zh-CN",
    "title": "TMGM能用EA吗？剥头皮、对冲和免费VPS条件｜满返网",
    "description": "能。TMGM官网写明MT4支持EA自动交易、不限制剥头皮、可以用EA对冲。免费VPS有条件：已是客户每月交易满7手；新客户Basic版需入金3,000美元、高频版20,000美元。另说明EA和高频交易为什么更要看每手返佣。核对于2026-11-02。",
-   "answer": "能。TMGM官网写明MT4支持EA自动交易，不限制剥头皮，也可以用EA开反向仓位对冲；EDGE和CLASSIC账户都标注兼容EA。 免费VPS有条件：已是客户的，月底审核前当月交易满7手；新客户申请Basic版需入金至少3,000美元，高频版（High Frequency）至少20,000美元。",
+   "answer": "能。TMGM官网写明MT4支持EA自动交易，不限制剥头皮，也可以用EA开反向仓位对冲。 EDGE和CLASSIC账户都标注兼容EA。 免费VPS有条件：已是客户的，月底审核前当月交易满7手；新客户申请Basic版需入金至少3,000美元，高频版（High Frequency）至少20,000美元。",
    "faq": [
     {
      "q": "TMGM能用EA吗？",
@@ -648,7 +648,7 @@
    "lang": "zh-CN",
    "title": "TMGM返佣网站对比：满返网、Cashback Island、TradingFinder每手返多少｜满返网",
    "description": "按各站公开页面对比TMGM标准账户返佣：满返网外汇每手10美元、黄金20美元；Cashback Island外汇8美元、黄金16美元；TradingFinder外汇5美元、黄金10美元（2026年10月28日核对）。附选择返佣网站时要核对的6件事。",
-   "answer": "按各站公开页面（2026年10月28日核对），TMGM标准账户每标准手返佣：满返网外汇10美元、黄金20美元；Cashback Island外汇8美元、黄金16美元；TradingFinder外汇5美元、黄金10美元。三家都表示返佣不改变官方的点差和手续费。比较时要用同一种账户类型，并核对结算方式、已有账户能否申请、需要提供哪些资料。",
+   "answer": "按各站公开页面（2026年10月28日核对），TMGM标准账户每标准手返佣如下。 网站 外汇 黄金 满返网 10美元 20美元 Cashback Island 8美元 16美元 TradingFinder 5美元 10美元 三家都表示返佣不改变官方的点差和手续费。比较时要用同一种账户类型，并核对结算方式、已有账户能否申请、需要提供哪些资料。",
    "faq": [
     {
      "q": "TMGM返佣哪个网站返得多？",
@@ -735,7 +735,7 @@
    "lang": "zh-CN",
    "title": "TMGM返佣申请｜返佣标准、结算方式和常见问题｜满返网",
    "description": "TMGM返佣申请指南：了解TMGM账户类型、返佣计算、结算与到账规则、新老账户区别、TMGM代理与IB合作关系及申请步骤。",
-   "answer": "TMGM返佣是按账户组别、交易品种和合资格标准手数，把交易产生的部分佣金返还给客户。以满返网当前方案为例，标准账户（STD）黄金每手返20美元；合资格返佣每天结算，当天平仓订单的返佣次日打入对应的 MT4/MT5 交易账户。 每标准手返佣（美元） STD PM DC PRO RAW07 黄金 20 15 10 10 2 外汇 10 4 7 2 2 比特币 1.5 1.5 10 1.5 1.5 数据来自满返网首页当前返佣表；RAW07 另收手续费。实际资格和金额以平台后台记录及审核为准。 其他品种返佣 每标准手返佣 STD PM PRO RAW07 原油（WTI、布伦特） 1.5美元 1.5美元 1.5美元 1.5美元 股指（如US30） 100点 40点 15点 15点 亚洲股指 1000点 400点 150点 150点 其他加密货币 1.5美元 1.5美元 1.5美元 1.5美元 股票 2点 2点 2点 2点 原油： TMGM原油1标准手是100桶，每手返1.5美元。 股指按“点”计： 1点是报价的最小单位（0.01个指数点），100点就是1个指数点。以US30为例，TMGM合约规格是1手对应10美元/指数点，100点约等于每手10美元。其他指数按各自的合约大小和计价货币折算。 股票也按“点”计： 1点是0.01，股票通常1手对应1股，所以2点约等于每手（每股）2美分；港股、澳股按当地货币计。各账户相同，具体以MT4/MT5里的品种规格为准。 白银和DC账户的其他品种 按平台另行设定的标准计算，以后台记录为准，可以 联系确认 。 以上为2026年11月的标准，可能调整，以平台后台记录为准。",
+   "answer": "TMGM返佣按合资格的已平仓标准手数计算，每天结算，当天平仓订单的返佣次日打入对应的MT4/MT5交易账户。满返网方案下，STD账户黄金每手返20美元、外汇10美元。 每标准手返佣（美元） STD PM DC PRO RAW07 黄金 20 15 10 10 2 外汇 10 4 7 2 2 比特币 1.5 1.5 10 1.5 1.5 RAW07另收手续费。数据来自满返网首页当前返佣表，实际资格和金额以平台后台记录及审核为准。原油、股指、股票等见 其他品种返佣 。",
    "faq": [
     {
      "q": "“100%返佣”是什么意思？",
@@ -760,7 +760,7 @@
    "lang": "zh-CN",
    "title": "TMGM跟单怎么用？HUBx主账户和跟单账户设置步骤｜满返网",
    "description": "TMGM客户可以用HUBx跟单：在客户门户申请HUBx权限后，交易账户可以做主账户或跟单子账户。跟单方只需提供MT4账号和PIN码，可设跟单比例、最大手数、最大回撤和可跟品种。本页说明设置步骤、风控选项和注意事项。",
-   "answer": "TMGM客户可以用HUBx跟单：在客户门户申请HUBx权限并同意协议后，同一后台的交易账户既可以做主账户（被跟的一方），也可以做跟单子账户。跟单方只需把MT4交易账号和PIN码提供给主账户操作人，不用交出交易密码；双方都同意跟单参数后才开始跟单。 跟单方可以设跟单比例、最大手数、最大回撤和可跟品种。",
+   "answer": "TMGM客户可以用HUBx跟单：在客户门户申请HUBx权限并同意协议后，同一后台的交易账户既可以做主账户（被跟的一方），也可以做跟单子账户。 跟单方只需把MT4交易账号和PIN码提供给主账户操作人，不用交出交易密码。 双方都同意跟单参数后才开始跟单。 跟单方可以设跟单比例、最大手数、最大回撤和可跟品种。",
    "faq": [
     {
      "q": "TMGM有跟单功能吗？",
@@ -863,7 +863,7 @@
    "lang": "zh-CN",
    "title": "TMGM黄金返佣指南｜XAUUSD每手返佣与成本计算｜满返网",
    "description": "TMGM黄金返佣怎么计算？了解XAUUSD标准手、账户类型、点差手续费与返佣后的净成本，适合黄金短线和高频交易者参考。",
-   "answer": "以满返网当前方案为例，TMGM黄金（XAUUSD）每标准手返佣为：STD 20美元、PM 15美元、DC 和 PRO 各10美元、RAW07 2美元（RAW07另收手续费；平台活动期间RAW07返佣可能更高，以当期活动说明为准）。判断哪个账户更划算，要看“点差 + 手续费 + 滑点 + 隔夜费 − 返佣”后的净成本，而不是只看返佣数字。",
+   "answer": "以满返网当前方案为例，TMGM黄金（XAUUSD）每标准手返佣：STD 20美元、PM 15美元、DC和PRO各10美元、RAW07 2美元。 RAW07另收手续费；平台活动期间RAW07返佣可能更高，以当期活动说明为准。 选账户要看净成本（点差 + 手续费 + 滑点 + 隔夜费 − 返佣），不要只看返佣数字。",
    "faq": [
     {
      "q": "TMGM黄金每手返佣多少？",
@@ -888,7 +888,7 @@
    "lang": "zh-CN",
    "title": "TMGM交易时间（北京时间）：黄金、白银、外汇几点开盘休市｜满返网",
    "description": "TMGM黄金冬令时（2026年11月2日起）北京时间周一07:01开盘，周二至周五05:59休市、07:01重开，周六05:55收盘；美国夏令时期间各早1小时。附白银、欧元美元换算表，以及停盘前和数据公布时的杠杆调整。",
-   "answer": "现在是冬令时（2026年11月2日周一开盘起）：TMGM黄金（XAUUSD）北京时间周一07:01开盘，周二至周五每天05:59休市、07:01重新开盘，周六05:55全周收盘。美国夏令时期间（2027年3月14日起），服务器时间从GMT+2改为GMT+3，北京时间各早1小时：周一06:01开盘，每天04:59休市、06:01重开，周六04:55收盘。",
+   "answer": "现在是冬令时（2026年11月2日周一开盘起）：TMGM黄金（XAUUSD）北京时间周一07:01开盘，周二至周五每天05:59休市、07:01重开，周六05:55全周收盘。 北京时间 冬令时（现在） 夏令时（2027年3月14日起） 周一开盘 07:01 06:01 周二至周五每日休市 / 重开 05:59 / 07:01 04:59 / 06:01 周六全周收盘 05:55 04:55 服务器时间 GMT+2 GMT+3",
    "faq": [
     {
      "q": "TMGM黄金北京时间几点开盘？",
@@ -1028,7 +1028,7 @@
    "lang": "en",
    "title": "Just Opened a TMGM Account? Claim Rebates Within 3 Days | Max Rebate",
    "description": "Registered on TMGM's own website without an agent link? Within 3 days of registering, submit only your registered email to apply for rebates. No account number, password or ID needed.",
-   "answer": "If you registered your TMGM account within the last 3 days and did not use another agent's link or invitation code, you only need to submit your registered email to apply for rebates. No account number, password or ID is needed, and approval is subject to platform review. Accounts older than 3 days can submit their email too, and Max Rebate will reply by email with your options.",
+   "answer": "Registered your TMGM account within the last 3 days, without another agent's link or invitation code? Submit your registered email to apply for rebates. No account number, password or ID is needed. Approval is subject to platform review. Account older than 3 days? Submit your email too, and Max Rebate will reply by email with your options.",
    "faq": [
     {
      "q": "I just registered with TMGM. Can I still get rebates?",
@@ -1155,7 +1155,7 @@
    "lang": "zh-CN",
    "title": "爆仓是什么？保证金比例怎么算、怎样避免爆仓｜满返网",
    "description": "爆仓是保证金比例跌到平台强平线，系统自动平仓。保证金比例 = 净值 ÷ 已用保证金 × 100%，在MT4/MT5“交易”标签页可以随时看。附仓位举例、锁仓风险和新手避免第一次爆仓的清单。",
-   "answer": "爆仓是指账户的保证金比例跌到平台的强平线（Stop Out），系统自动把持仓平掉，通常先平浮亏最大的一单。保证金比例 = 净值 ÷ 已用保证金 × 100%，在MT4/MT5的“交易”标签页可以随时看到。 比例掉到强平线之前，一般先到追加保证金线（Margin Call），这时账户状态会变红提醒。强平线是多少，各平台、各账户可能不同，以客户协议为准。避免爆仓最有效的办法是仓位小、留足余量：同样2,000美元的账户，开0.1手黄金，金价要反向走约180美元才到50%；开0.5手，反向走约20美元就到了（举例的杠杆和强平线是假设）。",
+   "answer": "爆仓是保证金比例跌到平台的强平线（Stop Out），系统自动平仓，通常先平浮亏最大的一单。 保证金比例 = 净值 ÷ 已用保证金 × 100%，在MT4/MT5“交易”标签页随时可看。 到强平线之前，一般先到追加保证金线（Margin Call），账户状态会变红。 强平线各平台、各账户可能不同，以客户协议为准。 防爆仓最有效的是仓位小：2,000美元账户开0.1手黄金，金价反向约180美元才到50%；开0.5手，约20美元就到（杠杆和强平线为假设）。",
    "faq": [
     {
      "q": "保证金比例多少会爆仓？",
@@ -1234,7 +1234,7 @@
    "lang": "zh-CN",
    "title": "外汇交易成本怎么算？点差、手续费、隔夜利息与返佣｜满返网",
    "description": "外汇交易成本=点差+手续费+隔夜利息+滑点−返佣。拆解每一项怎么算、谁影响最大，并附一笔黄金单的完整成本示例和对比方法。",
-   "answer": "一笔外汇或黄金单的净交易成本 = 点差 + 手续费 + 隔夜利息 + 滑点 − 返佣。 这是比较成本组成的估算口径，各项先换成同一货币。隔夜利息与滑点可能有利也可能不利，应保留方向；返佣以实际合资格金额为准，不改变市场风险。 以满返网当前TMGM方案为例（单位：美元/标准手）：STD账户不单独收手续费，成本在点差里，黄金每手返佣20美元；RAW07账户点差低，但黄金每手另收手续费参考5美元、返佣2美元，返佣后手续费部分约3美元。点差要在MT5里按品种规格换算成金额，才能和返佣相减，详见 TMGM账户类型对比 。",
+   "answer": "一笔外汇或黄金单的净交易成本 = 点差 + 手续费 + 隔夜利息 + 滑点 − 返佣。 各项先换成同一货币；隔夜利息和滑点可能有利也可能不利，要保留方向。 STD账户：不另收手续费，成本在点差里，黄金每手返20美元。 RAW07账户：点差低，黄金每手另收手续费参考5美元、返佣2美元，手续费部分净约3美元。 点差要先在MT5按品种规格换算成金额，才能和返佣相减，见 TMGM账户类型对比 。",
    "faq": [
     {
      "q": "外汇交易的成本有哪些？",
@@ -1296,7 +1296,7 @@
    "lang": "zh-CN",
    "title": "1手是多少：外汇、黄金、原油的1点和点值换算｜满返网",
    "description": "TMGM外汇1手是10万单位基础货币，EURUSD每动1个点1手盈亏10美元；黄金1手100盎司，金价动1美元盈亏100美元；原油1手100桶。附0.01手换算和返佣算法。",
-   "answer": "TMGM外汇1标准手是10万单位基础货币，EURUSD每变动1个点（0.0001），1手盈亏10美元；黄金（XAUUSD）1手是100盎司，金价每变动1美元，1手盈亏100美元；原油（XTIUSD）1手是100桶，油价每变动0.01美元，1手盈亏1美元。 最小可以交易0.01手，盈亏按手数等比例缩小：0.01手黄金，金价动1美元，盈亏1美元。返佣也按标准手算，STD账户0.1手黄金返2美元。",
+   "answer": "TMGM黄金1手是100盎司，金价动1美元，1手盈亏100美元；外汇1手是10万单位基础货币，EURUSD动1个点（0.0001），1手盈亏10美元。 品种 1标准手 价格变动 1手盈亏 外汇（EURUSD） 10万单位 1个点（0.0001） 10美元 黄金（XAUUSD） 100盎司 1美元 100美元 原油（XTIUSD） 100桶 0.01美元 1美元 最小0.01手，盈亏按手数等比例缩小。返佣也按标准手算：STD账户0.1手黄金返2美元。",
    "faq": [
     {
      "q": "黄金1手是多少盎司？",
