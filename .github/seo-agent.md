@@ -63,6 +63,15 @@ the site owner reviews and merges. If nothing is worth changing, open no PR and 
 
 ## Writing rules (GEO-friendly and compliant)
 
+- **Brief first.** A reader should get the answer in under 10 seconds. The `#answer` card comes first in `<main>`
+  (before the contents list and the notice): one bold sentence with the answer, number, unit and condition, then
+  at most 3–4 bullets or a small table. No background, caveats or links stacked into the answer card.
+- Short blocks: one idea per paragraph, 2–3 sentences. Turn lists of conditions, steps or options into `<ul>`/`<ol>`
+  or a table instead of a long sentence.
+- `npm run check` enforces the limits: answer card ≤ 220 Chinese characters (≤ 90 English words) excluding tables,
+  each answer-card paragraph or bullet ≤ 140 characters (≤ 60 words), each body paragraph ≤ 160 characters
+  (≤ 70 words). Shorten the text; never raise the limits.
+
 - Answer first: the first sentence under each H2 states the answer, with the number, unit and condition.
 - Use tables for comparisons; plain HTML text, never text inside images.
 - Cite external sources for facts (regulators, broker help/academy pages, reputable references) in a 参考资料 card.

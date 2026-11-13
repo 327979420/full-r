@@ -18,6 +18,40 @@ async function exists(relativePath) {
   }
 }
 
+// Readability limits for guide pages: readers should get the answer in seconds.
+// Chinese is measured in characters, English in words; tables are not counted.
+const LIMITS = {
+  zh: { block: 160, answerBlock: 140, answer: 220, unit: "characters" },
+  en: { block: 70, answerBlock: 60, answer: 90, unit: "words" }
+};
+
+function textSize(html, lang) {
+  const text = html.replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/gi, "x");
+  return lang === "en" ? text.split(/\s+/).filter(Boolean).length : text.replace(/\s/g, "").length;
+}
+
+function checkReadability(file, source) {
+  const lang = /<html[^>]*\blang=["']en/i.test(source) ? "en" : "zh";
+  const limit = LIMITS[lang];
+  const blocks = (html) => [...html.matchAll(/<(p|li|summary)\b[^>]*>([\s\S]*?)<\/\1>/gi)].map((m) => m[2]);
+  const answer = (source.match(/<section class="card answer" id="answer">([\s\S]*?)<\/section>/i) || [])[1];
+  if (!answer) return fail(file, "article page missing the answer box (section.card.answer#answer)");
+  const toc = source.indexOf('class="page-toc"');
+  if (toc >= 0 && toc < source.indexOf('id="answer"')) fail(file, "answer box must come before the contents list");
+  const answerText = answer.replace(/<h2[\s\S]*?<\/h2>|<div class="table-scroll"[\s\S]*?<\/div>/gi, "");
+  const answerSize = textSize(answerText, lang);
+  if (answerSize > limit.answer) fail(file, `answer box is ${answerSize} ${limit.unit} (max ${limit.answer}); lead with one short sentence, use bullets or a table`);
+  for (const block of blocks(answerText)) {
+    const size = textSize(block, lang);
+    if (size > limit.answerBlock) fail(file, `answer box paragraph is ${size} ${limit.unit} (max ${limit.answerBlock}): "${block.replace(/<[^>]+>/g, "").slice(0, 30)}…"`);
+  }
+  const main = (source.match(/<main>([\s\S]*)<\/main>/i) || ["", ""])[1].replace(/<section class="card answer"[\s\S]*?<\/section>/i, "");
+  for (const block of blocks(main)) {
+    const size = textSize(block, lang);
+    if (size > limit.block) fail(file, `paragraph is ${size} ${limit.unit} (max ${limit.block}); split it or use a list: "${block.replace(/<[^>]+>/g, "").slice(0, 30)}…"`);
+  }
+}
+
 function localTarget(href) {
   if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) return null;
   if (/^[a-z][a-z\d+.-]*:/i.test(href) || href.startsWith("//")) return null;
@@ -54,6 +88,7 @@ for (const file of contentPages) {
   if (/<meta\s+property=["']og:type["']\s+content=["']article["']/i.test(source)) {
     if (!/data-seo=["']managed["']/i.test(source)) fail(file, "article page missing managed JSON-LD (run: node scripts/seo-sync.mjs)");
     if (!/data-seo=["']updated["']/i.test(source)) fail(file, "article page missing visible last-updated date (run: node scripts/seo-sync.mjs)");
+    checkReadability(file, source);
   }
   const title = (source.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || "";
   if (!title.trim()) fail(file, "missing title");
