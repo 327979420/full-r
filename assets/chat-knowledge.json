@@ -54,7 +54,7 @@
    "Your account and execution conditions remain those of the platform and account group.",
    "After approval, follow-up continues through Max Rebate's contact channels.",
    "Register through the correct link and establish rebate attribution",
-   "Just submit your registered email. No spam, no pressure.",
+   "Submit only your registered email. Rebates are usually switched on the same day. No spam, no pressure.",
    "For trading teams, communities and client channels",
    "You complete the process yourself. Max Rebate never requests passwords, codes or bank-card details.",
    "Gold rebate only. Spread, slippage, swaps and other costs are not included.",
@@ -77,7 +77,7 @@
     },
     {
      "q": "When is the rebate credited?",
-     "a": "Rebates are settled daily: the rebate on orders closed today is credited to the matching MT4/MT5 trading account the next day. Only closed orders count; open positions count once they are closed. Before the first payment, the account must be linked and rebate access switched on."
+     "a": "Rebates are settled daily: the rebate on orders closed today is credited to the matching MT4/MT5 trading account the next day. Only closed orders count; open positions count once they are closed. Before the first payment, rebate access must be switched on: if you registered within the last 3 days and submit your registered email, this usually happens the same day."
     },
     {
      "q": "Will the site ask for trading passwords?",
@@ -107,7 +107,7 @@
     },
     {
      "q": "返佣什么时候到账？",
-     "a": "返佣每天结算：当天平仓订单的返佣，次日打入对应的 MT4/MT5 交易账户。只计已平仓订单，持仓平仓后才计入。首次到账前，账户需要先完成归属并开启返佣权限。"
+     "a": "返佣每天结算：当天平仓订单的返佣，次日打入对应的 MT4/MT5 交易账户。只计已平仓订单，持仓平仓后才计入。首次到账前，账户需要先开通返佣权限：注册 3 天内提交注册邮箱的，一般当天开通。"
     },
     {
      "q": "网站会要求交易密码吗？",
@@ -979,7 +979,7 @@
    "lang": "zh-CN",
    "title": "TMGM开户链接｜开户注册与返佣绑定教程｜满返网",
    "description": "通过TMGM开户链接完成注册、身份认证和交易账户开通，并了解返佣绑定、新老账户区别及开户安全注意事项。独立客户服务网站，非TMGM官网。",
-   "answer": "通过满返网的开户按钮注册，或自行在TMGM官方渠道注册且未使用其他代理链接或邀请码，都可以申请返佣。自行注册的须在注册3天内提交注册邮箱；满返网只需注册邮箱，资格以平台审核为准。超过3天请发邮件咨询。",
+   "answer": "通过满返网的开户按钮注册，或自行在TMGM官方渠道注册且未使用其他代理链接或邀请码，都可以申请返佣。自行注册的须在注册3天内提交注册邮箱；满返网只需注册邮箱，一般当天开通，资格以平台审核为准。超过3天请发邮件咨询。",
    "faq": [
     {
      "q": "注册时需要填邀请码吗？",
@@ -987,7 +987,7 @@
     },
     {
      "q": "已经自己在TMGM官网注册了，还能申请返佣吗？",
-     "a": "注册3天内、没用其他代理链接或邀请码的可以申请，只需 提交注册邮箱 ，结果以平台审核为准；超过3天的请发邮件咨询。"
+     "a": "注册3天内、没用其他代理链接或邀请码的可以申请，只需 提交注册邮箱 ，一般当天开通，结果以平台审核为准；超过3天的请发邮件咨询。"
     },
     {
      "q": "TMGM注册页有中文吗？",
@@ -1085,12 +1085,16 @@
    "url": "https://max-rebate.com/tmgm-new-account-rebate-en.html",
    "lang": "en",
    "title": "Just Opened a TMGM Account? Claim Rebates Within 3 Days | Max Rebate",
-   "description": "Registered on TMGM's own website without an agent link? Within 3 days of registering, submit only your registered email to apply for rebates. No account number, password or ID needed.",
-   "answer": "Registered your TMGM account within the last 3 days, without another agent's link or invitation code? Submit your registered email to apply for rebates. No account number, password or ID is needed. Approval is subject to platform review. Account older than 3 days? Submit your email too, and Max Rebate will reply by email with your options.",
+   "description": "Registered on TMGM's website or app without an agent link? Within 3 days of registering, submit only your registered email; rebate access is usually switched on the same day. No account number, password or ID needed.",
+   "answer": "Registered your TMGM account within the last 3 days, without another agent's link or invitation code? Submit your registered email, and rebate access is usually switched on the same day. No account number, password or ID is needed. Approval is subject to platform review. Account older than 3 days? Submit your email too, and Max Rebate will reply by email with your options.",
    "faq": [
     {
      "q": "I just registered with TMGM. Can I still get rebates?",
      "a": "Yes. If you registered within the last 3 days and did not use another agent's link or invitation code, submit your registered email to apply. Approval is subject to platform review."
+    },
+    {
+     "q": "How long does it take to switch on rebates after I submit my email?",
+     "a": "Usually the same day. Max Rebate emails the result to your registered email. Eligible trades count from then on: the rebate on orders closed today is credited to the matching MT4/MT5 trading account the next day."
     },
     {
      "q": "I forgot to enter an invitation code when registering. What now?",
@@ -1150,13 +1154,17 @@
   {
    "url": "https://max-rebate.com/tmgm-zhu-ce-hou-fan-yong.html",
    "lang": "zh-CN",
-   "title": "刚注册TMGM怎么申请返佣？3天内提交注册邮箱即可｜满返网",
-   "description": "刚在TMGM官网注册、没有用其他代理链接？注册3天内只需提交注册邮箱，就能申请返佣权限，不用账号、密码或证件。超过3天也可以先提交，满返网会通过邮件回复处理方式。",
-   "answer": "注册TMGM账户3天内，并且没有通过其他代理的链接或邀请码注册，只需提交注册邮箱，就可以申请返佣权限。不需要账号、密码或证件，结果以平台审核为准。超过3天的账户也可以先提交邮箱，满返网会通过邮件告诉你怎么处理。",
+   "title": "刚注册TMGM怎么申请返佣？3天内只填注册邮箱，一般当天开通｜满返网",
+   "description": "刚在TMGM官网或App注册、没有用其他代理链接？注册3天内只需提交注册邮箱，一般当天开通返佣权限，不用账号、密码或证件。超过3天也可以先提交，满返网会通过邮件回复处理方式。",
+   "answer": "在TMGM官网或App注册3天内、没用其他代理的链接或邀请码，只需提交注册邮箱，一般当天开通返佣权限。 不需要账号、密码或证件，结果以平台审核为准。 超过3天的账户也可以先提交邮箱，满返网会通过邮件告诉你怎么处理。",
    "faq": [
     {
      "q": "刚注册TMGM，还能申请返佣吗？",
      "a": "可以。注册3天内、没有通过其他代理的链接或邀请码注册的账户，只需提交注册邮箱就能申请返佣权限，结果以平台审核为准。"
+    },
+    {
+     "q": "提交注册邮箱后，多久能开通返佣？",
+     "a": "一般当天开通，结果会发到你的注册邮箱。开通后的合资格交易开始计返佣：当天平仓订单的返佣，次日打入对应的MT4/MT5交易账户。"
     },
     {
      "q": "注册时忘了填邀请码，怎么办？",
