@@ -49,3 +49,4 @@
 | — | 爆仓是什么：追加保证金、强平、穿仓的区别，保证金比例怎么算、在MT4/MT5哪里看，锁仓为什么也会爆仓，新手怎样避免（竞品选题缺口；TMGM强平线未公开，只写「以客户协议为准」） | 爆仓是什么、保证金比例多少会爆仓、预付款比例、锁仓会爆仓吗 | `waihui-bao-cang.html` | 已写 |
 | — | 喊单群、带单、资金盘怎么识别：三种套路、7个危险信号、怎样查牌照和网址、被骗后先做什么（竞品选题缺口 #5；不评价具体平台或个人） | 喊单群是骗局吗、带单老师靠谱吗、资金盘怎么识别、外汇平台提现要交费 | `han-dan-zi-jin-pan.html` | 已写 |
 | — | MT4/MT5怎么下单：市价单、四种挂单（挂在现价哪边、按Bid/Ask触发）、手机版下单改单删单、止损止盈（竞品选题缺口 #6；按MetaQuotes官方帮助，按钮名称以App为准） | MT4怎么挂单、buy limit和buy stop区别、MT5手机怎么下单、止损止盈怎么设 | `mt4-mt5-gua-dan.html` | 已写 |
+| — | 英文版：TMGM 1手多大、pip 值（外汇、黄金、原油、US30），0.1/0.01手、保证金、按手算返佣（与 `yi-shou-dian-zhi.html` 互为 hreflang；按 TMGM 英文品种页核对于2026-11-19，黄金 pip 按 TMGM 写 0.01） | tmgm gold lot size, tmgm pip value, how much is 1 lot of gold, 0.01 lot gold | `tmgm-lot-size-pip-value-en.html` | 已写 |
