@@ -1061,6 +1061,35 @@
    ]
   },
   {
+   "url": "https://max-rebate.com/tmgm-lot-size-pip-value-en.html",
+   "lang": "en",
+   "title": "TMGM Lot Size and Pip Value: Forex, Gold, Oil and US30 | Max Rebate",
+   "description": "At TMGM, 1 lot of gold is 100 oz, so a USD 1 move is USD 100 per lot. 1 lot of EURUSD is EUR 100,000 and a pip is worth USD 10. Tables for 0.1 and 0.01 lots, margin and rebates.",
+   "answer": "One standard lot of gold (XAUUSD) is 100 troy ounces, so a USD 1 move in the gold price is USD 100 per lot. One lot of EURUSD is EUR 100,000, and a 1-pip move (0.0001) is USD 10. Instrument 1 standard lot Price move Profit or loss per lot Forex (EURUSD) EUR 100,000 1 pip (0.0001) USD 10 Gold (XAUUSD) 100 oz USD 1.00 USD 100 US oil (XTIUSD) 100 barrels USD 0.01 USD 1 The minimum trade is 0.01 lots, and profit, loss and rebates scale with the lot size.",
+   "faq": [
+    {
+     "q": "How many ounces is 1 lot of gold at TMGM?",
+     "a": "One standard lot of XAUUSD is 100 troy ounces, 0.1 lots is 10 ounces and 0.01 lots is 1 ounce. A USD 1 move in the gold price is USD 100 per standard lot."
+    },
+    {
+     "q": "How much is 0.01 lots of gold per USD 1 move?",
+     "a": "USD 1. A 0.01-lot gold position is 1 ounce, so each USD 1 change in the price is a USD 1 profit or loss, before spread, commission and swap."
+    },
+    {
+     "q": "Do I need USD 100,000 to trade 1 lot of forex?",
+     "a": "No. The contract is 100,000 units of the base currency, but opening it needs only margin: contract value ÷ leverage. EURUSD at 1.10 with 1:100 leverage needs about USD 1,100. Your account's leverage applies."
+    },
+    {
+     "q": "What is a spread of 12 in MT4/MT5 worth?",
+     "a": "On a five-decimal pair such as EURUSD, 12 is 12 points, which is 1.2 pips. At USD 10 per pip on one lot, that is about USD 12."
+    },
+    {
+     "q": "What does \"100 points\" mean in the index rebate table?",
+     "a": "An index rebate point is 0.01 of an index point, so 100 points is one index point. TMGM's US30 contract is USD 10 per index point, so 100 points is about USD 10 per lot."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/tmgm-man-fan.html",
    "lang": "zh-CN",
    "title": "TMGM满返是什么？满返标准与申请流程｜满返网",
