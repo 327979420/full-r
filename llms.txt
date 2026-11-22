@@ -92,6 +92,7 @@ Source: https://max-rebate.com/en.html#faq
 - [喊单群、带单老师、资金盘怎么识别？7个危险信号](https://max-rebate.com/han-dan-zi-jin-pan.html): 喊单群、带单老师和资金盘怎么运作，7个危险信号：陌生人拉群、承诺收益、钱转个人账户、用链接下载App、提现先交钱。附查牌照、核对网址和被骗后怎么办。
 - [MT4/MT5怎么下单？四种挂单和止损止盈怎么设](https://max-rebate.com/mt4-mt5-gua-dan.html): MT4/MT5手机版怎么下市价单和挂单：买入限价、卖出限价、买入止损、卖出止损分别挂在哪里、按什么价格触发，止损止盈怎么设，挂单为什么没成交或成交价更差。
 - [TMGM Lot Size and Pip Value: Forex, Gold, Oil and US30](https://max-rebate.com/tmgm-lot-size-pip-value-en.html): At TMGM, 1 lot of gold is 100 oz, so a USD 1 move is USD 100 per lot. 1 lot of EURUSD is EUR 100,000 and a pip is worth USD 10. Tables for 0.1 and 0.01 lots, margin and rebates.
+- [TMGM MT4/MT5 Login Not Working? Fix "Invalid Account"](https://max-rebate.com/tmgm-mt4-mt5-login-en.html): Can't log in to TMGM MT4 or MT5 for the first time? Check the server name in your Client Portal, log in with the trading account number and trading password, then ask TMGM to check activation.
 
 ## 图文教程 / Step-by-step tutorials
 
