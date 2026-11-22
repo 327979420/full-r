@@ -50,3 +50,4 @@
 | — | 喊单群、带单、资金盘怎么识别：三种套路、7个危险信号、怎样查牌照和网址、被骗后先做什么（竞品选题缺口 #5；不评价具体平台或个人） | 喊单群是骗局吗、带单老师靠谱吗、资金盘怎么识别、外汇平台提现要交费 | `han-dan-zi-jin-pan.html` | 已写 |
 | — | MT4/MT5怎么下单：市价单、四种挂单（挂在现价哪边、按Bid/Ask触发）、手机版下单改单删单、止损止盈（竞品选题缺口 #6；按MetaQuotes官方帮助，按钮名称以App为准） | MT4怎么挂单、buy limit和buy stop区别、MT5手机怎么下单、止损止盈怎么设 | `mt4-mt5-gua-dan.html` | 已写 |
 | — | 英文版：TMGM 1手多大、pip 值（外汇、黄金、原油、US30），0.1/0.01手、保证金、按手算返佣（与 `yi-shou-dian-zhi.html` 互为 hreflang；按 TMGM 英文品种页核对于2026-11-19，黄金 pip 按 TMGM 写 0.01） | tmgm gold lot size, tmgm pip value, how much is 1 lot of gold, 0.01 lot gold | `tmgm-lot-size-pip-value-en.html` | 已写 |
+| — | 英文版：TMGM MT4/MT5 第一次登录不上（Invalid Account、服务器在客户门户首页看、交易密码和门户密码不同、观摩密码只读、账号未激活）（与 `mt4-deng-lu-bu-liao.html` 互为 hreflang；按 TMGM 英文帮助中心、FAQ、MT4 教程核对于2026-11-23） | tmgm mt4 invalid account, tmgm mt5 login, tmgm server name, tmgm mt4 password | `tmgm-mt4-mt5-login-en.html` | 已写 |

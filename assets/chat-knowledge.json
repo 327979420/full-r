@@ -1111,6 +1111,35 @@
    ]
   },
   {
+   "url": "https://max-rebate.com/tmgm-mt4-mt5-login-en.html",
+   "lang": "en",
+   "title": "TMGM MT4/MT5 Login Not Working? Fix \"Invalid Account\" | Max Rebate",
+   "description": "Can't log in to TMGM MT4 or MT5 for the first time? Check the server name in your Client Portal, log in with the trading account number and trading password, then ask TMGM to check activation.",
+   "answer": "In first-login cases Max Rebate has helped with, roughly six in ten were the wrong server, three in ten a password problem, and one in ten a trading account that was not yet active. Pick the exact server shown for your account on the Client Portal home page. Log in with the trading account number and trading password, typed by hand. If both are right and it still fails, ask TMGM to check that the account is active.",
+   "faq": [
+    {
+     "q": "What does \"Invalid Account\" mean in TMGM MT4?",
+     "a": "MT4 could not match your login details on the selected server. TMGM says the usual cause is choosing the wrong server. Check the server name shown on the Client Portal home page, then try the trading password again."
+    },
+    {
+     "q": "Do I log in to MT4/MT5 with my email or my account number?",
+     "a": "With the trading account number, the string of digits shown in the Client Portal. Your email address is for the Client Portal, not for MT4/MT5."
+    },
+    {
+     "q": "Is the Client Portal password the same as the MT4/MT5 password?",
+     "a": "TMGM's FAQ says they are different. Use the trading account password in MT4/MT5, and reset it in the Client Portal if you have forgotten it."
+    },
+    {
+     "q": "Why can I see my account but not place trades?",
+     "a": "You may have logged in with the investor password. TMGM's help centre explains that it gives read-only access: you can view trading activity but cannot place or manage trades. Log in again with the trading password."
+    },
+    {
+     "q": "How long does account activation take?",
+     "a": "There is no fixed time because TMGM checks it manually. Contact live chat or email support with your trading account number and follow their reply."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/tmgm-new-account-rebate-en.html",
    "lang": "en",
    "title": "Just Opened a TMGM Account? Claim Rebates Within 3 Days | Max Rebate",
