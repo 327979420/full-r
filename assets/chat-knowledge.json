@@ -673,6 +673,35 @@
    ]
   },
   {
+   "url": "https://max-rebate.com/tmgm-ea-scalping-vps-en.html",
+   "lang": "en",
+   "title": "Does TMGM Allow EAs, Scalping and Hedging? Free VPS Rules | Max Rebate",
+   "description": "TMGM's MT4 page says EAs, scalping and hedging are allowed. The free Basic VPS needs 7 lots a month for existing clients, or a USD 3,000 deposit for new clients. EA trades earn rebates like manual trades.",
+   "answer": "Yes. TMGM's MT4 page says the platform supports Expert Advisors, has no scalping restrictions and lets you hedge with opposite or related positions. TMGM lists both EDGE and CLASSIC accounts as EA compatible. The free Basic VPS needs 7 lots traded in the month for existing clients, or a deposit of at least USD 3,000 for new clients.",
+   "faq": [
+    {
+     "q": "Does TMGM allow Expert Advisors?",
+     "a": "Yes. TMGM's MT4 page says the platform supports Expert Advisors for automated trading, and its account types page lists both EDGE and CLASSIC as EA compatible."
+    },
+    {
+     "q": "Does TMGM allow scalping?",
+     "a": "Yes. TMGM's MT4 page says there are no scalping restrictions."
+    },
+    {
+     "q": "Is the TMGM VPS free?",
+     "a": "Free if you meet the conditions: existing clients need 7 lots traded before the month-end review, and new clients need a deposit of USD 3,000 for Basic or USD 20,000 for High Frequency. The free offer is for a Basic VPS. Checked 2026-11-24; TMGM's page applies."
+    },
+    {
+     "q": "Do trades placed by an EA earn rebates?",
+     "a": "Yes. EA trades are counted the same way as manual trades, by eligible closed standard lots. Using an EA does not change the rebate."
+    },
+    {
+     "q": "Will TMGM suddenly restrict my account for using an EA?",
+     "a": "In normal use, usually not. If TMGM considers a trading pattern risky, it generally emails first and explains what to adjust. If nothing changes after the reminder, TMGM may act under the client agreement."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/tmgm-ea-vps.html",
    "lang": "zh-CN",
    "title": "TMGM能用EA吗？剥头皮、对冲和免费VPS条件｜满返网",
