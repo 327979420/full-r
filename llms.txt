@@ -93,6 +93,7 @@ Source: https://max-rebate.com/en.html#faq
 - [MT4/MT5怎么下单？四种挂单和止损止盈怎么设](https://max-rebate.com/mt4-mt5-gua-dan.html): MT4/MT5手机版怎么下市价单和挂单：买入限价、卖出限价、买入止损、卖出止损分别挂在哪里、按什么价格触发，止损止盈怎么设，挂单为什么没成交或成交价更差。
 - [TMGM Lot Size and Pip Value: Forex, Gold, Oil and US30](https://max-rebate.com/tmgm-lot-size-pip-value-en.html): At TMGM, 1 lot of gold is 100 oz, so a USD 1 move is USD 100 per lot. 1 lot of EURUSD is EUR 100,000 and a pip is worth USD 10. Tables for 0.1 and 0.01 lots, margin and rebates.
 - [TMGM MT4/MT5 Login Not Working? Fix "Invalid Account"](https://max-rebate.com/tmgm-mt4-mt5-login-en.html): Can't log in to TMGM MT4 or MT5 for the first time? Check the server name in your Client Portal, log in with the trading account number and trading password, then ask TMGM to check activation.
+- [Does TMGM Allow EAs, Scalping and Hedging? Free VPS Rules](https://max-rebate.com/tmgm-ea-scalping-vps-en.html): TMGM's MT4 page says EAs, scalping and hedging are allowed. The free Basic VPS needs 7 lots a month for existing clients, or a USD 3,000 deposit for new clients. EA trades earn rebates like manual trades.
 
 ## 图文教程 / Step-by-step tutorials
 
