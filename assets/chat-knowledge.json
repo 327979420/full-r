@@ -1210,6 +1210,35 @@
    ]
   },
   {
+   "url": "https://max-rebate.com/tmgm-trading-hours-en.html",
+   "lang": "en",
+   "title": "TMGM Trading Hours: Gold, Silver, Oil and Forex in UTC | Max Rebate",
+   "description": "TMGM server time is GMT+2 (GMT+3 in US daylight saving). Gold opens Sunday 23:01 UTC (Monday 07:01 in UTC+8) and pauses daily 21:59–23:01 UTC. Tables for gold, silver, oil and EURUSD.",
+   "answer": "Now (standard time, since 2 November 2026), TMGM gold opens on Sunday at 23:01 UTC, which is Monday 07:01 in UTC+8. From Monday to Thursday it pauses at 21:59 UTC and reopens at 23:01 UTC, and it closes for the week on Friday at 21:55 UTC. TMGM server time is GMT+2, or GMT+3 during US daylight saving. From 14 March 2027, US daylight saving starts and every time below moves one hour earlier in UTC.",
+   "faq": [
+    {
+     "q": "What time does TMGM gold open on Monday?",
+     "a": "In standard time, which applies now, gold opens on Sunday at 23:01 UTC, which is Monday 07:01 in UTC+8. During US daylight saving it opens an hour earlier, at 22:01 UTC."
+    },
+    {
+     "q": "What time zone is TMGM server time?",
+     "a": "TMGM's trading hours page says server time and charts are GMT+2, or GMT+3 during daylight saving. The switch follows US daylight saving."
+    },
+    {
+     "q": "Why does TMGM gold stop trading for an hour every day?",
+     "a": "The gold session in TMGM's schedule ends at 23:59 server time and restarts at 01:01, so there is a daily pause of about an hour. In standard time that is 21:59 to 23:01 UTC."
+    },
+    {
+     "q": "Do trading hours change when daylight saving ends?",
+     "a": "Not in server time, which moves with US daylight saving. In UTC and in places without daylight saving, such as UTC+8, the open and close are one hour later in standard time and one hour earlier once US daylight saving starts."
+    },
+    {
+     "q": "Where can I find holiday trading hours?",
+     "a": "Holiday sessions are set separately and announced by TMGM before each holiday. This page converts normal trading days only."
+    }
+   ]
+  },
+  {
    "url": "https://max-rebate.com/tmgm-zhanghu-leixing.html",
    "lang": "zh-CN",
    "title": "TMGM账户类型对比：STD、PM、DC、PRO、RAW07怎么选｜满返网",
