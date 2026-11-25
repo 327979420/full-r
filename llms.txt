@@ -94,6 +94,7 @@ Source: https://max-rebate.com/en.html#faq
 - [TMGM Lot Size and Pip Value: Forex, Gold, Oil and US30](https://max-rebate.com/tmgm-lot-size-pip-value-en.html): At TMGM, 1 lot of gold is 100 oz, so a USD 1 move is USD 100 per lot. 1 lot of EURUSD is EUR 100,000 and a pip is worth USD 10. Tables for 0.1 and 0.01 lots, margin and rebates.
 - [TMGM MT4/MT5 Login Not Working? Fix "Invalid Account"](https://max-rebate.com/tmgm-mt4-mt5-login-en.html): Can't log in to TMGM MT4 or MT5 for the first time? Check the server name in your Client Portal, log in with the trading account number and trading password, then ask TMGM to check activation.
 - [Does TMGM Allow EAs, Scalping and Hedging? Free VPS Rules](https://max-rebate.com/tmgm-ea-scalping-vps-en.html): TMGM's MT4 page says EAs, scalping and hedging are allowed. The free Basic VPS needs 7 lots a month for existing clients, or a USD 3,000 deposit for new clients. EA trades earn rebates like manual trades.
+- [TMGM Trading Hours: Gold, Silver, Oil and Forex in UTC](https://max-rebate.com/tmgm-trading-hours-en.html): TMGM server time is GMT+2 (GMT+3 in US daylight saving). Gold opens Sunday 23:01 UTC (Monday 07:01 in UTC+8) and pauses daily 21:59–23:01 UTC. Tables for gold, silver, oil and EURUSD.
 
 ## 图文教程 / Step-by-step tutorials
 
